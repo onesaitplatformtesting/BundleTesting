@@ -1,0 +1,27 @@
+---
+createdAt: 1689922307000
+updatedAt: 1689922307000
+id: "e5d423a8-fe30-4db9-aed9-289f2eca4e6e"
+identification: "ApiBundleSurvivor"
+user: "administrator"
+ontology: "0a82c586-11a7-4a22-b54f-8b52cf2b9ff0"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "bundle"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "bundle"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1689922307000
+  updatedAt: 1689922307000
+  id: "7875aa6c-30cf-45a1-b533-12eedfe8db5d"
+  apiqueryparameters: []
+  identification: "ApiBundleSurvivor_GETAll"
+  description: "get all"
+  operation: "GET"
+  path: "/"
+public: true
