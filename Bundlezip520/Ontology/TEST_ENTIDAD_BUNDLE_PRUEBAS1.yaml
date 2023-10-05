@@ -1,0 +1,50 @@
+---
+createdAt: 1687876856125
+updatedAt: 1687951527694
+id: "6b1dd579-c7b0-4867-88e1-e9040ea324ec"
+identification: "TEST_ENTIDAD_BUNDLE_PRUEBAS1"
+user: "developer"
+jsonSchema:
+  $schema: "http://json-schema.org/draft-07/schema#"
+  title: "TEST_ENTIDAD_BUNDLE_PRUEBAS1"
+  type: "object"
+  required:
+  - "TEST_ENTIDAD_BUNDLE_PRUEBAS1"
+  properties:
+    TEST_ENTIDAD_BUNDLE_PRUEBAS1:
+      type: "string"
+      $ref: "#/datos"
+  datos:
+    description: "Properties for DataModel TEST_ENTIDAD_BUNDLE_PRUEBAS1"
+    type: "object"
+    required:
+    - "propiedad"
+    properties:
+      propiedad:
+        type: "string"
+  description: "TEST_ENTIDAD_BUNDLE_PRUEBAS1"
+  entitydclass: []
+  additionalProperties: true
+dataModel: "MASTER-DataModel-5"
+active: true
+contextDataEnabled: true
+rtdbClean: false
+rtdbCleanLapse: "NEVER"
+rtdbToHdb: false
+rtdbToHdbStorage: "MONGO_GRIDFS"
+description: "TEST_ENTIDAD_BUNDLE_PRUEBAS1"
+metainf: "TEST_ENTIDAD_BUNDLE_PRUEBAS1"
+ontologyUserAccesses: []
+rtdbDatasource: "MONGO"
+allowsCypherFields: false
+allowsCreateTopic: false
+allowsCreateNotificationTopic: false
+allowsCreateMqttTopic: false
+partitionKey: "/id"
+supportsJsonLd: false
+jsonLdContext: ""
+enableDataClass: false
+public: true
+ontologyKPI: null
+ontologyAI: null
+ontologyTimeSeries: null

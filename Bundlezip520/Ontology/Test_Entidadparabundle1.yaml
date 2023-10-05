@@ -1,0 +1,49 @@
+---
+createdAt: 1687861493751
+updatedAt: 1687861493751
+id: "051c8a7b-d9dc-4c6d-95d9-98f033fc671a"
+identification: "Test_Entidadparabundle1"
+user: "administrator"
+jsonSchema:
+  $schema: "http://json-schema.org/draft-07/schema#"
+  title: "Test_Entidadparabundle1"
+  type: "object"
+  required:
+  - "Test_Entidadparabundle1"
+  properties:
+    Test_Entidadparabundle1:
+      type: "string"
+      $ref: "#/datos"
+  datos:
+    description: "Properties for DataModel Test_Entidadparabundle1"
+    type: "object"
+    required:
+    - "propiedad"
+    properties:
+      propiedad:
+        type: "string"
+  description: "Test_Entidadparabundle1"
+  entitydclass: []
+  additionalProperties: true
+dataModel: "MASTER-DataModel-5"
+active: true
+contextDataEnabled: true
+rtdbClean: false
+rtdbCleanLapse: "NEVER"
+rtdbToHdb: false
+description: "Test_Entidadparabundle1"
+metainf: "Test_Entidadparabundle1"
+ontologyUserAccesses: []
+rtdbDatasource: "MONGO"
+allowsCypherFields: false
+allowsCreateTopic: false
+allowsCreateNotificationTopic: false
+allowsCreateMqttTopic: false
+partitionKey: "/id"
+supportsJsonLd: false
+jsonLdContext: ""
+enableDataClass: false
+public: true
+ontologyKPI: null
+ontologyAI: null
+ontologyTimeSeries: null
