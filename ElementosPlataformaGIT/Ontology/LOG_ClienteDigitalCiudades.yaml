@@ -1,0 +1,76 @@
+---
+createdAt: 1696953045478
+updatedAt: 1696953045478
+id: "34d56d28-f345-4be6-9b15-15b3aded3134"
+identification: "LOG_ClienteDigitalCiudades"
+user: "administrator"
+jsonSchema:
+  $schema: "http://json-schema.org/draft-07/schema#"
+  title: "DataModel DeviceLog Schema"
+  type: "object"
+  required:
+  - "DeviceLog"
+  properties:
+    DeviceLog:
+      type: "string"
+      $ref: "#/datos"
+  datos:
+    description: "Properties for DeviceLog Alarm"
+    type: "object"
+    required:
+    - "status"
+    - "level"
+    - "message"
+    - "device"
+    - "timestamp"
+    properties:
+      location:
+        type: "object"
+        required:
+        - "coordinates"
+        - "type"
+        properties:
+          coordinates:
+            type: "object"
+            properties:
+              latitude:
+                type: "number"
+              longitude:
+                type: "number"
+          type:
+            type: "string"
+            enum:
+            - "Point"
+      status:
+        type: "string"
+      level:
+        type: "string"
+      message:
+        type: "string"
+      extraOptions:
+        type: "string"
+      device:
+        type: "string"
+      timestamp:
+        type: "string"
+        format: "date-time"
+  additionalProperties: true
+dataModel: "MASTER-DataModel-3"
+active: true
+contextDataEnabled: false
+rtdbClean: true
+rtdbCleanLapse: "SIX_MONTHS"
+rtdbToHdb: false
+description: "System Ontology. Centralized Log for devices of type ClienteDigitalCiudades"
+ontologyUserAccesses: []
+rtdbDatasource: "MONGO"
+allowsCypherFields: false
+allowsCreateTopic: false
+allowsCreateNotificationTopic: false
+allowsCreateMqttTopic: false
+supportsJsonLd: false
+enableDataClass: false
+public: false
+ontologyKPI: null
+ontologyAI: null
+ontologyTimeSeries: null
