@@ -1,0 +1,13 @@
+---
+createdAt: 1694513841000
+updatedAt: 1694513841000
+id: "d2d5ab8e-fbfe-45d4-acb1-7f7f65e6cc01"
+identification: "GadgetTable511nuevo"
+user: "administrator"
+type: "MASTER-GadgetTemplate-13"
+description: "GadgetTable511nuevo"
+instance: true
+config:
+  parameters:
+    initialEntity: "Restaurants"
+public: false

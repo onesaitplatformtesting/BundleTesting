@@ -1,0 +1,36 @@
+---
+createdAt: 1697541626000
+updatedAt: 1697541626000
+id: "b1d29214-4bff-4008-b1c1-b8ecdb326c44"
+identification: "clientedigitalTOPGUN_NUEVO"
+user: "administrator"
+clientPlatformOntologies:
+- createdAt: 1697541626000
+  updatedAt: 1697541626000
+  id: "1e6c5e6e-3e23-4cbc-b93b-c6e0318a4f44"
+  access: "ALL"
+  ontology: "MASTER-Ontology-Restaurant-1"
+- createdAt: 1697541626000
+  updatedAt: 1697541626000
+  id: "d9b3e04e-7929-4de7-9e30-9fb560df5a72"
+  access: "ALL"
+  ontology: "3cd2944d-5ba5-4f19-82e2-56817f46377c"
+tokens:
+- createdAt: 1697541626000
+  updatedAt: 1697541643000
+  id: "0d683ca0-0d1d-4a30-a7c5-9802d4a388ef"
+  tokenName: "c2d990125da74cd493999c3403ac83b4"
+  active: true
+clientConnections: []
+devices:
+- createdAt: 1697541781000
+  updatedAt: 1697542021000
+  id: "c7a2f577-0749-4024-b17f-904080e63977"
+  identification: "clientedigitalTOPGUN_NUEVOID"
+  connected: false
+  status: "OK"
+  protocol: "REST"
+  disabled: true
+encryptionKey: "2c1aacc5-cf06-4e88-a66b-f1e722154b4c"
+metadata: ""
+description: "clientedigitalTOPGUN_NUEVO"

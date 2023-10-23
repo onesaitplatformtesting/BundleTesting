@@ -1,0 +1,13 @@
+---
+createdAt: 1672753339000
+updatedAt: 1672753339000
+id: "81276d25-2487-4b27-b5ab-c19aeb3d9feb"
+identification: "Gadget_nuevo"
+user: "administrator"
+type: "MASTER-GadgetTemplate-8"
+description: "Gadget_nuevo"
+instance: true
+config:
+  parameters:
+    initialEntity: "HelsinkiPopulation"
+public: false

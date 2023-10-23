@@ -1,0 +1,15 @@
+---
+createdAt: 1682518944000
+updatedAt: 1682518944000
+id: "7f76ea4f-1308-4ff8-8b9d-4885265dd8b5"
+identification: "gadget_nuevo_599"
+user: "administrator"
+type: "MASTER-GadgetTemplate-7"
+description: "gadget_nuevo_599"
+instance: true
+config:
+  parameters:
+    initialEntity: ""
+    typeGadget: "withWizard"
+    hideIdColumn: false
+public: false
