@@ -1,0 +1,57 @@
+---
+createdAt: 1696945964354
+updatedAt: 1697006627698
+id: "0d0cb875-9505-43cd-8e75-228f04fb965d"
+identification: "APIparaBundle"
+user: "developer"
+ontology: "7817ebc3-000e-451f-b607-2ede87ddef97"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "pruebas"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "pruebas"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1696945964375
+  updatedAt: 1697006627698
+  id: "d7ba7191-e74c-475d-8cf0-1bbb3570687a"
+  apiqueryparameters: []
+  identification: "APIparaBundle_GETAll"
+  description: "get all"
+  operation: "GET"
+  path: "/"
+- createdAt: 1696945964375
+  updatedAt: 1697006627698
+  id: "3248eebd-8bbb-4360-ba1a-168e59d11561"
+  apiqueryparameters:
+  - createdAt: 1696945964376
+    updatedAt: 1697006627698
+    id: "00eca904-a98e-41e2-96f6-a9547be2bc9f"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "APIparaBundle_GET"
+  description: "get id"
+  operation: "GET"
+  path: "/{id}"
+- createdAt: 1696945964373
+  updatedAt: 1697006627698
+  id: "70617a58-b6b2-4d5c-bfbf-10c9b3f59d99"
+  apiqueryparameters:
+  - createdAt: 1696945964374
+    updatedAt: 1697006627698
+    id: "f7814cb7-3bd2-46c0-88b4-740fc0bc3b98"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "APIparaBundle_DELETEID"
+  description: "delete id"
+  operation: "DELETE"
+  path: "/{id}"
+public: true

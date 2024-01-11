@@ -1,0 +1,55 @@
+---
+createdAt: 1696506227033
+updatedAt: 1696506227033
+id: "4181135c-48dc-4d16-86a7-20205456efff"
+identification: "Entidad_bundle520"
+user: "administrator"
+jsonSchema:
+  $schema: "http://json-schema.org/draft-07/schema#"
+  title: "Entidad_bundle520"
+  type: "object"
+  required:
+  - "Entidad_bundle520"
+  properties:
+    Entidad_bundle520:
+      type: "string"
+      $ref: "#/datos"
+  datos:
+    description: "Properties for DataModel Entidad_bundle520"
+    type: "object"
+    required:
+    - "propiedad"
+    - "propiedad2"
+    - "propiedad3"
+    properties:
+      propiedad:
+        type: "string"
+      propiedad2:
+        type: "string"
+      propiedad3:
+        type: "string"
+  description: "Entidad_bundle520"
+  entitydclass: []
+  additionalProperties: true
+dataModel: "MASTER-DataModel-5"
+active: true
+contextDataEnabled: true
+rtdbClean: false
+rtdbCleanLapse: "NEVER"
+rtdbToHdb: false
+description: "Entidad_bundle520"
+metainf: "pruebas"
+ontologyUserAccesses: []
+rtdbDatasource: "MONGO"
+allowsCypherFields: false
+allowsCreateTopic: false
+allowsCreateNotificationTopic: false
+allowsCreateMqttTopic: false
+partitionKey: "/id"
+supportsJsonLd: false
+jsonLdContext: ""
+enableDataClass: false
+public: true
+ontologyKPI: null
+ontologyAI: null
+ontologyTimeSeries: null

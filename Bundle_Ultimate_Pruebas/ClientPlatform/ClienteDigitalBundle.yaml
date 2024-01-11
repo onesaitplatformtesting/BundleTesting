@@ -1,0 +1,28 @@
+---
+createdAt: 1696946862953
+updatedAt: 1697006627697
+id: "c4134a0a-9195-41f2-a879-17232f9a7347"
+identification: "ClienteDigitalBundle"
+user: "developer"
+clientPlatformOntologies:
+- createdAt: 1696946863268
+  updatedAt: 1697006627698
+  id: "2fe8d9aa-1585-4cd5-851b-6877187614b0"
+  access: "ALL"
+  ontology: "396c0e85-b733-4487-b02e-40dc496e7689"
+- createdAt: 1696946863007
+  updatedAt: 1697006627698
+  id: "00259ca7-8ceb-46f9-ab81-3803118926d5"
+  access: "ALL"
+  ontology: "7817ebc3-000e-451f-b607-2ede87ddef97"
+tokens:
+- createdAt: 1696946862981
+  updatedAt: 1697006627698
+  id: "3b2d731e-51a5-447c-a3cb-e199a94d8984"
+  tokenName: "b52d3b352e1d4f1ca639126e497f61cb"
+  active: true
+clientConnections: []
+devices: []
+encryptionKey: "df339e3b-2e27-4389-8902-bec784af0920"
+metadata: ""
+description: "pruebas"
