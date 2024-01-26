@@ -1,0 +1,28 @@
+---
+createdAt: 1706178762000
+updatedAt: 1706178762000
+id: "5079952d-657a-4a8d-b813-5cebd6004ac5"
+identification: "DC_BUNDLE_PRUEBAS"
+user: "administrator"
+clientPlatformOntologies:
+- createdAt: 1706178762000
+  updatedAt: 1706178762000
+  id: "f296ba5e-33ce-4bda-bf18-76a753343dde"
+  access: "ALL"
+  ontology: "1ee660c4-5719-40a1-8656-cdd161413d92"
+- createdAt: 1706178762000
+  updatedAt: 1706178762000
+  id: "2aa7de37-bb36-42e0-9bb6-4c33bf21d45c"
+  access: "ALL"
+  ontology: "7e08bdff-74c0-421e-afe2-05dc5ab6e9a1"
+tokens:
+- createdAt: 1706178762000
+  updatedAt: 1706178762000
+  id: "4bada3a0-702c-4363-a773-9e9ff81e4e10"
+  tokenName: "c7b40065553c46aa84221d5d9c259b58"
+  active: true
+clientConnections: []
+devices: []
+encryptionKey: "ec9bd0aa-5ed9-4079-aaa9-5e44fda52301"
+metadata: ""
+description: "DC_BUNDLE_PRUEBAS"
