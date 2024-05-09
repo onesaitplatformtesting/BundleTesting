@@ -1,0 +1,12 @@
+---
+createdAt: 1714725854000
+updatedAt: 1714725854000
+id: "MASTER-Configuration-33"
+identification: "BundlesRepository"
+user: "administrator"
+ymlConfig: "#Onesait Platform GITHUB Conf\ngitConnections:\n  - privateToken: XXXXXXXXXXXXXXXXXXX\n\
+  \    user: XXXXXXXXXXXXXX\n    projectURL: https://github.com/onesaitplatform/onesaitplatform-bundles\n\
+  \    branch: main"
+environment: "default"
+type: "BUNDLE_GIT"
+description: "BundlesRepository"

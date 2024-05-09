@@ -1,0 +1,77 @@
+---
+createdAt: 1706178762000
+updatedAt: 1706178762000
+id: "7e08bdff-74c0-421e-afe2-05dc5ab6e9a1"
+identification: "LOG_DC_BUNDLE_PRUEBAS"
+user: "administrator"
+jsonSchema:
+  $schema: "http://json-schema.org/draft-07/schema#"
+  title: "DataModel DeviceLog Schema"
+  type: "object"
+  required:
+  - "DeviceLog"
+  properties:
+    DeviceLog:
+      type: "string"
+      $ref: "#/datos"
+  datos:
+    description: "Properties for DeviceLog Alarm"
+    type: "object"
+    required:
+    - "status"
+    - "level"
+    - "message"
+    - "device"
+    - "timestamp"
+    properties:
+      location:
+        type: "object"
+        required:
+        - "coordinates"
+        - "type"
+        properties:
+          coordinates:
+            type: "object"
+            properties:
+              latitude:
+                type: "number"
+              longitude:
+                type: "number"
+          type:
+            type: "string"
+            enum:
+            - "Point"
+      status:
+        type: "string"
+      level:
+        type: "string"
+      message:
+        type: "string"
+      extraOptions:
+        type: "string"
+      device:
+        type: "string"
+      timestamp:
+        type: "string"
+        format: "date-time"
+  additionalProperties: true
+dataModel: "MASTER-DataModel-3"
+active: true
+contextDataEnabled: false
+rtdbClean: true
+rtdbCleanLapse: "SIX_MONTHS"
+rtdbToHdb: false
+description: "System Ontology. Centralized Log for devices of type DC_BUNDLE_PRUEBAS"
+ontologyUserAccesses: []
+rtdbDatasource: "MONGO"
+allowsCypherFields: false
+allowsCreateTopic: false
+allowsCreateNotificationTopic: false
+allowsNotificationBpm: false
+allowsCreateMqttTopic: false
+supportsJsonLd: false
+enableDataClass: false
+public: false
+ontologyKPI: null
+ontologyAI: null
+ontologyTimeSeries: null
