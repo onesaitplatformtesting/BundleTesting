@@ -1,0 +1,50 @@
+---
+createdAt: 1684242062000
+updatedAt: 1715255315000
+id: "00c80e9b-f9eb-4951-bda3-c6a51e11446b"
+identification: "testOntologyMinIO"
+user: "administrator"
+jsonSchema:
+  $schema: "http://json-schema.org/draft-07/schema#"
+  title: "testOntologyMinIO"
+  type: "object"
+  required:
+  - "testOntologyMinIO"
+  properties:
+    testOntologyMinIO:
+      type: "string"
+      $ref: "#/datos"
+  datos:
+    description: "Properties for DataModel testOntologyMinIO"
+    type: "object"
+    required:
+    - "fieldname"
+    properties:
+      fieldname:
+        type: "string"
+  description: "description"
+  entitydclass: []
+  additionalProperties: true
+dataModel: "MASTER-DataModel-5"
+active: true
+contextDataEnabled: true
+rtdbClean: false
+rtdbCleanLapse: "NEVER"
+rtdbToHdb: false
+description: "description"
+metainf: "metainf"
+ontologyUserAccesses: []
+rtdbDatasource: "MONGO"
+allowsCypherFields: false
+allowsCreateTopic: true
+allowsCreateNotificationTopic: true
+allowsNotificationBpm: false
+allowsCreateMqttTopic: false
+partitionKey: "/id"
+supportsJsonLd: false
+jsonLdContext: ""
+enableDataClass: false
+public: false
+ontologyKPI: null
+ontologyAI: null
+ontologyTimeSeries: null
