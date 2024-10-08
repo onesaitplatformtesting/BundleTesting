@@ -1,0 +1,63 @@
+---
+createdAt: 1717400361410
+updatedAt: 1728301060798
+id: "a5dfc28e-df5f-4d3e-8467-dafeec895368"
+identification: "helsinkitest"
+user: "administrator"
+ontology: "MASTER-Ontology-4"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "helsinkitest"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "helsinkitest"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1717403259958
+  updatedAt: 1717403259958
+  id: "6302ef6d-18d1-412d-b065-f4a37437e816"
+  apiqueryparameters: []
+  identification: "helsinkitest_GETAll"
+  description: "get all"
+  operation: "GET"
+  path: "/"
+- createdAt: 1717403259932
+  updatedAt: 1717403259932
+  id: "00637728-4584-4523-b92a-ba6888249110"
+  apiqueryparameters:
+  - createdAt: 1717403259956
+    updatedAt: 1717403259956
+    id: "5f097bc8-5eeb-460e-9cb0-54610c131d08"
+    name: "targetdb"
+    dataType: "STRING"
+    description: ""
+    value: "rtdb"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1717403259947
+    updatedAt: 1717403259947
+    id: "0272c6f9-eddb-4fd5-959a-bedbc7851fb2"
+    name: "queryType"
+    dataType: "STRING"
+    description: ""
+    value: "sql"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1717403259957
+    updatedAt: 1717403259957
+    id: "7a8990e4-62ea-4a34-b55b-742577b514af"
+    name: "query"
+    dataType: "STRING"
+    description: ""
+    value: "Select * from HelsinkiPopulation as c wherer ff limit 3"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  identification: "testError"
+  description: "test4"
+  operation: "GET"
+  path: "testError"
+  postProcess: ""
+public: false

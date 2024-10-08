@@ -1,0 +1,27 @@
+---
+createdAt: 1721117935749
+updatedAt: 1728301060861
+id: "f644f98b-e4d8-4fee-8118-c213528fb5ff"
+identification: "APINUEVA_APP"
+user: "developer"
+ontology: "MASTER-Ontology-9"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "PRUEBAS"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "PRUEBAS"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1721117935841
+  updatedAt: 1721117935841
+  id: "9f8daa37-db2d-4aed-9094-a585f86e00d3"
+  apiqueryparameters: []
+  identification: "APINUEVA_APP_GETAll"
+  description: "ALL"
+  operation: "GET"
+  path: "/"
+public: true

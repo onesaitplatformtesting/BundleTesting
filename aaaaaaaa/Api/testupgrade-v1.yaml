@@ -1,0 +1,58 @@
+---
+createdAt: 1721302169887
+updatedAt: 1728301060789
+id: "8b497d58-c6a2-4d27-971c-924c7fcbcc4c"
+identification: "testupgrade"
+user: "developer"
+ontology: "MASTER-Ontology-10"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "uyoiuyoiuy"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "iuyuiyuiy"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1721302170050
+  updatedAt: 1721302170050
+  id: "526ea002-6454-48ba-9164-ae95eef71f60"
+  apiqueryparameters:
+  - createdAt: 1721302170051
+    updatedAt: 1721302170051
+    id: "45a3d545-2781-4af5-903f-075c58959723"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  identification: "testupgrade_POST"
+  description: "jhjh"
+  operation: "POST"
+  path: "/"
+- createdAt: 1721302170028
+  updatedAt: 1721302170028
+  id: "ea64204a-f700-403b-8195-756463bf85c1"
+  apiqueryparameters: []
+  identification: "testupgrade_GETAll"
+  description: "hg"
+  operation: "GET"
+  path: "/"
+- createdAt: 1721302170041
+  updatedAt: 1721302170041
+  id: "03c9fd23-75ac-49c9-8614-f523dbd91aba"
+  apiqueryparameters:
+  - createdAt: 1721302170043
+    updatedAt: 1721302170043
+    id: "2cf5d1a6-c317-4fa5-bf4a-0d2ce4e0d7b9"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "testupgrade_GET"
+  description: "lhlj"
+  operation: "GET"
+  path: "/{id}"
+public: false

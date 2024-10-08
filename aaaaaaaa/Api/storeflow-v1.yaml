@@ -1,0 +1,34 @@
+---
+createdAt: 1707306942057
+updatedAt: 1728301060727
+id: "2be8608c-93f9-4528-a737-5057712e012a"
+identification: "storeflow"
+user: "administrator"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "storeflow"
+category: "ALL"
+endpointExt: "http://flowengineservice:5050/adminDomain"
+state: "DEVELOPMENT"
+apiType: "NODE_RED"
+apiOperations:
+- createdAt: 1727081290374
+  updatedAt: 1727081290374
+  id: "f9a24eab-0423-4b91-b4f7-b379255e2b0c"
+  apiqueryparameters:
+  - createdAt: 1727081290375
+    updatedAt: 1727081290375
+    id: "30ac68c6-62be-4995-b5a9-f6dabaffcbc2"
+    name: "flowId"
+    dataType: "STRING"
+    description: ""
+    condition: "REQUIRED"
+    headerType: "PATH"
+  identification: "/flow/:flowId"
+  description: "/flow/:flowId"
+  operation: "GET"
+  endpoint: "/92c49aab5991b385/flow/{flowId}/"
+  path: "/flow/{flowId}/"
+public: false
+ontology: null

@@ -1,0 +1,72 @@
+---
+createdAt: 1726582281760
+updatedAt: 1728301060824
+id: "c61a5524-b883-4ab6-82fc-0a78a646f48c"
+identification: "Customers"
+user: "administrator"
+ontology: "b739c379-eeee-4d56-a8dd-a33e3b72c571"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "check if customer exists"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "BPM,training"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1726582281824
+  updatedAt: 1726582281824
+  id: "dbde796a-f91b-4809-8b71-a7254be0e5ba"
+  apiqueryparameters:
+  - createdAt: 1726582281828
+    updatedAt: 1726582281828
+    id: "28403f97-a682-4cc4-94c9-f129a78646b8"
+    name: "id"
+    dataType: "NUMBER"
+    description: ""
+    condition: "REQUIRED"
+    headerType: "BODY"
+  - createdAt: 1726582281832
+    updatedAt: 1726582281832
+    id: "73752c77-6bcb-412d-95ca-4039e0ac9fbe"
+    name: "targetdb"
+    dataType: "STRING"
+    description: ""
+    value: "rtdb"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1726582281833
+    updatedAt: 1726582281833
+    id: "60b590a9-866e-4008-bb57-f988ee09eb33"
+    name: "queryType"
+    dataType: "STRING"
+    description: ""
+    value: "sql"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1726582281834
+    updatedAt: 1726582281834
+    id: "91862848-f6b6-4972-bddb-59421e2d9893"
+    name: "query"
+    dataType: "STRING"
+    description: ""
+    value: "Select * from customer as c where Customers.id={$id}"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  identification: "checkIfExists"
+  description: "pruebas"
+  operation: "GET"
+  path: "checkIfExists"
+  postProcess: "// data is a string variable containing the query output \nvar dataArray\
+    \ = JSON.parse(data);\n\n// A string result must be returned\nreturn (JSON.stringify(dataArray));"
+- createdAt: 1726582281835
+  updatedAt: 1726582281835
+  id: "b302fef5-8b29-4e87-a126-ba1fdbdf21d7"
+  apiqueryparameters: []
+  identification: "Customers_GETAll"
+  description: "all"
+  operation: "GET"
+  path: "/"
+public: true

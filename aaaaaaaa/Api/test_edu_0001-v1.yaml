@@ -1,0 +1,71 @@
+---
+createdAt: 1716455960255
+updatedAt: 1728301060749
+id: "3b69f883-e142-44c7-a6b6-e1381766f3d9"
+identification: "test_edu_0001"
+user: "administrator"
+ontology: "MASTER-Ontology-Restaurant-1"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "Obtener restaurantes interesantes."
+category: "TOOLS"
+endpointExt: ""
+state: "PUBLISHED"
+metaInf: "test_edu_0001"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1716455960298
+  updatedAt: 1716455960298
+  id: "f81e3deb-8c55-4671-98de-7dc6e11aca1a"
+  apiqueryparameters:
+  - createdAt: 1716455960304
+    updatedAt: 1716455960304
+    id: "b5bfdfaa-9515-49b2-92a6-4296135c6229"
+    name: "cuisineType"
+    dataType: "STRING"
+    description: ""
+    condition: "REQUIRED"
+    headerType: "QUERY"
+  - createdAt: 1716455960308
+    updatedAt: 1716455960308
+    id: "ca3a9cc7-9dc9-4e52-90df-c5f83300ac10"
+    name: "query"
+    dataType: "STRING"
+    description: ""
+    value: "SELECT Restaurant\r\nFROM Restaurants\r\nWHERE Restaurant.cuisine = {$cuisineType}"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1716455960309
+    updatedAt: 1716455960309
+    id: "0d55910c-1bea-4f43-9308-d4a16ebefcdc"
+    name: "targetdb"
+    dataType: "STRING"
+    description: ""
+    value: "rtdb"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1716455960309
+    updatedAt: 1716455960309
+    id: "d8b4415c-4a1a-427a-ad3f-4eb2d9a31a0b"
+    name: "queryType"
+    dataType: "STRING"
+    description: ""
+    value: "sql"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  identification: "getByCuisine"
+  description: "Obtener restaurantes por cocina"
+  operation: "GET"
+  path: "getByCuisine"
+  postProcess: ""
+- createdAt: 1716455960310
+  updatedAt: 1716455960310
+  id: "7bfcd5cb-6d5d-40fb-94ab-29abd405d8c1"
+  apiqueryparameters: []
+  identification: "test_edu_0001_GETAll"
+  description: "Obtener todos los restaurantes"
+  operation: "GET"
+  path: "/"
+public: false

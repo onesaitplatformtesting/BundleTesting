@@ -1,0 +1,69 @@
+---
+createdAt: 1707306942030
+updatedAt: 1728301060736
+id: "313faa6e-8cfd-45b9-8174-55b3ab52d480"
+identification: "rtvachetNodeAPI"
+user: "administrator"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "rtvachetNodeAPI"
+category: "ALL"
+endpointExt: "http://flowengineservice:5050/adminDomain"
+state: "DEVELOPMENT"
+apiType: "NODE_RED"
+apiOperations:
+- createdAt: 1727081290348
+  updatedAt: 1727081290348
+  id: "017d6de6-4b98-428c-a5fa-d9a534cdc0ac"
+  apiqueryparameters: []
+  identification: "getAll"
+  description: "getAll"
+  operation: "GET"
+  endpoint: "/941ed940c59e9250/getAll/"
+  path: "/getAll/"
+- createdAt: 1727081290347
+  updatedAt: 1727081290347
+  id: "2cf0bffa-1f6d-40b3-b596-77d03d997a02"
+  apiqueryparameters:
+  - createdAt: 1727081290347
+    updatedAt: 1727081290347
+    id: "d1caa473-8eac-4c0a-8097-211c924b2ba7"
+    name: "uselessparam"
+    dataType: "STRING"
+    description: ""
+    condition: "REQUIRED"
+    headerType: "QUERY"
+  identification: "/getsomething"
+  description: "/getsomething"
+  operation: "GET"
+  endpoint: "/49f9094cd2d70df2/getsomething/"
+  path: "/getsomething/"
+- createdAt: 1727081290348
+  updatedAt: 1727081290348
+  id: "448705fb-b7a1-4bf4-b145-ddf1357f60e1"
+  apiqueryparameters: []
+  identification: "getFirstThree"
+  description: "/getFirstThree"
+  operation: "GET"
+  endpoint: "/56ca3d58f17c4414/getFirstThree/"
+  path: "/getFirstThree/"
+- createdAt: 1727081290348
+  updatedAt: 1727081290348
+  id: "bd860192-652a-47eb-9688-cf9045d3ef83"
+  apiqueryparameters:
+  - createdAt: 1727081290348
+    updatedAt: 1727081290348
+    id: "c55f39ec-d0a6-45d6-a84b-83ec6475d54c"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  identification: "/uploadfile"
+  description: "/uploadfile"
+  operation: "POST"
+  endpoint: "/88720874616182c5/uploadfile/"
+  path: "/uploadfile/"
+public: false
+ontology: null

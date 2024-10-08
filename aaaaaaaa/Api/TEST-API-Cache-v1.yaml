@@ -1,0 +1,97 @@
+---
+createdAt: 1728398331417
+updatedAt: 1728399007607
+id: "ec0e6807-1e04-4847-9923-c0810d19c118"
+identification: "TEST-API-Cache"
+user: "administrator"
+ontology: "MASTER-Ontology-10"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "qweqweqwe"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "weqweqwe"
+apicachetimeout: 3
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1728399007600
+  updatedAt: 1728399007600
+  id: "195392a9-20ac-4aab-bcb6-eda0afac5fa6"
+  apiqueryparameters:
+  - createdAt: 1728399007601
+    updatedAt: 1728399007601
+    id: "8a0690c0-4ead-40a9-94f1-2544dfa926c9"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  - createdAt: 1728399007601
+    updatedAt: 1728399007601
+    id: "9b1eac65-ecad-4308-866f-61dc7565acfa"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  identification: "TEST-API-Cache_PUT"
+  description: "ww"
+  operation: "PUT"
+  path: "/{id}"
+- createdAt: 1728399007605
+  updatedAt: 1728399007605
+  id: "50fae677-87c3-4373-8c5a-1bed7efef02d"
+  apiqueryparameters:
+  - createdAt: 1728399007605
+    updatedAt: 1728399007605
+    id: "35854fc6-650a-487f-b914-35a5f4fad0fd"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "TEST-API-Cache_DELETEID"
+  description: "ww"
+  operation: "DELETE"
+  path: "/{id}"
+- createdAt: 1728399007603
+  updatedAt: 1728399007603
+  id: "0c1ccae7-2571-40fe-909c-6921ca9c60f8"
+  apiqueryparameters: []
+  identification: "TEST-API-Cache_GETAll"
+  description: "dff"
+  operation: "GET"
+  path: "/"
+- createdAt: 1728399007602
+  updatedAt: 1728399007602
+  id: "2ba83805-3f01-4006-905a-07f2b1393cb4"
+  apiqueryparameters:
+  - createdAt: 1728399007602
+    updatedAt: 1728399007602
+    id: "7c21b3d1-db82-4227-93d2-71b9fad28349"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "TEST-API-Cache_GET"
+  description: "ww"
+  operation: "GET"
+  path: "/{id}"
+- createdAt: 1728399007604
+  updatedAt: 1728399007604
+  id: "6d92732a-08d8-49bf-a294-82f9e2690ca6"
+  apiqueryparameters:
+  - createdAt: 1728399007604
+    updatedAt: 1728399007604
+    id: "b5119b1b-b01d-4884-a2c1-8e40cc78a1b8"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  identification: "TEST-API-Cache_POST"
+  description: "dfdsf"
+  operation: "POST"
+  path: "/"
+public: false

@@ -1,0 +1,107 @@
+---
+createdAt: 1723461465863
+updatedAt: 1728301060884
+id: "fbd38662-d983-4100-8bc0-f7f701c09af8"
+identification: "api610beta13custom"
+user: "developer"
+ontology: "a47104a9-aa67-4cdc-b25c-02d619361ecf"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "api610beta13custom"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "api610beta13custom"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1723461466006
+  updatedAt: 1723461466006
+  id: "a2c93398-762e-45b1-aac6-8378337bc5b8"
+  apiqueryparameters: []
+  identification: "api610beta13custom_GETAll"
+  description: "getAll"
+  operation: "GET"
+  path: "/"
+- createdAt: 1723461466005
+  updatedAt: 1723461466005
+  id: "2fb1e0bd-50be-4729-bac4-e0e7f972a257"
+  apiqueryparameters:
+  - createdAt: 1723461466005
+    updatedAt: 1723461466005
+    id: "b6aaa018-edcb-48a0-b31a-1b83789eb8cb"
+    name: "targetdb"
+    dataType: "STRING"
+    description: ""
+    value: "rtdb"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1723461466005
+    updatedAt: 1723461466005
+    id: "d111b83d-4e0c-4795-9c39-f524e7906a5e"
+    name: "query"
+    dataType: "STRING"
+    description: ""
+    value: "Select * from HelsinkiDataflowClone as c limit 3"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1723461466006
+    updatedAt: 1723461466006
+    id: "b5335ed3-7b2a-446e-a4f1-c16ac90c0d7f"
+    name: "queryType"
+    dataType: "STRING"
+    description: ""
+    value: "sql"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  identification: "getAllCustom"
+  description: "getAllCustom"
+  operation: "GET"
+  path: "getAllCustom"
+  postProcess: ""
+- createdAt: 1723461465992
+  updatedAt: 1723461465992
+  id: "6b41cfed-dd6e-489a-8325-1238c23e2a11"
+  apiqueryparameters:
+  - createdAt: 1723461466004
+    updatedAt: 1723461466004
+    id: "7891dc71-eff6-42d3-ad08-1875857967bc"
+    name: "year"
+    dataType: "NUMBER"
+    description: ""
+    condition: "REQUIRED"
+    headerType: "PATH"
+  - createdAt: 1723461466004
+    updatedAt: 1723461466004
+    id: "9f973045-3e02-422d-bdf3-a11c67f3ea49"
+    name: "queryType"
+    dataType: "STRING"
+    description: ""
+    value: "sql"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1723461466003
+    updatedAt: 1723461466003
+    id: "b0b04a49-9e74-4ecd-990c-dc656bb48b30"
+    name: "query"
+    dataType: "STRING"
+    description: ""
+    value: "Select * from HelsinkiDataflowClone as c where c.Helsinki.year > {$year}"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1723461465998
+    updatedAt: 1723461465998
+    id: "634c03f1-7bb2-45c0-bbed-591fd884de40"
+    name: "targetdb"
+    dataType: "STRING"
+    description: ""
+    value: "rtdb"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  identification: "getAllparam"
+  description: "getAllparam"
+  operation: "GET"
+  path: "getAllparam/{year}"
+  postProcess: ""
+public: false

@@ -1,0 +1,35 @@
+---
+createdAt: 1713341755734
+updatedAt: 1728301060775
+id: "756f1919-58f7-4527-9ee3-00aef35c4e35"
+identification: "apirestnebula600beta901"
+user: "developer"
+ontology: "7c9ec321-d7e3-4374-bc59-05894b8c14a3"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "apirestnebula600beta901"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "apirestnebula600beta901"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1713341755821
+  updatedAt: 1713341755821
+  id: "833515c1-2233-4c7d-b53b-9320b9b4b88a"
+  apiqueryparameters:
+  - createdAt: 1713341755830
+    updatedAt: 1713341755830
+    id: "b0ce5f3e-7c0f-4285-becc-0c587133a19d"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  identification: "apirestnebula600beta901_POSTNebula"
+  description: "Execute nGQL query"
+  operation: "POST"
+  path: "/execute-ngql"
+public: false

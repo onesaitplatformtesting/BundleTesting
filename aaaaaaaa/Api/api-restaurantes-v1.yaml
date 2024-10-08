@@ -1,0 +1,96 @@
+---
+createdAt: 1727074127352
+updatedAt: 1728301060814
+id: "b82834f2-b17b-45c3-b237-905ebfb81a85"
+identification: "api-restaurantes"
+user: "jfgpimpollo"
+ontology: "MASTER-Ontology-Restaurant-1"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "restaurants"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "restaurants"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1727074127386
+  updatedAt: 1727074127386
+  id: "1d95421f-202e-4eb3-bb10-180eb95cc7a9"
+  apiqueryparameters:
+  - createdAt: 1727074127387
+    updatedAt: 1727074127387
+    id: "c9de032a-17d4-45f9-b810-853b53bcd55c"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "api-restaurantes_GET"
+  description: "Get By Id"
+  operation: "GET"
+  path: "/{id}"
+- createdAt: 1727074127391
+  updatedAt: 1727074127391
+  id: "2d0d1977-acc9-44d7-8e95-130adf0f8dad"
+  apiqueryparameters:
+  - createdAt: 1727074127391
+    updatedAt: 1727074127391
+    id: "0ddd9144-5426-4403-a05e-cb19ebe2302b"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  - createdAt: 1727074127391
+    updatedAt: 1727074127391
+    id: "55dd80ef-679d-4397-900f-38c42b3e483a"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "api-restaurantes_PUT"
+  description: "Update"
+  operation: "PUT"
+  path: "/{id}"
+- createdAt: 1727074127381
+  updatedAt: 1727074127381
+  id: "83e1caab-ebd4-4c69-9b5c-254a447f0b2b"
+  apiqueryparameters: []
+  identification: "api-restaurantes_GETAll"
+  description: "Get All"
+  operation: "GET"
+  path: "/"
+- createdAt: 1727074127392
+  updatedAt: 1727074127392
+  id: "a573a294-0c06-419c-9aed-580443f64d01"
+  apiqueryparameters:
+  - createdAt: 1727074127392
+    updatedAt: 1727074127392
+    id: "494713e9-7651-4d97-8b58-084751bc2791"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  identification: "api-restaurantes_POST"
+  description: "Insert"
+  operation: "POST"
+  path: "/"
+- createdAt: 1727074127390
+  updatedAt: 1727074127390
+  id: "9e9bf5b9-6f64-47a9-93ef-3562eb0624aa"
+  apiqueryparameters:
+  - createdAt: 1727074127390
+    updatedAt: 1727074127390
+    id: "26fa7c2c-6144-4cc0-9077-dbb67e21ff8a"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "api-restaurantes_DELETEID"
+  description: "Delete"
+  operation: "DELETE"
+  path: "/{id}"
+public: true

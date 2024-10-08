@@ -1,0 +1,96 @@
+---
+createdAt: 1721297430186
+updatedAt: 1728301060792
+id: "9efde819-cd21-4ccd-b7c6-8e69ee658c26"
+identification: "TEST-API-Estado-creado"
+user: "administrator"
+ontology: "MASTER-Ontology-10"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "adsasdasdasdd"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "dadasdasdasdasd"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1721297430232
+  updatedAt: 1721297430232
+  id: "eae8a526-9c75-4d68-b736-b35acee24869"
+  apiqueryparameters:
+  - createdAt: 1721297430233
+    updatedAt: 1721297430233
+    id: "a2397e13-1dd4-4b25-b91a-2dcd9a702de1"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "TEST-API-Estado-creado_DELETEID"
+  description: "asdads"
+  operation: "DELETE"
+  path: "/{id}"
+- createdAt: 1721297430233
+  updatedAt: 1721297430233
+  id: "954c8016-c1bc-4931-abdf-6c61500571a4"
+  apiqueryparameters:
+  - createdAt: 1721297430238
+    updatedAt: 1721297430238
+    id: "2261b0ef-934d-40b7-85e5-2ef8dbe1da5b"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  identification: "TEST-API-Estado-creado_POST"
+  description: "asdasd"
+  operation: "POST"
+  path: "/"
+- createdAt: 1721297430225
+  updatedAt: 1721297430225
+  id: "a13db1e5-4879-4c2a-b4bc-4eba435dd79e"
+  apiqueryparameters:
+  - createdAt: 1721297430227
+    updatedAt: 1721297430227
+    id: "e4326cb3-cc02-4ded-93fd-fdff3afaa17c"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  - createdAt: 1721297430226
+    updatedAt: 1721297430226
+    id: "b09fb563-356d-464a-9640-66c1eaf8014f"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "TEST-API-Estado-creado_PUT"
+  description: "adsasd"
+  operation: "PUT"
+  path: "/{id}"
+- createdAt: 1721297430224
+  updatedAt: 1721297430224
+  id: "4de24de6-f3c4-40c4-ab7f-bcc333567dbd"
+  apiqueryparameters: []
+  identification: "TEST-API-Estado-creado_GETAll"
+  description: "asdad"
+  operation: "GET"
+  path: "/"
+- createdAt: 1721297430227
+  updatedAt: 1721297430227
+  id: "2a872065-817a-4957-a663-819e39132285"
+  apiqueryparameters:
+  - createdAt: 1721297430228
+    updatedAt: 1721297430228
+    id: "a02af9b3-bba3-45ce-839a-ab8392efed85"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "TEST-API-Estado-creado_GET"
+  description: "adsasd"
+  operation: "GET"
+  path: "/{id}"
+public: false

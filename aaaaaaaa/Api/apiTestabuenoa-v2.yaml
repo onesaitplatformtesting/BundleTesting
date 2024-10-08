@@ -1,0 +1,34 @@
+---
+createdAt: 1709051336281
+updatedAt: 1728301060768
+id: "5dfd43c8-a3b0-445b-bec0-f8fe03bba9aa"
+identification: "apiTestabuenoa"
+user: "administrator"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 2
+description: "apiTestabuenoa"
+category: "ALL"
+endpointExt: "http://flowengineservice:5050/adminDomain"
+state: "CREATED"
+apiType: "NODE_RED"
+apiOperations:
+- createdAt: 1727081290437
+  updatedAt: 1727081290437
+  id: "92b1933d-17fe-4b62-ad62-e3ef3e282d27"
+  apiqueryparameters:
+  - createdAt: 1727081290437
+    updatedAt: 1727081290437
+    id: "12a45e89-b7b6-4071-98d8-28eeff243e7f"
+    name: "apiTestabuenoa"
+    dataType: "STRING"
+    description: ""
+    condition: "REQUIRED"
+    headerType: "QUERY"
+  identification: "apiTestabuenoa"
+  description: "apiTestabuenoa"
+  operation: "GET"
+  endpoint: "/6837bcfe0bd80c8d/apiTestabuenoa/"
+  path: "/apiTestabuenoa/"
+public: false
+ontology: null

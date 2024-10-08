@@ -1,0 +1,721 @@
+---
+createdAt: 1716193769013
+updatedAt: 1728301060712
+id: "2253cd8d-3883-494c-8e3d-098b49f30bf0"
+identification: "PruebaDeleteCache"
+user: "administrator"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "PruebaDeleteCache"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "PruebaDeleteCache"
+apicachetimeout: 20
+apiType: "EXTERNAL_FROM_JSON"
+swaggerJson: "{\r\n    \"openapi\": \"3.0.1\",\r\n    \"info\": {\r\n        \"title\"\
+  : \"onesait Platform\",\r\n        \"description\": \"onesait Platform Control Panel\
+  \ Management\",\r\n        \"contact\": {\r\n            \"name\": \"onesait Platform\
+  \ Team\",\r\n            \"url\": \"https://onesaitplatform.online\",\r\n      \
+  \      \"email\": \"support@onesaitplatform.com\"\r\n        },\r\n        \"license\"\
+  : {\r\n            \"name\": \"Apache2 License\",\r\n            \"url\": \"http://www.apache.org/licenses/LICENSE-2.0.html\"\
+  \r\n        },\r\n        \"version\": \"\"\r\n    },\r\n    \"servers\": [{\r\n\
+  \        \"url\": \"https://development.onesaitplatform.com/controlpanel\",\r\n\
+  \        \"description\": \"Generated server url\"\r\n    }],\r\n    \"paths\":\
+  \ {\r\n        \"/api/apis\": {\r\n            \"get\": {\r\n                \"\
+  tags\": [\"APIs Management\"],\r\n                \"summary\": \"Get list of user\
+  \ apis and public apis\",\r\n                \"operationId\": \"getApiList\",\r\n\
+  \                \"responses\": {\r\n                    \"200\": {\r\n        \
+  \                \"description\": \"OK\",\r\n                        \"content\"\
+  : {\r\n                            \"*/*\": {\r\n                              \
+  \  \"schema\": {\r\n                                    \"type\": \"object\"\r\n\
+  \                                }\r\n                            }\r\n        \
+  \                }\r\n                    }\r\n                },\r\n          \
+  \      \"security\": [{\r\n                    \"JWT-Token\": [],\r\n          \
+  \          \"X-OP-APIKey\": []\r\n                }]\r\n            },\r\n     \
+  \       \"put\": {\r\n                \"tags\": [\"APIs Management\"],\r\n     \
+  \           \"summary\": \"Update API\",\r\n                \"operationId\": \"\
+  updateApi\",\r\n                \"requestBody\": {\r\n                    \"content\"\
+  : {\r\n                        \"application/json\": {\r\n                     \
+  \       \"schema\": {\r\n                                \"$ref\": \"#/components/schemas/ApiRestDTO\"\
+  \r\n                            }\r\n                        }\r\n             \
+  \       },\r\n                    \"required\": true\r\n                },\r\n \
+  \               \"responses\": {\r\n                    \"200\": {\r\n         \
+  \               \"description\": \"OK\",\r\n                        \"content\"\
+  : {\r\n                            \"*/*\": {\r\n                              \
+  \  \"schema\": {\r\n                                    \"type\": \"object\"\r\n\
+  \                                }\r\n                            }\r\n        \
+  \                }\r\n                    }\r\n                },\r\n          \
+  \      \"security\": [{\r\n                    \"JWT-Token\": [],\r\n          \
+  \          \"X-OP-APIKey\": []\r\n                }]\r\n            },\r\n     \
+  \       \"post\": {\r\n                \"tags\": [\"APIs Management\"],\r\n    \
+  \            \"summary\": \"Create new API\",\r\n                \"operationId\"\
+  : \"createApi\",\r\n                \"requestBody\": {\r\n                    \"\
+  content\": {\r\n                        \"application/json\": {\r\n            \
+  \                \"schema\": {\r\n                                \"$ref\": \"#/components/schemas/ApiRestDTO\"\
+  \r\n                            }\r\n                        }\r\n             \
+  \       },\r\n                    \"required\": true\r\n                },\r\n \
+  \               \"responses\": {\r\n                    \"200\": {\r\n         \
+  \               \"description\": \"OK\",\r\n                        \"content\"\
+  : {\r\n                            \"*/*\": {\r\n                              \
+  \  \"schema\": {\r\n                                    \"type\": \"object\"\r\n\
+  \                                }\r\n                            }\r\n        \
+  \                }\r\n                    }\r\n                },\r\n          \
+  \      \"security\": [{\r\n                    \"JWT-Token\": [],\r\n          \
+  \          \"X-OP-APIKey\": []\r\n                }]\r\n            }\r\n      \
+  \  },\r\n        \"/api/apis/{apiId}/gravitee/unsubscribe\": {\r\n            \"\
+  post\": {\r\n                \"tags\": [\"APIs Management\"],\r\n              \
+  \  \"operationId\": \"unsubscribeToAPI\",\r\n                \"parameters\": [{\r\
+  \n                    \"name\": \"apiId\",\r\n                    \"in\": \"path\"\
+  ,\r\n                    \"required\": true,\r\n                    \"schema\":\
+  \ {\r\n                        \"type\": \"string\"\r\n                    }\r\n\
+  \                }, {\r\n                    \"name\": \"application\",\r\n    \
+  \                \"in\": \"query\",\r\n                    \"required\": true,\r\
+  \n                    \"schema\": {\r\n                        \"type\": \"string\"\
+  \r\n                    }\r\n                }],\r\n                \"responses\"\
+  : {\r\n                    \"200\": {\r\n                        \"description\"\
+  : \"OK\",\r\n                        \"content\": {\r\n                        \
+  \    \"*/*\": {\r\n                                \"schema\": {\r\n           \
+  \                         \"type\": \"object\"\r\n                             \
+  \   }\r\n                            }\r\n                        }\r\n        \
+  \            }\r\n                },\r\n                \"security\": [{\r\n   \
+  \                 \"JWT-Token\": [],\r\n                    \"X-OP-APIKey\": []\r\
+  \n                }]\r\n            }\r\n        },\r\n        \"/api/apis/{apiId}/gravitee/subscribe\"\
+  : {\r\n            \"post\": {\r\n                \"tags\": [\"APIs Management\"\
+  ],\r\n                \"operationId\": \"subscribeToAPI\",\r\n                \"\
+  parameters\": [{\r\n                    \"name\": \"apiId\",\r\n               \
+  \     \"in\": \"path\",\r\n                    \"required\": true,\r\n         \
+  \           \"schema\": {\r\n                        \"type\": \"string\"\r\n  \
+  \                  }\r\n                }, {\r\n                    \"name\": \"\
+  application\",\r\n                    \"in\": \"query\",\r\n                   \
+  \ \"required\": true,\r\n                    \"schema\": {\r\n                 \
+  \       \"type\": \"string\"\r\n                    }\r\n                }],\r\n\
+  \                \"responses\": {\r\n                    \"200\": {\r\n        \
+  \                \"description\": \"OK\",\r\n                        \"content\"\
+  : {\r\n                            \"*/*\": {\r\n                              \
+  \  \"schema\": {\r\n                                    \"type\": \"object\"\r\n\
+  \                                }\r\n                            }\r\n        \
+  \                }\r\n                    }\r\n                },\r\n          \
+  \      \"security\": [{\r\n                    \"JWT-Token\": [],\r\n          \
+  \          \"X-OP-APIKey\": []\r\n                }]\r\n            }\r\n      \
+  \  },\r\n        \"/api/apis/{apiId}/gravitee/deploy\": {\r\n            \"post\"\
+  : {\r\n                \"tags\": [\"APIs Management\"],\r\n                \"summary\"\
+  : \"Sync changes and deploy API in Gravitee\",\r\n                \"operationId\"\
+  : \"deployGraviteeAPI\",\r\n                \"parameters\": [{\r\n             \
+  \       \"name\": \"apiId\",\r\n                    \"in\": \"path\",\r\n      \
+  \              \"description\": \"Api id\",\r\n                    \"required\"\
+  : true,\r\n                    \"schema\": {\r\n                        \"type\"\
+  : \"string\"\r\n                    }\r\n                }],\r\n               \
+  \ \"responses\": {\r\n                    \"200\": {\r\n                       \
+  \ \"description\": \"OK\",\r\n                        \"content\": {\r\n       \
+  \                     \"*/*\": {\r\n                                \"schema\":\
+  \ {\r\n                                    \"type\": \"string\"\r\n            \
+  \                    }\r\n                            }\r\n                    \
+  \    }\r\n                    }\r\n                },\r\n                \"security\"\
+  : [{\r\n                    \"JWT-Token\": [],\r\n                    \"X-OP-APIKey\"\
+  : []\r\n                }]\r\n            }\r\n        },\r\n        \"/api/apis/{apiId}/authorizations\"\
+  : {\r\n            \"get\": {\r\n                \"tags\": [\"APIs Management\"\
+  ],\r\n                \"summary\": \"Get users access to api by identification or\
+  \ id\",\r\n                \"operationId\": \"getAuthorizations\",\r\n         \
+  \       \"parameters\": [{\r\n                    \"name\": \"apiId\",\r\n     \
+  \               \"in\": \"path\",\r\n                    \"description\": \"Api\
+  \ identification or id\",\r\n                    \"required\": true,\r\n       \
+  \             \"schema\": {\r\n                        \"type\": \"string\"\r\n\
+  \                    }\r\n                }, {\r\n                    \"name\":\
+  \ \"version\",\r\n                    \"in\": \"query\",\r\n                   \
+  \ \"description\": \"Version required if use identification\",\r\n             \
+  \       \"required\": false,\r\n                    \"schema\": {\r\n          \
+  \              \"type\": \"string\",\r\n                        \"default\": \"\"\
+  \r\n                    }\r\n                }],\r\n                \"responses\"\
+  : {\r\n                    \"200\": {\r\n                        \"description\"\
+  : \"OK\",\r\n                        \"content\": {\r\n                        \
+  \    \"*/*\": {\r\n                                \"schema\": {\r\n           \
+  \                         \"type\": \"object\"\r\n                             \
+  \   }\r\n                            }\r\n                        }\r\n        \
+  \            }\r\n                },\r\n                \"security\": [{\r\n   \
+  \                 \"JWT-Token\": [],\r\n                    \"X-OP-APIKey\": []\r\
+  \n                }]\r\n            },\r\n            \"post\": {\r\n          \
+  \      \"tags\": [\"APIs Management\"],\r\n                \"summary\": \"Create\
+  \ users access to api by identification or id\",\r\n                \"operationId\"\
+  : \"createAuthorizations\",\r\n                \"parameters\": [{\r\n          \
+  \          \"name\": \"apiId\",\r\n                    \"in\": \"path\",\r\n   \
+  \                 \"description\": \"Api identification or id\",\r\n           \
+  \         \"required\": true,\r\n                    \"schema\": {\r\n         \
+  \               \"type\": \"string\"\r\n                    }\r\n              \
+  \  }, {\r\n                    \"name\": \"version\",\r\n                    \"\
+  in\": \"query\",\r\n                    \"description\": \"Version required if use\
+  \ identification\",\r\n                    \"required\": false,\r\n            \
+  \        \"schema\": {\r\n                        \"type\": \"string\",\r\n    \
+  \                    \"default\": \"\"\r\n                    }\r\n            \
+  \    }],\r\n                \"requestBody\": {\r\n                    \"content\"\
+  : {\r\n                        \"application/json\": {\r\n                     \
+  \       \"schema\": {\r\n                                \"type\": \"array\",\r\n\
+  \                                \"items\": {\r\n                              \
+  \      \"$ref\": \"#/components/schemas/UserApiSimplifiedInputDTO\"\r\n        \
+  \                        }\r\n                            }\r\n                \
+  \        }\r\n                    },\r\n                    \"required\": true\r\
+  \n                },\r\n                \"responses\": {\r\n                   \
+  \ \"200\": {\r\n                        \"description\": \"OK\",\r\n           \
+  \             \"content\": {\r\n                            \"*/*\": {\r\n     \
+  \                           \"schema\": {\r\n                                  \
+  \  \"type\": \"object\"\r\n                                }\r\n               \
+  \             }\r\n                        }\r\n                    }\r\n      \
+  \          },\r\n                \"security\": [{\r\n                    \"JWT-Token\"\
+  : [],\r\n                    \"X-OP-APIKey\": []\r\n                }]\r\n     \
+  \       },\r\n            \"delete\": {\r\n                \"tags\": [\"APIs Management\"\
+  ],\r\n                \"summary\": \"Remove users access to api by identification\
+  \ or id\",\r\n                \"operationId\": \"removeAuthorizations\",\r\n   \
+  \             \"parameters\": [{\r\n                    \"name\": \"apiId\",\r\n\
+  \                    \"in\": \"path\",\r\n                    \"description\": \"\
+  Api identification or id\",\r\n                    \"required\": true,\r\n     \
+  \               \"schema\": {\r\n                        \"type\": \"string\"\r\n\
+  \                    }\r\n                }, {\r\n                    \"name\":\
+  \ \"version\",\r\n                    \"in\": \"query\",\r\n                   \
+  \ \"description\": \"Version required if use identification\",\r\n             \
+  \       \"required\": false,\r\n                    \"schema\": {\r\n          \
+  \              \"type\": \"string\",\r\n                        \"default\": \"\"\
+  \r\n                    }\r\n                }],\r\n                \"requestBody\"\
+  : {\r\n                    \"content\": {\r\n                        \"application/json\"\
+  : {\r\n                            \"schema\": {\r\n                           \
+  \     \"type\": \"array\",\r\n                                \"items\": {\r\n \
+  \                                   \"$ref\": \"#/components/schemas/UserApiSimplifiedInputDTO\"\
+  \r\n                                }\r\n                            }\r\n     \
+  \                   }\r\n                    },\r\n                    \"required\"\
+  : true\r\n                },\r\n                \"responses\": {\r\n           \
+  \         \"200\": {\r\n                        \"description\": \"OK\",\r\n   \
+  \                     \"content\": {\r\n                            \"*/*\": {\r\
+  \n                                \"schema\": {\r\n                            \
+  \        \"type\": \"object\"\r\n                                }\r\n         \
+  \                   }\r\n                        }\r\n                    }\r\n\
+  \                },\r\n                \"security\": [{\r\n                    \"\
+  JWT-Token\": [],\r\n                    \"X-OP-APIKey\": []\r\n                }]\r\
+  \n            }\r\n        },\r\n        \"/api/apis/paginated/list-apis\": {\r\n\
+  \            \"post\": {\r\n                \"tags\": [\"APIs Management\"],\r\n\
+  \                \"summary\": \"List Apis Pageable\",\r\n                \"operationId\"\
+  : \"listApisPageable\",\r\n                \"parameters\": [{\r\n              \
+  \      \"name\": \"page\",\r\n                    \"in\": \"query\",\r\n       \
+  \             \"required\": true,\r\n                    \"schema\": {\r\n     \
+  \                   \"type\": \"integer\",\r\n                        \"format\"\
+  : \"int32\"\r\n                    }\r\n                }, {\r\n               \
+  \     \"name\": \"limit\",\r\n                    \"in\": \"query\",\r\n       \
+  \             \"required\": true,\r\n                    \"schema\": {\r\n     \
+  \                   \"type\": \"integer\",\r\n                        \"format\"\
+  : \"int32\"\r\n                    }\r\n                }, {\r\n               \
+  \     \"name\": \"state\",\r\n                    \"in\": \"query\",\r\n       \
+  \             \"description\": \"Api state \",\r\n                    \"required\"\
+  : false,\r\n                    \"schema\": {\r\n                        \"type\"\
+  : \"string\",\r\n                        \"enum\": [\"CREATED\", \"PUBLISHED\",\
+  \ \"DELETED\", \"DEPRECATED\", \"DEVELOPMENT\"]\r\n                    }\r\n   \
+  \             }, {\r\n                    \"name\": \"owner\",\r\n             \
+  \       \"in\": \"query\",\r\n                    \"description\": \"Owner user\
+  \ \",\r\n                    \"required\": false,\r\n                    \"schema\"\
+  : {\r\n                        \"type\": \"string\",\r\n                       \
+  \ \"default\": \"\"\r\n                    }\r\n                }, {\r\n       \
+  \             \"name\": \"identification\",\r\n                    \"in\": \"query\"\
+  ,\r\n                    \"description\": \"Api Identification\",\r\n          \
+  \          \"required\": false,\r\n                    \"schema\": {\r\n       \
+  \                 \"type\": \"string\",\r\n                        \"default\":\
+  \ \"\"\r\n                    }\r\n                }],\r\n                \"responses\"\
+  : {\r\n                    \"200\": {\r\n                        \"description\"\
+  : \"OK\",\r\n                        \"content\": {\r\n                        \
+  \    \"*/*\": {\r\n                                \"schema\": {\r\n           \
+  \                         \"type\": \"object\"\r\n                             \
+  \   }\r\n                            }\r\n                        }\r\n        \
+  \            }\r\n                },\r\n                \"security\": [{\r\n   \
+  \                 \"JWT-Token\": [],\r\n                    \"X-OP-APIKey\": []\r\
+  \n                }]\r\n            }\r\n        },\r\n        \"/api/apis/import\"\
+  : {\r\n            \"post\": {\r\n                \"tags\": [\"APIs Management\"\
+  ],\r\n                \"summary\": \"Import API\",\r\n                \"operationId\"\
+  : \"importApi\",\r\n                \"parameters\": [{\r\n                    \"\
+  name\": \"overwrite\",\r\n                    \"in\": \"query\",\r\n           \
+  \         \"description\": \"Overwrite api if exists\",\r\n                    \"\
+  required\": false,\r\n                    \"schema\": {\r\n                    \
+  \    \"type\": \"boolean\",\r\n                        \"default\": false\r\n  \
+  \                  }\r\n                }, {\r\n                    \"name\": \"\
+  importAuthorizations\",\r\n                    \"in\": \"query\",\r\n          \
+  \          \"description\": \"Import authorizations if exist\",\r\n            \
+  \        \"required\": false,\r\n                    \"schema\": {\r\n         \
+  \               \"type\": \"boolean\",\r\n                        \"default\": false\r\
+  \n                    }\r\n                }],\r\n                \"requestBody\"\
+  : {\r\n                    \"content\": {\r\n                        \"application/json\"\
+  : {\r\n                            \"schema\": {\r\n                           \
+  \     \"$ref\": \"#/components/schemas/ApiRestDTO\"\r\n                        \
+  \    }\r\n                        }\r\n                    },\r\n              \
+  \      \"required\": true\r\n                },\r\n                \"responses\"\
+  : {\r\n                    \"200\": {\r\n                        \"description\"\
+  : \"OK\",\r\n                        \"content\": {\r\n                        \
+  \    \"*/*\": {\r\n                                \"schema\": {\r\n           \
+  \                         \"type\": \"object\"\r\n                             \
+  \   }\r\n                            }\r\n                        }\r\n        \
+  \            }\r\n                },\r\n                \"security\": [{\r\n   \
+  \                 \"JWT-Token\": [],\r\n                    \"X-OP-APIKey\": []\r\
+  \n                }]\r\n            }\r\n        },\r\n        \"/api/apis/import/apis/\"\
+  : {\r\n            \"post\": {\r\n                \"tags\": [\"APIs Management\"\
+  ],\r\n                \"summary\": \"Import several APIs\",\r\n                \"\
+  operationId\": \"importSeveralApis\",\r\n                \"parameters\": [{\r\n\
+  \                    \"name\": \"overwrite\",\r\n                    \"in\": \"\
+  query\",\r\n                    \"description\": \"Overwrite api if exists\",\r\n\
+  \                    \"required\": false,\r\n                    \"schema\": {\r\
+  \n                        \"type\": \"boolean\",\r\n                        \"default\"\
+  : false\r\n                    }\r\n                }, {\r\n                   \
+  \ \"name\": \"importAuthorizations\",\r\n                    \"in\": \"query\",\r\
+  \n                    \"description\": \"Import authorizations if exist\",\r\n \
+  \                   \"required\": false,\r\n                    \"schema\": {\r\n\
+  \                        \"type\": \"boolean\",\r\n                        \"default\"\
+  : false\r\n                    }\r\n                }],\r\n                \"requestBody\"\
+  : {\r\n                    \"content\": {\r\n                        \"application/json\"\
+  : {\r\n                            \"schema\": {\r\n                           \
+  \     \"type\": \"array\",\r\n                                \"description\": \"\
+  APIBodies\",\r\n                                \"items\": {\r\n               \
+  \                     \"$ref\": \"#/components/schemas/ApiRestDTO\"\r\n        \
+  \                        }\r\n                            }\r\n                \
+  \        }\r\n                    },\r\n                    \"required\": true\r\
+  \n                },\r\n                \"responses\": {\r\n                   \
+  \ \"200\": {\r\n                        \"description\": \"OK\",\r\n           \
+  \             \"content\": {\r\n                            \"*/*\": {\r\n     \
+  \                           \"schema\": {\r\n                                  \
+  \  \"type\": \"object\"\r\n                                }\r\n               \
+  \             }\r\n                        }\r\n                    }\r\n      \
+  \          },\r\n                \"security\": [{\r\n                    \"JWT-Token\"\
+  : [],\r\n                    \"X-OP-APIKey\": []\r\n                }]\r\n     \
+  \       }\r\n        },\r\n        \"/api/apis/gravitee/update/swagger\": {\r\n\
+  \            \"post\": {\r\n                \"tags\": [\"APIs Management\"],\r\n\
+  \                \"operationId\": \"updateGraviteeSwagger\",\r\n               \
+  \ \"parameters\": [{\r\n                    \"name\": \"apiId\",\r\n           \
+  \         \"in\": \"query\",\r\n                    \"required\": true,\r\n    \
+  \                \"schema\": {\r\n                        \"type\": \"string\"\r\
+  \n                    }\r\n                }, {\r\n                    \"name\"\
+  : \"content\",\r\n                    \"in\": \"query\",\r\n                   \
+  \ \"required\": false,\r\n                    \"schema\": {\r\n                \
+  \        \"type\": \"string\"\r\n                    }\r\n                }],\r\n\
+  \                \"responses\": {\r\n                    \"200\": {\r\n        \
+  \                \"description\": \"OK\",\r\n                        \"content\"\
+  : {\r\n                            \"application/json;charset=UTF-8\": {\r\n   \
+  \                             \"schema\": {\r\n                                \
+  \    \"type\": \"string\"\r\n                                }\r\n             \
+  \               }\r\n                        }\r\n                    }\r\n    \
+  \            },\r\n                \"security\": [{\r\n                    \"JWT-Token\"\
+  : [],\r\n                    \"X-OP-APIKey\": []\r\n                }]\r\n     \
+  \       }\r\n        },\r\n        \"/api/apis/deauthorize/api/{apiId}/user/{userId}\"\
+  : {\r\n            \"post\": {\r\n                \"tags\": [\"APIs Management\"\
+  ],\r\n                \"summary\": \"Deauthorize user for api by identification\
+  \ or id\",\r\n                \"operationId\": \"deauthorize\",\r\n            \
+  \    \"parameters\": [{\r\n                    \"name\": \"apiId\",\r\n        \
+  \            \"in\": \"path\",\r\n                    \"description\": \"Api identification\
+  \ or id\",\r\n                    \"required\": true,\r\n                    \"\
+  schema\": {\r\n                        \"type\": \"string\"\r\n                \
+  \    }\r\n                }, {\r\n                    \"name\": \"userId\",\r\n\
+  \                    \"in\": \"path\",\r\n                    \"description\": \"\
+  User\",\r\n                    \"required\": true,\r\n                    \"schema\"\
+  : {\r\n                        \"type\": \"string\"\r\n                    }\r\n\
+  \                }, {\r\n                    \"name\": \"version\",\r\n        \
+  \            \"in\": \"query\",\r\n                    \"description\": \"Version\
+  \ required if use identification (if not present it applies to all versions)\",\r\
+  \n                    \"required\": false,\r\n                    \"schema\": {\r\
+  \n                        \"type\": \"string\",\r\n                        \"default\"\
+  : \"\"\r\n                    }\r\n                }],\r\n                \"responses\"\
+  : {\r\n                    \"200\": {\r\n                        \"description\"\
+  : \"OK\",\r\n                        \"content\": {\r\n                        \
+  \    \"*/*\": {\r\n                                \"schema\": {\r\n           \
+  \                         \"type\": \"object\"\r\n                             \
+  \   }\r\n                            }\r\n                        }\r\n        \
+  \            }\r\n                },\r\n                \"security\": [{\r\n   \
+  \                 \"JWT-Token\": [],\r\n                    \"X-OP-APIKey\": []\r\
+  \n                }]\r\n            }\r\n        },\r\n        \"/api/apis/clone/{id}\"\
+  : {\r\n            \"post\": {\r\n                \"tags\": [\"APIs Management\"\
+  ],\r\n                \"summary\": \"Clone API api by database id\",\r\n       \
+  \         \"operationId\": \"cloneApi\",\r\n                \"parameters\": [{\r\
+  \n                    \"name\": \"id\",\r\n                    \"in\": \"path\"\
+  ,\r\n                    \"description\": \"Api id\",\r\n                    \"\
+  required\": true,\r\n                    \"schema\": {\r\n                     \
+  \   \"type\": \"string\"\r\n                    }\r\n                }, {\r\n  \
+  \                  \"name\": \"identification\",\r\n                    \"in\":\
+  \ \"query\",\r\n                    \"description\": \"New API identification\"\
+  ,\r\n                    \"required\": true,\r\n                    \"schema\":\
+  \ {\r\n                        \"type\": \"string\"\r\n                    }\r\n\
+  \                }],\r\n                \"responses\": {\r\n                   \
+  \ \"200\": {\r\n                        \"description\": \"OK\",\r\n           \
+  \             \"content\": {\r\n                            \"*/*\": {\r\n     \
+  \                           \"schema\": {\r\n                                  \
+  \  \"type\": \"string\"\r\n                                }\r\n               \
+  \             }\r\n                        }\r\n                    }\r\n      \
+  \          },\r\n                \"security\": [{\r\n                    \"JWT-Token\"\
+  : [],\r\n                    \"X-OP-APIKey\": []\r\n                }]\r\n     \
+  \       }\r\n        },\r\n        \"/api/apis/client-js\": {\r\n            \"\
+  post\": {\r\n                \"tags\": [\"APIs Management\"],\r\n              \
+  \  \"summary\": \"Client\",\r\n                \"operationId\": \"generateClientJS\"\
+  ,\r\n                \"parameters\": [{\r\n                    \"name\": \"framework\"\
+  ,\r\n                    \"in\": \"query\",\r\n                    \"description\"\
+  : \"Target JS framework\",\r\n                    \"required\": true,\r\n      \
+  \              \"schema\": {\r\n                        \"type\": \"string\",\r\n\
+  \                        \"enum\": [\"REACT_JS\"]\r\n                    }\r\n \
+  \               }],\r\n                \"requestBody\": {\r\n                  \
+  \  \"content\": {\r\n                        \"application/json\": {\r\n       \
+  \                     \"schema\": {\r\n                                \"type\"\
+  : \"array\",\r\n                                \"description\": \"List of API ids\"\
+  ,\r\n                                \"items\": {\r\n                          \
+  \          \"type\": \"string\"\r\n                                }\r\n       \
+  \                     }\r\n                        }\r\n                    },\r\
+  \n                    \"required\": true\r\n                },\r\n             \
+  \   \"responses\": {\r\n                    \"200\": {\r\n                     \
+  \   \"description\": \"OK\",\r\n                        \"content\": {\r\n     \
+  \                       \"*/*\": {\r\n                                \"schema\"\
+  : {\r\n                                    \"type\": \"string\",\r\n           \
+  \                         \"format\": \"binary\"\r\n                           \
+  \     }\r\n                            }\r\n                        }\r\n      \
+  \              }\r\n                },\r\n                \"security\": [{\r\n \
+  \                   \"JWT-Token\": [],\r\n                    \"X-OP-APIKey\": []\r\
+  \n                }]\r\n            }\r\n        },\r\n        \"/api/apis/changestate/{id}/{state}\"\
+  : {\r\n            \"post\": {\r\n                \"tags\": [\"APIs Management\"\
+  ],\r\n                \"summary\": \"Change api state by identification or id\"\
+  ,\r\n                \"operationId\": \"changeStateByIdentification\",\r\n     \
+  \           \"parameters\": [{\r\n                    \"name\": \"id\",\r\n    \
+  \                \"in\": \"path\",\r\n                    \"description\": \"Api\
+  \ identification or id\",\r\n                    \"required\": true,\r\n       \
+  \             \"schema\": {\r\n                        \"type\": \"string\"\r\n\
+  \                    }\r\n                }, {\r\n                    \"name\":\
+  \ \"state\",\r\n                    \"in\": \"path\",\r\n                    \"\
+  description\": \"Api state\",\r\n                    \"required\": true,\r\n   \
+  \                 \"schema\": {\r\n                        \"type\": \"string\"\r\
+  \n                    }\r\n                }, {\r\n                    \"name\"\
+  : \"version\",\r\n                    \"in\": \"query\",\r\n                   \
+  \ \"description\": \"Version required if use identification\",\r\n             \
+  \       \"required\": false,\r\n                    \"schema\": {\r\n          \
+  \              \"type\": \"string\",\r\n                        \"default\": \"\"\
+  \r\n                    }\r\n                }],\r\n                \"responses\"\
+  : {\r\n                    \"200\": {\r\n                        \"description\"\
+  : \"OK\",\r\n                        \"content\": {\r\n                        \
+  \    \"*/*\": {\r\n                                \"schema\": {\r\n           \
+  \                         \"type\": \"object\"\r\n                             \
+  \   }\r\n                            }\r\n                        }\r\n        \
+  \            }\r\n                },\r\n                \"security\": [{\r\n   \
+  \                 \"JWT-Token\": [],\r\n                    \"X-OP-APIKey\": []\r\
+  \n                }]\r\n            }\r\n        },\r\n        \"/api/apis/authorize/api/{apiId}/user/{userId}\"\
+  : {\r\n            \"post\": {\r\n                \"tags\": [\"APIs Management\"\
+  ],\r\n                \"summary\": \"Authorize user for api by identification or\
+  \ id\",\r\n                \"operationId\": \"authorize\",\r\n                \"\
+  parameters\": [{\r\n                    \"name\": \"apiId\",\r\n               \
+  \     \"in\": \"path\",\r\n                    \"description\": \"Api identification\
+  \ or id\",\r\n                    \"required\": true,\r\n                    \"\
+  schema\": {\r\n                        \"type\": \"string\"\r\n                \
+  \    }\r\n                }, {\r\n                    \"name\": \"userId\",\r\n\
+  \                    \"in\": \"path\",\r\n                    \"description\": \"\
+  User\",\r\n                    \"required\": true,\r\n                    \"schema\"\
+  : {\r\n                        \"type\": \"string\"\r\n                    }\r\n\
+  \                }, {\r\n                    \"name\": \"version\",\r\n        \
+  \            \"in\": \"query\",\r\n                    \"description\": \"Version\
+  \ required if use identification (if not present it applies to all versions)\",\r\
+  \n                    \"required\": false,\r\n                    \"schema\": {\r\
+  \n                        \"type\": \"string\",\r\n                        \"default\"\
+  : \"\"\r\n                    }\r\n                }],\r\n                \"responses\"\
+  : {\r\n                    \"200\": {\r\n                        \"description\"\
+  : \"OK\",\r\n                        \"content\": {\r\n                        \
+  \    \"*/*\": {\r\n                                \"schema\": {\r\n           \
+  \                         \"type\": \"object\"\r\n                             \
+  \   }\r\n                            }\r\n                        }\r\n        \
+  \            }\r\n                },\r\n                \"security\": [{\r\n   \
+  \                 \"JWT-Token\": [],\r\n                    \"X-OP-APIKey\": []\r\
+  \n                }]\r\n            }\r\n        },\r\n        \"/api/apis/api/token\"\
+  : {\r\n            \"get\": {\r\n                \"tags\": [\"APIs Management\"\
+  ],\r\n                \"summary\": \"Get user token for api\",\r\n             \
+  \   \"operationId\": \"getApiToken\",\r\n                \"responses\": {\r\n  \
+  \                  \"200\": {\r\n                        \"description\": \"OK\"\
+  ,\r\n                        \"content\": {\r\n                            \"*/*\"\
+  : {\r\n                                \"schema\": {\r\n                       \
+  \             \"type\": \"string\"\r\n                                }\r\n    \
+  \                        }\r\n                        }\r\n                    }\r\
+  \n                },\r\n                \"security\": [{\r\n                   \
+  \ \"JWT-Token\": [],\r\n                    \"X-OP-APIKey\": []\r\n            \
+  \    }]\r\n            },\r\n            \"post\": {\r\n                \"tags\"\
+  : [\"APIs Management\"],\r\n                \"summary\": \"Generate new user token\
+  \ for api\",\r\n                \"operationId\": \"generateApiToken\",\r\n     \
+  \           \"responses\": {\r\n                    \"200\": {\r\n             \
+  \           \"description\": \"OK\",\r\n                        \"content\": {\r\
+  \n                            \"*/*\": {\r\n                                \"schema\"\
+  : {\r\n                                    \"type\": \"string\"\r\n            \
+  \                    }\r\n                            }\r\n                    \
+  \    }\r\n                    }\r\n                },\r\n                \"security\"\
+  : [{\r\n                    \"JWT-Token\": [],\r\n                    \"X-OP-APIKey\"\
+  : []\r\n                }]\r\n            }\r\n        },\r\n        \"/api/apis/{id}\"\
+  : {\r\n            \"get\": {\r\n                \"tags\": [\"APIs Management\"\
+  ],\r\n                \"summary\": \"Get api by identification or id\",\r\n    \
+  \            \"operationId\": \"getApiByIdentificationOrId\",\r\n              \
+  \  \"parameters\": [{\r\n                    \"name\": \"id\",\r\n             \
+  \       \"in\": \"path\",\r\n                    \"description\": \"Api identification\"\
+  ,\r\n                    \"required\": true,\r\n                    \"schema\":\
+  \ {\r\n                        \"type\": \"string\"\r\n                    }\r\n\
+  \                }, {\r\n                    \"name\": \"version\",\r\n        \
+  \            \"in\": \"query\",\r\n                    \"description\": \"Version\
+  \ required\",\r\n                    \"required\": false,\r\n                  \
+  \  \"schema\": {\r\n                        \"type\": \"string\",\r\n          \
+  \              \"default\": \"\"\r\n                    }\r\n                }],\r\
+  \n                \"responses\": {\r\n                    \"200\": {\r\n       \
+  \                 \"description\": \"OK\",\r\n                        \"content\"\
+  : {\r\n                            \"*/*\": {\r\n                              \
+  \  \"schema\": {\r\n                                    \"type\": \"object\"\r\n\
+  \                                }\r\n                            }\r\n        \
+  \                }\r\n                    }\r\n                },\r\n          \
+  \      \"security\": [{\r\n                    \"JWT-Token\": [],\r\n          \
+  \          \"X-OP-APIKey\": []\r\n                }]\r\n            },\r\n     \
+  \       \"delete\": {\r\n                \"tags\": [\"APIs Management\"],\r\n  \
+  \              \"summary\": \"Delete api by identification or id\",\r\n        \
+  \        \"operationId\": \"deleteApi\",\r\n                \"parameters\": [{\r\
+  \n                    \"name\": \"id\",\r\n                    \"in\": \"path\"\
+  ,\r\n                    \"description\": \"Api identification or id\",\r\n    \
+  \                \"required\": true,\r\n                    \"schema\": {\r\n  \
+  \                      \"type\": \"string\"\r\n                    }\r\n       \
+  \         }, {\r\n                    \"name\": \"version\",\r\n               \
+  \     \"in\": \"query\",\r\n                    \"description\": \"Version required\
+  \ if use identification\",\r\n                    \"required\": false,\r\n     \
+  \               \"schema\": {\r\n                        \"type\": \"string\",\r\
+  \n                        \"default\": \"\"\r\n                    }\r\n       \
+  \         }],\r\n                \"responses\": {\r\n                    \"200\"\
+  : {\r\n                        \"description\": \"OK\",\r\n                    \
+  \    \"content\": {\r\n                            \"*/*\": {\r\n              \
+  \                  \"schema\": {\r\n                                    \"type\"\
+  : \"object\"\r\n                                }\r\n                          \
+  \  }\r\n                        }\r\n                    }\r\n                },\r\
+  \n                \"security\": [{\r\n                    \"JWT-Token\": [],\r\n\
+  \                    \"X-OP-APIKey\": []\r\n                }]\r\n            }\r\
+  \n        },\r\n        \"/api/apis/identification/{identification}\": {\r\n   \
+  \         \"get\": {\r\n                \"tags\": [\"APIs Management\"],\r\n   \
+  \             \"summary\": \"Get api by identification\",\r\n                \"\
+  operationId\": \"getApiByIdentification\",\r\n                \"parameters\": [{\r\
+  \n                    \"name\": \"identification\",\r\n                    \"in\"\
+  : \"path\",\r\n                    \"description\": \"Api identification\",\r\n\
+  \                    \"required\": true,\r\n                    \"schema\": {\r\n\
+  \                        \"type\": \"string\"\r\n                    }\r\n     \
+  \           }, {\r\n                    \"name\": \"version\",\r\n             \
+  \       \"in\": \"query\",\r\n                    \"description\": \"Version required\"\
+  ,\r\n                    \"required\": false,\r\n                    \"schema\"\
+  : {\r\n                        \"type\": \"string\",\r\n                       \
+  \ \"default\": \"\"\r\n                    }\r\n                }],\r\n        \
+  \        \"responses\": {\r\n                    \"200\": {\r\n                \
+  \        \"description\": \"OK\",\r\n                        \"content\": {\r\n\
+  \                            \"*/*\": {\r\n                                \"schema\"\
+  : {\r\n                                    \"type\": \"object\"\r\n            \
+  \                    }\r\n                            }\r\n                    \
+  \    }\r\n                    }\r\n                },\r\n                \"security\"\
+  : [{\r\n                    \"JWT-Token\": [],\r\n                    \"X-OP-APIKey\"\
+  : []\r\n                }]\r\n            }\r\n        },\r\n        \"/api/apis/id/{id}\"\
+  : {\r\n            \"get\": {\r\n                \"tags\": [\"APIs Management\"\
+  ],\r\n                \"summary\": \"Get api by id\",\r\n                \"operationId\"\
+  : \"getApiById\",\r\n                \"parameters\": [{\r\n                    \"\
+  name\": \"id\",\r\n                    \"in\": \"path\",\r\n                   \
+  \ \"description\": \"Api id\",\r\n                    \"required\": true,\r\n  \
+  \                  \"schema\": {\r\n                        \"type\": \"string\"\
+  \r\n                    }\r\n                }],\r\n                \"responses\"\
+  : {\r\n                    \"200\": {\r\n                        \"description\"\
+  : \"OK\",\r\n                        \"content\": {\r\n                        \
+  \    \"*/*\": {\r\n                                \"schema\": {\r\n           \
+  \                         \"type\": \"object\"\r\n                             \
+  \   }\r\n                            }\r\n                        }\r\n        \
+  \            }\r\n                },\r\n                \"security\": [{\r\n   \
+  \                 \"JWT-Token\": [],\r\n                    \"X-OP-APIKey\": []\r\
+  \n                }]\r\n            }\r\n        },\r\n        \"/api/apis/export/{id}\"\
+  : {\r\n            \"get\": {\r\n                \"tags\": [\"APIs Management\"\
+  ],\r\n                \"summary\": \"Export api by identification or id\",\r\n \
+  \               \"operationId\": \"exportApiByIdentification\",\r\n            \
+  \    \"parameters\": [{\r\n                    \"name\": \"id\",\r\n           \
+  \         \"in\": \"path\",\r\n                    \"description\": \"Api identification\
+  \ or id\",\r\n                    \"required\": true,\r\n                    \"\
+  schema\": {\r\n                        \"type\": \"string\"\r\n                \
+  \    }\r\n                }, {\r\n                    \"name\": \"version\",\r\n\
+  \                    \"in\": \"query\",\r\n                    \"description\":\
+  \ \"Version required if use identification (if not present it applies to all versions)\"\
+  ,\r\n                    \"required\": false,\r\n                    \"schema\"\
+  : {\r\n                        \"type\": \"string\",\r\n                       \
+  \ \"default\": \"\"\r\n                    }\r\n                }],\r\n        \
+  \        \"responses\": {\r\n                    \"200\": {\r\n                \
+  \        \"description\": \"OK\",\r\n                        \"content\": {\r\n\
+  \                            \"*/*\": {\r\n                                \"schema\"\
+  : {\r\n                                    \"type\": \"object\"\r\n            \
+  \                    }\r\n                            }\r\n                    \
+  \    }\r\n                    }\r\n                },\r\n                \"security\"\
+  : [{\r\n                    \"JWT-Token\": [],\r\n                    \"X-OP-APIKey\"\
+  : []\r\n                }]\r\n            }\r\n        },\r\n        \"/api/apis/export/\"\
+  : {\r\n            \"get\": {\r\n                \"tags\": [\"APIs Management\"\
+  ],\r\n                \"summary\": \"Export all apis\",\r\n                \"operationId\"\
+  : \"exportAllApis\",\r\n                \"responses\": {\r\n                   \
+  \ \"200\": {\r\n                        \"description\": \"OK\",\r\n           \
+  \             \"content\": {\r\n                            \"*/*\": {\r\n     \
+  \                           \"schema\": {\r\n                                  \
+  \  \"type\": \"object\"\r\n                                }\r\n               \
+  \             }\r\n                        }\r\n                    }\r\n      \
+  \          },\r\n                \"security\": [{\r\n                    \"JWT-Token\"\
+  : [],\r\n                    \"X-OP-APIKey\": []\r\n                }]\r\n     \
+  \       }\r\n        },\r\n        \"/api/apis/api/username/{token}\": {\r\n   \
+  \         \"get\": {\r\n                \"tags\": [\"APIs Management\"],\r\n   \
+  \             \"summary\": \"Get username for api by user token\",\r\n         \
+  \       \"operationId\": \"getApiUsernameByToken\",\r\n                \"parameters\"\
+  : [{\r\n                    \"name\": \"token\",\r\n                    \"in\":\
+  \ \"path\",\r\n                    \"description\": \"Token Id \",\r\n         \
+  \           \"required\": true,\r\n                    \"schema\": {\r\n       \
+  \                 \"type\": \"string\"\r\n                    }\r\n            \
+  \    }],\r\n                \"responses\": {\r\n                    \"200\": {\r\
+  \n                        \"description\": \"OK\",\r\n                        \"\
+  content\": {\r\n                            \"*/*\": {\r\n                     \
+  \           \"schema\": {\r\n                                    \"type\": \"string\"\
+  \r\n                                }\r\n                            }\r\n     \
+  \                   }\r\n                    }\r\n                },\r\n       \
+  \         \"security\": [{\r\n                    \"JWT-Token\": [],\r\n       \
+  \             \"X-OP-APIKey\": []\r\n                }]\r\n            }\r\n   \
+  \     },\r\n        \"/api/apis/api/tokens\": {\r\n            \"get\": {\r\n  \
+  \              \"tags\": [\"APIs Management\"],\r\n                \"summary\":\
+  \ \"Get user tokens for api\",\r\n                \"operationId\": \"getApiTokens\"\
+  ,\r\n                \"responses\": {\r\n                    \"200\": {\r\n    \
+  \                    \"description\": \"OK\",\r\n                        \"content\"\
+  : {\r\n                            \"*/*\": {\r\n                              \
+  \  \"schema\": {\r\n                                    \"type\": \"object\"\r\n\
+  \                                }\r\n                            }\r\n        \
+  \                }\r\n                    }\r\n                },\r\n          \
+  \      \"security\": [{\r\n                    \"JWT-Token\": [],\r\n          \
+  \          \"X-OP-APIKey\": []\r\n                }]\r\n            }\r\n      \
+  \  },\r\n        \"/api/apis/api/token/{token}\": {\r\n            \"delete\": {\r\
+  \n                \"tags\": [\"APIs Management\"],\r\n                \"summary\"\
+  : \"Delete user token for api\",\r\n                \"operationId\": \"deleteApiToken\"\
+  ,\r\n                \"parameters\": [{\r\n                    \"name\": \"token\"\
+  ,\r\n                    \"in\": \"path\",\r\n                    \"description\"\
+  : \"Token Id \",\r\n                    \"required\": true,\r\n                \
+  \    \"schema\": {\r\n                        \"type\": \"string\"\r\n         \
+  \           }\r\n                }],\r\n                \"responses\": {\r\n   \
+  \                 \"200\": {\r\n                        \"description\": \"OK\"\
+  ,\r\n                        \"content\": {\r\n                            \"*/*\"\
+  : {\r\n                                \"schema\": {\r\n                       \
+  \             \"type\": \"string\"\r\n                                }\r\n    \
+  \                        }\r\n                        }\r\n                    }\r\
+  \n                },\r\n                \"security\": [{\r\n                   \
+  \ \"JWT-Token\": [],\r\n                    \"X-OP-APIKey\": []\r\n            \
+  \    }]\r\n            }\r\n        }\r\n    },\r\n    \"components\": {\r\n   \
+  \     \"schemas\": {\r\n            \"ApiQueryParameterDTO\": {\r\n            \
+  \    \"type\": \"object\",\r\n                \"properties\": {\r\n            \
+  \        \"name\": {\r\n                        \"type\": \"string\",\r\n      \
+  \                  \"description\": \"Nombre del Header\"\r\n                  \
+  \  },\r\n                    \"dataType\": {\r\n                        \"type\"\
+  : \"string\",\r\n                        \"description\": \"Tipo de Header\",\r\n\
+  \                        \"enum\": [\"STRING\", \"ARRAY\", \"DATE\", \"OBJECT\"\
+  , \"PASSWORD\", \"BINARY\", \"EMAIL\", \"UUID\", \"URI\", \"HOSTNAME\", \"NUMBER\"\
+  , \"FILE\"]\r\n                    },\r\n                    \"description\": {\r\
+  \n                        \"type\": \"string\",\r\n                        \"description\"\
+  : \"Descripción del Header\"\r\n                    },\r\n                    \"\
+  value\": {\r\n                        \"type\": \"string\",\r\n                \
+  \        \"description\": \"Valor del Header\"\r\n                    },\r\n   \
+  \                 \"headerType\": {\r\n                        \"type\": \"string\"\
+  ,\r\n                        \"description\": \"Condición del Header\",\r\n    \
+  \                    \"enum\": [\"BODY\", \"FORMDATA\", \"HEADER\", \"PATH\", \"\
+  QUERY\"]\r\n                    },\r\n                    \"condition\": {\r\n \
+  \                       \"type\": \"string\",\r\n                        \"description\"\
+  : \"Tipo de Parametro\"\r\n                    }\r\n                },\r\n     \
+  \           \"description\": \"QueryParams de la Operacion\"\r\n            },\r\
+  \n            \"ApiRestDTO\": {\r\n                \"required\": [\"category\",\
+  \ \"creationDate\", \"identification\", \"metainf\", \"swaggerJson\", \"type\",\
+  \ \"userId\"],\r\n                \"type\": \"object\",\r\n                \"properties\"\
+  : {\r\n                    \"id\": {\r\n                        \"type\": \"string\"\
+  ,\r\n                        \"description\": \"API Id\"\r\n                   \
+  \ },\r\n                    \"identification\": {\r\n                        \"\
+  type\": \"string\",\r\n                        \"description\": \"API Identification\"\
+  \r\n                    },\r\n                    \"version\": {\r\n           \
+  \             \"type\": \"integer\",\r\n                        \"description\"\
+  : \"API Version Number\",\r\n                        \"format\": \"int32\"\r\n \
+  \                   },\r\n                    \"type\": {\r\n                  \
+  \      \"type\": \"string\",\r\n                        \"description\": \"API Type\"\
+  \r\n                    },\r\n                    \"isPublic\": {\r\n          \
+  \              \"type\": \"boolean\",\r\n                        \"description\"\
+  : \"API Public/Private\"\r\n                    },\r\n                    \"category\"\
+  : {\r\n                        \"type\": \"string\",\r\n                       \
+  \ \"description\": \"API Category\"\r\n                    },\r\n              \
+  \      \"externalApi\": {\r\n                        \"type\": \"boolean\",\r\n\
+  \                        \"description\": \"API External\"\r\n                 \
+  \   },\r\n                    \"ontologyId\": {\r\n                        \"type\"\
+  : \"string\",\r\n                        \"description\": \"Ontology Identification\
+  \ for OntologyAPI\"\r\n                    },\r\n                    \"apiLimit\"\
+  : {\r\n                        \"type\": \"integer\",\r\n                      \
+  \  \"description\": \"QPS API limit\",\r\n                        \"format\": \"\
+  int32\"\r\n                    },\r\n                    \"apiCacheTimeout\": {\r\
+  \n                        \"type\": \"integer\",\r\n                        \"description\"\
+  : \"API cache timeout\",\r\n                        \"format\": \"int32\"\r\n  \
+  \                  },\r\n                    \"endpoint\": {\r\n               \
+  \         \"type\": \"string\",\r\n                        \"description\": \"Endpoint\
+  \ for invoking API\"\r\n                    },\r\n                    \"endpointExt\"\
+  : {\r\n                        \"type\": \"string\",\r\n                       \
+  \ \"description\": \"External Endpoint for invoking API\"\r\n                  \
+  \  },\r\n                    \"description\": {\r\n                        \"type\"\
+  : \"string\",\r\n                        \"description\": \"API Description\"\r\n\
+  \                    },\r\n                    \"metainf\": {\r\n              \
+  \          \"type\": \"string\",\r\n                        \"description\": \"\
+  Tags Meta-inf for API\"\r\n                    },\r\n                    \"imageType\"\
+  : {\r\n                        \"type\": \"string\",\r\n                       \
+  \ \"description\": \"Image Type\"\r\n                    },\r\n                \
+  \    \"status\": {\r\n                        \"type\": \"string\",\r\n        \
+  \                \"description\": \"API Status\"\r\n                    },\r\n \
+  \                   \"creationDate\": {\r\n                        \"type\": \"\
+  string\",\r\n                        \"description\": \"creation Date\"\r\n    \
+  \                },\r\n                    \"userId\": {\r\n                   \
+  \     \"type\": \"string\",\r\n                        \"description\": \"API Propietary\"\
+  \r\n                    },\r\n                    \"swaggerJson\": {\r\n       \
+  \                 \"type\": \"string\",\r\n                        \"description\"\
+  : \"API Swagger Json\"\r\n                    },\r\n                    \"operations\"\
+  : {\r\n                        \"type\": \"array\",\r\n                        \"\
+  description\": \"API Operations\",\r\n                        \"items\": {\r\n \
+  \                           \"$ref\": \"#/components/schemas/ApiRestOperationDTO\"\
+  \r\n                        }\r\n                    },\r\n                    \"\
+  authentications\": {\r\n                        \"type\": \"array\",\r\n       \
+  \                 \"description\": \"API Authentication\",\r\n                 \
+  \       \"items\": {\r\n                            \"$ref\": \"#/components/schemas/UserApiSimplifiedResponseDTO\"\
+  \r\n                        }\r\n                    },\r\n                    \"\
+  publishInGravitee\": {\r\n                        \"type\": \"boolean\",\r\n   \
+  \                     \"description\": \"Publish In Gravitee\"\r\n             \
+  \       },\r\n                    \"graviteeJWTPlan\": {\r\n                   \
+  \     \"type\": \"boolean\",\r\n                        \"description\": \"Gravitee\
+  \ JWT security plan\"\r\n                    },\r\n                    \"graviteeId\"\
+  : {\r\n                        \"type\": \"string\",\r\n                       \
+  \ \"description\": \"GraviteeId\"\r\n                    },\r\n                \
+  \    \"jwtClientId\": {\r\n                        \"type\": \"string\",\r\n   \
+  \                     \"description\": \"Gravitee JWT client ID (application)\"\r\
+  \n                    }\r\n                },\r\n                \"description\"\
+  : \"APIBody\"\r\n            },\r\n            \"ApiRestOperationDTO\": {\r\n  \
+  \              \"type\": \"object\",\r\n                \"properties\": {\r\n  \
+  \                  \"identification\": {\r\n                        \"type\": \"\
+  string\",\r\n                        \"description\": \"Identificación de la Operacion\"\
+  \r\n                    },\r\n                    \"id\": {\r\n                \
+  \        \"type\": \"string\",\r\n                        \"description\": \"ID\
+  \ de la Operacion\"\r\n                    },\r\n                    \"description\"\
+  : {\r\n                        \"type\": \"string\",\r\n                       \
+  \ \"description\": \"Descripción de la Operacion\"\r\n                    },\r\n\
+  \                    \"operation\": {\r\n                        \"type\": \"string\"\
+  ,\r\n                        \"description\": \"Tipo de Operacion\",\r\n       \
+  \                 \"enum\": [\"PUT\", \"POST\", \"GET\", \"DELETE\"]\r\n       \
+  \             },\r\n                    \"endpoint\": {\r\n                    \
+  \    \"type\": \"string\",\r\n                        \"description\": \"Enpoint\
+  \ Particular de la Operacion\"\r\n                    },\r\n                   \
+  \ \"path\": {\r\n                        \"type\": \"string\",\r\n             \
+  \           \"description\": \"Path de la Operacion\"\r\n                    },\r\
+  \n                    \"queryParams\": {\r\n                        \"type\": \"\
+  array\",\r\n                        \"description\": \"QueryParams de la Operacion\"\
+  ,\r\n                        \"items\": {\r\n                            \"$ref\"\
+  : \"#/components/schemas/ApiQueryParameterDTO\"\r\n                        }\r\n\
+  \                    },\r\n                    \"postProcess\": {\r\n          \
+  \              \"type\": \"string\",\r\n                        \"description\"\
+  : \"Postprocesado de la Operacion\"\r\n                    }\r\n               \
+  \ },\r\n                \"description\": \"API Operations\"\r\n            },\r\n\
+  \            \"UserApiSimplifiedResponseDTO\": {\r\n                \"type\": \"\
+  object\",\r\n                \"properties\": {\r\n                    \"userId\"\
+  : {\r\n                        \"type\": \"string\"\r\n                    },\r\n\
+  \                    \"apiIdentification\": {\r\n                        \"type\"\
+  : \"string\"\r\n                    },\r\n                    \"apiVersion\": {\r\
+  \n                        \"type\": \"integer\",\r\n                        \"format\"\
+  : \"int32\"\r\n                    }\r\n                },\r\n                \"\
+  description\": \"API Authentication\"\r\n            },\r\n            \"UserApiSimplifiedInputDTO\"\
+  : {\r\n                \"type\": \"object\",\r\n                \"properties\":\
+  \ {\r\n                    \"userId\": {\r\n                        \"type\": \"\
+  string\"\r\n                    }\r\n                }\r\n            }\r\n    \
+  \    },\r\n        \"securitySchemes\": {\r\n            \"X-OP-APIKey\": {\r\n\
+  \                \"type\": \"apiKey\",\r\n                \"name\": \"X-OP-APIKey\"\
+  ,\r\n                \"in\": \"header\"\r\n            },\r\n            \"JWT-Token\"\
+  : {\r\n                \"type\": \"http\",\r\n                \"scheme\": \"bearer\"\
+  ,\r\n                \"bearerFormat\": \"JWT\"\r\n            }\r\n        }\r\n\
+  \    }\r\n}"
+apiOperations: []
+public: false
+ontology: null

@@ -1,0 +1,285 @@
+---
+createdAt: 1713778306762
+updatedAt: 1728398018883
+id: "e23b5d78-dbc4-413c-9d76-519c38df4855"
+identification: "TEST-API-Custom"
+user: "administrator"
+ontology: "MASTER-Ontology-4"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "API generada para pruebas automáticas"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "TEST-API-Custom,HelsinkiPopulation,TESTING"
+apiType: "INTERNAL_ONTOLOGY"
+apiOperations:
+- createdAt: 1728398018875
+  updatedAt: 1728398018875
+  id: "3a8faf17-9ece-47dd-be5e-2513c2ec0acb"
+  apiqueryparameters:
+  - createdAt: 1728398018875
+    updatedAt: 1728398018875
+    id: "d2de68f4-4d7f-4434-96d1-adc0bc6bb601"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "TEST-API-Custom_GET"
+  description: "Obtiene el elemento mediante su id"
+  operation: "GET"
+  path: "/{id}"
+- createdAt: 1728398018873
+  updatedAt: 1728398018873
+  id: "f67bf70f-c22d-433d-871f-96c23b9c5f7b"
+  apiqueryparameters:
+  - createdAt: 1728398018873
+    updatedAt: 1728398018873
+    id: "116b6b12-8537-4471-971f-41f888d3de3e"
+    name: "targetdb"
+    dataType: "STRING"
+    description: ""
+    value: "rtdb"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1728398018873
+    updatedAt: 1728398018873
+    id: "ffb2d67a-a997-4cce-871e-2e5891947997"
+    name: "queryType"
+    dataType: "STRING"
+    description: ""
+    value: "native"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1728398018874
+    updatedAt: 1728398018874
+    id: "72fbce9c-77d6-4aae-bbc7-a217e23a2431"
+    name: "query"
+    dataType: "STRING"
+    description: ""
+    value: "db.HelsinkiPopulation.find({}).limit(3)"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  identification: "Native_sinparametros"
+  description: "Native_sinparametros"
+  operation: "GET"
+  path: "Native_sinparametros"
+  postProcess: ""
+- createdAt: 1728398018878
+  updatedAt: 1728398018878
+  id: "7b4fa718-2710-495a-9b42-947c57d677ce"
+  apiqueryparameters:
+  - createdAt: 1728398018878
+    updatedAt: 1728398018878
+    id: "703e3436-d4ac-4896-a337-0f01bfa58f46"
+    name: "queryType"
+    dataType: "STRING"
+    description: ""
+    value: "sql"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1728398018879
+    updatedAt: 1728398018879
+    id: "6dbf88d5-c3ec-4e7d-9811-4d4ef4ca2c64"
+    name: "targetdb"
+    dataType: "STRING"
+    description: ""
+    value: "rtdb"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1728398018878
+    updatedAt: 1728398018878
+    id: "464bc6d7-5d78-4ec0-9450-49d1d38b59b1"
+    name: "query"
+    dataType: "STRING"
+    description: ""
+    value: "Select * from HelsinkiPopulation as c limit 3"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  identification: "Query_conpost"
+  description: "SQL"
+  operation: "GET"
+  path: "Query_conpost"
+  postProcess: "//data is a string variable containing the query output \nvar dataArray\
+    \ = JSON.parse(data);\nvar result = \"{'TEST':'TEST'}\";\n// A string result must\
+    \ be returned\nreturn (JSON.stringify(result));"
+- createdAt: 1728398018864
+  updatedAt: 1728398018864
+  id: "ca3c4499-4142-46d1-89a9-e469c77f4c0e"
+  apiqueryparameters:
+  - createdAt: 1728398018870
+    updatedAt: 1728398018870
+    id: "8cb46b93-4c1a-43ea-8bc3-377d28157278"
+    name: "targetdb"
+    dataType: "STRING"
+    description: ""
+    value: "rtdb"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1728398018871
+    updatedAt: 1728398018871
+    id: "b0f9bd96-eb5f-4821-9bdd-92a1a1e70d66"
+    name: "query"
+    dataType: "STRING"
+    description: ""
+    value: "db.HelsinkiPopulation.find({'Helsinki.year':{$year}}).limit(3)"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1728398018870
+    updatedAt: 1728398018870
+    id: "34a2570f-e1ad-4090-81e4-62fed1064c94"
+    name: "year"
+    dataType: "NUMBER"
+    description: ""
+    condition: "REQUIRED"
+    headerType: "PATH"
+  - createdAt: 1728398018865
+    updatedAt: 1728398018865
+    id: "1cb10676-2bd2-4b0e-b40d-473fa3e32400"
+    name: "queryType"
+    dataType: "STRING"
+    description: ""
+    value: "native"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  identification: "Native_conparametros"
+  description: "Native_conparametros"
+  operation: "GET"
+  path: "Native_conparametros/{year}"
+  postProcess: ""
+- createdAt: 1728398018879
+  updatedAt: 1728398018879
+  id: "8c941444-c55d-4095-9d7c-a341eac1096c"
+  apiqueryparameters:
+  - createdAt: 1728398018879
+    updatedAt: 1728398018879
+    id: "59fdf127-4cdc-4ffb-888a-2b09b7a1f09d"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  identification: "TEST-API-Custom_POST"
+  description: "Inserción de un elemento"
+  operation: "POST"
+  path: "/"
+- createdAt: 1728398018876
+  updatedAt: 1728398018876
+  id: "c5f41aa1-7e9b-41c1-9d0e-2684bd29427e"
+  apiqueryparameters:
+  - createdAt: 1728398018876
+    updatedAt: 1728398018876
+    id: "56c0a7b3-4fc4-4cfb-bc63-740c519a4edb"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "TEST-API-Custom_DELETEID"
+  description: "Eliminación de un elemento mediante su id"
+  operation: "DELETE"
+  path: "/{id}"
+- createdAt: 1728398018874
+  updatedAt: 1728398018874
+  id: "6a168a98-8fa2-4b5a-b701-e97813199450"
+  apiqueryparameters: []
+  identification: "TEST-API-Custom_GETAll"
+  description: "Obtiene todos los elementos"
+  operation: "GET"
+  path: "/"
+- createdAt: 1728398018880
+  updatedAt: 1728398018880
+  id: "5bbc618d-30ba-4330-a7df-ba78bb940bda"
+  apiqueryparameters:
+  - createdAt: 1728398018881
+    updatedAt: 1728398018881
+    id: "20e551e7-51b8-43ef-aa52-846bba744f94"
+    name: "query"
+    dataType: "STRING"
+    description: ""
+    value: "Select * from HelsinkiPopulation as c limit 3"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1728398018881
+    updatedAt: 1728398018881
+    id: "3257e299-25a5-4a4a-a3bd-8756e12d2f53"
+    name: "targetdb"
+    dataType: "STRING"
+    description: ""
+    value: "rtdb"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1728398018880
+    updatedAt: 1728398018880
+    id: "b0dd8abf-baa9-4959-acb1-32ffc78e9555"
+    name: "queryType"
+    dataType: "STRING"
+    description: ""
+    value: "sql"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  identification: "SQL_sinparametros"
+  description: "SQL_sinparametros"
+  operation: "GET"
+  path: "SQL_sinparametros"
+  postProcess: ""
+- createdAt: 1728398018871
+  updatedAt: 1728398018871
+  id: "e54639d3-a851-4e78-bd47-96e21f85ba10"
+  apiqueryparameters:
+  - createdAt: 1728398018872
+    updatedAt: 1728398018872
+    id: "ed7129c4-69f0-4d0e-9f77-2dd52bdcdd2d"
+    name: "query"
+    dataType: "STRING"
+    description: ""
+    value: "SELECT COUNT(*) from HelsinkiPopulation as c limit 3"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1728398018872
+    updatedAt: 1728398018872
+    id: "0f74f72f-8fb4-45e2-b970-65fd146c4d2b"
+    name: "queryType"
+    dataType: "STRING"
+    description: ""
+    value: "sql"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1728398018872
+    updatedAt: 1728398018872
+    id: "71eb9280-8ab4-4430-8250-17ed41133270"
+    name: "targetdb"
+    dataType: "STRING"
+    description: ""
+    value: "rtdb"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  identification: "DFSDFSDF"
+  description: "SDFSDFSSDF"
+  operation: "GET"
+  path: "DFSDFSDF"
+  postProcess: ""
+- createdAt: 1728398018876
+  updatedAt: 1728398018876
+  id: "94b5e0eb-1011-42fa-a660-46bde14f7b90"
+  apiqueryparameters:
+  - createdAt: 1728398018877
+    updatedAt: 1728398018877
+    id: "a090fc19-cba3-4dcc-bdee-cf96ba0b76a0"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  - createdAt: 1728398018877
+    updatedAt: 1728398018877
+    id: "1be7470d-2a84-44e9-89f7-ac5d37dc9ac7"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  identification: "TEST-API-Custom_PUT"
+  description: "Actualización de un elemento mediante su id"
+  operation: "PUT"
+  path: "/{id}"
+public: true

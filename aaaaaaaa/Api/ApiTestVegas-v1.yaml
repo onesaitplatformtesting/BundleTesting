@@ -1,0 +1,59 @@
+---
+createdAt: 1713363995787
+updatedAt: 1728400034134
+id: "0ba1ad2a-f7d9-4167-9da3-e518e41f7865"
+identification: "ApiTestVegas"
+user: "developer"
+ontology: "MASTER-Ontology-4"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "ApiTestVegas"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "ApiTestVegas"
+apilimit: 1
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1728400034132
+  updatedAt: 1728400034132
+  id: "f1819842-4347-410a-a5aa-893d13b85a64"
+  apiqueryparameters:
+  - createdAt: 1728400034132
+    updatedAt: 1728400034132
+    id: "13bf28c8-d24a-402d-a9e1-54481c356270"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  identification: "ApiTestVegas_POST"
+  description: "post"
+  operation: "POST"
+  path: "/"
+- createdAt: 1728400034133
+  updatedAt: 1728400034133
+  id: "281a1f5a-135a-4f66-9d5d-479b4d09ef61"
+  apiqueryparameters: []
+  identification: "ApiTestVegas_GETAll"
+  description: "getall"
+  operation: "GET"
+  path: "/"
+- createdAt: 1728400034131
+  updatedAt: 1728400034131
+  id: "35c01cea-847b-43e0-8bb0-25121b0a8f6e"
+  apiqueryparameters:
+  - createdAt: 1728400034131
+    updatedAt: 1728400034131
+    id: "3bb937f4-5166-4187-bad7-49055c9f913e"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "ApiTestVegas_GET"
+  description: "getId"
+  operation: "GET"
+  path: "/{id}"
+public: true

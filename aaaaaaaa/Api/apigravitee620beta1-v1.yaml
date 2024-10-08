@@ -1,0 +1,143 @@
+---
+createdAt: 1728314299436
+updatedAt: 1728314308713
+id: "2a478788-1b50-44a4-a91d-fe1c470582cb"
+identification: "apigravitee620beta1"
+user: "developer"
+ontology: "a47104a9-aa67-4cdc-b25c-02d619361ecf"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "apigravitee620beta1"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "apigravitee620beta1"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: "{\r\n  \"openapi\" : \"3.0.1\",\r\n  \"info\" : {\r\n    \"title\" :\
+  \ \"Platform  API Manager\",\r\n    \"description\" : \"Platform - apigravitee620beta1\
+  \ - v1\",\r\n    \"contact\" : {\r\n      \"name\" : \"Platform Team\",\r\n    \
+  \  \"url\" : \"https://dev.onesaitplatform.com\",\r\n      \"email\" : \"support@onesaitplatform.com\"\
+  \r\n    },\r\n    \"license\" : {\r\n      \"name\" : \"1.0.0\",\r\n      \"url\"\
+  \ : \"http://www.apache.org/licenses/LICENSE-2.0.html\"\r\n    },\r\n    \"version\"\
+  \ : \"Apache 2.0 License\"\r\n  },\r\n  \"servers\" : [ {\r\n    \"url\" : \"/api-manager/server/api/v1/apigravitee620beta1\"\
+  \r\n  } ],\r\n  \"tags\" : [ {\r\n    \"name\" : \"apigravitee620beta1\"\r\n  }\
+  \ ],\r\n  \"paths\" : {\r\n    \"/\" : {\r\n      \"get\" : {\r\n        \"tags\"\
+  \ : [ \"apigravitee620beta1\" ],\r\n        \"operationId\" : \"get_all\",\r\n \
+  \       \"responses\" : {\r\n          \"200\" : {\r\n            \"description\"\
+  \ : \"OK\",\r\n            \"content\" : {\r\n              \"application/json\"\
+  \ : {\r\n                \"schema\" : {\r\n                  \"type\" : \"object\"\
+  \r\n                }\r\n              },\r\n              \"application/atom+xml\"\
+  \ : {\r\n                \"schema\" : {\r\n                  \"type\" : \"object\"\
+  \r\n                }\r\n              },\r\n              \"text/plain\" : {\r\n\
+  \                \"schema\" : {\r\n                  \"type\" : \"object\"\r\n \
+  \               }\r\n              },\r\n              \"text/csv\" : {\r\n    \
+  \            \"schema\" : {\r\n                  \"type\" : \"object\"\r\n     \
+  \           }\r\n              },\r\n              \"application/ld+json\" : {\r\
+  \n                \"schema\" : {\r\n                  \"type\" : \"object\"\r\n\
+  \                }\r\n              }\r\n            }\r\n          },\r\n     \
+  \     \"400\" : {\r\n            \"description\" : \"Bad Request\",\r\n        \
+  \    \"content\" : {\r\n              \"application/json\" : {\r\n             \
+  \   \"schema\" : {\r\n                  \"type\" : \"object\"\r\n              \
+  \  }\r\n              },\r\n              \"application/atom+xml\" : {\r\n     \
+  \           \"schema\" : {\r\n                  \"type\" : \"object\"\r\n      \
+  \          }\r\n              },\r\n              \"text/plain\" : {\r\n       \
+  \         \"schema\" : {\r\n                  \"type\" : \"object\"\r\n        \
+  \        }\r\n              },\r\n              \"text/csv\" : {\r\n           \
+  \     \"schema\" : {\r\n                  \"type\" : \"object\"\r\n            \
+  \    }\r\n              },\r\n              \"application/ld+json\" : {\r\n    \
+  \            \"schema\" : {\r\n                  \"type\" : \"object\"\r\n     \
+  \           }\r\n              }\r\n            }\r\n          },\r\n          \"\
+  401\" : {\r\n            \"description\" : \"Unauthorized\",\r\n            \"content\"\
+  \ : {\r\n              \"application/json\" : {\r\n                \"schema\" :\
+  \ {\r\n                  \"type\" : \"object\"\r\n                }\r\n        \
+  \      },\r\n              \"application/atom+xml\" : {\r\n                \"schema\"\
+  \ : {\r\n                  \"type\" : \"object\"\r\n                }\r\n      \
+  \        },\r\n              \"text/plain\" : {\r\n                \"schema\" :\
+  \ {\r\n                  \"type\" : \"object\"\r\n                }\r\n        \
+  \      },\r\n              \"text/csv\" : {\r\n                \"schema\" : {\r\n\
+  \                  \"type\" : \"object\"\r\n                }\r\n              },\r\
+  \n              \"application/ld+json\" : {\r\n                \"schema\" : {\r\n\
+  \                  \"type\" : \"object\"\r\n                }\r\n              }\r\
+  \n            }\r\n          },\r\n          \"204\" : {\r\n            \"description\"\
+  \ : \"No Content\",\r\n            \"content\" : { }\r\n          },\r\n       \
+  \   \"501\" : {\r\n            \"description\" : \"Internal Server Error\",\r\n\
+  \            \"content\" : {\r\n              \"application/json\" : {\r\n     \
+  \           \"schema\" : {\r\n                  \"type\" : \"object\"\r\n      \
+  \          }\r\n              },\r\n              \"application/atom+xml\" : {\r\
+  \n                \"schema\" : {\r\n                  \"type\" : \"object\"\r\n\
+  \                }\r\n              },\r\n              \"text/plain\" : {\r\n \
+  \               \"schema\" : {\r\n                  \"type\" : \"object\"\r\n  \
+  \              }\r\n              },\r\n              \"text/csv\" : {\r\n     \
+  \           \"schema\" : {\r\n                  \"type\" : \"object\"\r\n      \
+  \          }\r\n              },\r\n              \"application/ld+json\" : {\r\n\
+  \                \"schema\" : {\r\n                  \"type\" : \"object\"\r\n \
+  \               }\r\n              }\r\n            }\r\n          }\r\n       \
+  \ },\r\n        \"security\" : [ {\r\n          \"X-OP-APIKey\" : [ ]\r\n      \
+  \  }, {\r\n          \"JWT\" : [ ]\r\n        } ]\r\n      }\r\n    }\r\n  },\r\n\
+  \  \"components\" : {\r\n    \"responses\" : {\r\n      \"200\" : {\r\n        \"\
+  description\" : \"OK\",\r\n        \"content\" : {\r\n          \"application/json\"\
+  \ : {\r\n            \"schema\" : {\r\n              \"type\" : \"object\"\r\n \
+  \           }\r\n          },\r\n          \"application/atom+xml\" : {\r\n    \
+  \        \"schema\" : {\r\n              \"type\" : \"object\"\r\n            }\r\
+  \n          },\r\n          \"text/plain\" : {\r\n            \"schema\" : {\r\n\
+  \              \"type\" : \"object\"\r\n            }\r\n          },\r\n      \
+  \    \"text/csv\" : {\r\n            \"schema\" : {\r\n              \"type\" :\
+  \ \"object\"\r\n            }\r\n          },\r\n          \"application/ld+json\"\
+  \ : {\r\n            \"schema\" : {\r\n              \"type\" : \"object\"\r\n \
+  \           }\r\n          }\r\n        }\r\n      },\r\n      \"400\" : {\r\n \
+  \       \"description\" : \"Bad Request\",\r\n        \"content\" : {\r\n      \
+  \    \"application/json\" : {\r\n            \"schema\" : {\r\n              \"\
+  type\" : \"object\"\r\n            }\r\n          },\r\n          \"application/atom+xml\"\
+  \ : {\r\n            \"schema\" : {\r\n              \"type\" : \"object\"\r\n \
+  \           }\r\n          },\r\n          \"text/plain\" : {\r\n            \"\
+  schema\" : {\r\n              \"type\" : \"object\"\r\n            }\r\n       \
+  \   },\r\n          \"text/csv\" : {\r\n            \"schema\" : {\r\n         \
+  \     \"type\" : \"object\"\r\n            }\r\n          },\r\n          \"application/ld+json\"\
+  \ : {\r\n            \"schema\" : {\r\n              \"type\" : \"object\"\r\n \
+  \           }\r\n          }\r\n        }\r\n      },\r\n      \"401\" : {\r\n \
+  \       \"description\" : \"Unauthorized\",\r\n        \"content\" : {\r\n     \
+  \     \"application/json\" : {\r\n            \"schema\" : {\r\n              \"\
+  type\" : \"object\"\r\n            }\r\n          },\r\n          \"application/atom+xml\"\
+  \ : {\r\n            \"schema\" : {\r\n              \"type\" : \"object\"\r\n \
+  \           }\r\n          },\r\n          \"text/plain\" : {\r\n            \"\
+  schema\" : {\r\n              \"type\" : \"object\"\r\n            }\r\n       \
+  \   },\r\n          \"text/csv\" : {\r\n            \"schema\" : {\r\n         \
+  \     \"type\" : \"object\"\r\n            }\r\n          },\r\n          \"application/ld+json\"\
+  \ : {\r\n            \"schema\" : {\r\n              \"type\" : \"object\"\r\n \
+  \           }\r\n          }\r\n        }\r\n      },\r\n      \"204\" : {\r\n \
+  \       \"description\" : \"No Content\",\r\n        \"content\" : { }\r\n     \
+  \ },\r\n      \"501\" : {\r\n        \"description\" : \"Internal Server Error\"\
+  ,\r\n        \"content\" : {\r\n          \"application/json\" : {\r\n         \
+  \   \"schema\" : {\r\n              \"type\" : \"object\"\r\n            }\r\n \
+  \         },\r\n          \"application/atom+xml\" : {\r\n            \"schema\"\
+  \ : {\r\n              \"type\" : \"object\"\r\n            }\r\n          },\r\n\
+  \          \"text/plain\" : {\r\n            \"schema\" : {\r\n              \"\
+  type\" : \"object\"\r\n            }\r\n          },\r\n          \"text/csv\" :\
+  \ {\r\n            \"schema\" : {\r\n              \"type\" : \"object\"\r\n   \
+  \         }\r\n          },\r\n          \"application/ld+json\" : {\r\n       \
+  \     \"schema\" : {\r\n              \"type\" : \"object\"\r\n            }\r\n\
+  \          }\r\n        }\r\n      }\r\n    },\r\n    \"securitySchemes\" : {\r\n\
+  \      \"X-OP-APIKey\" : {\r\n        \"type\" : \"apiKey\",\r\n        \"name\"\
+  \ : \"X-OP-APIKey\",\r\n        \"in\" : \"header\"\r\n      },\r\n      \"JWT\"\
+  \ : {\r\n        \"type\" : \"http\",\r\n        \"scheme\" : \"bearer\",\r\n  \
+  \      \"bearerFormat\" : \"JWT\"\r\n      }\r\n    }\r\n  },\r\n  \"x-sofia2-extension\"\
+  \ : {\r\n    \"identification\" : \"apigravitee620beta1\",\r\n    \"version\" :\
+  \ 1,\r\n    \"type\" : \"INTERNAL_ONTOLOGY\",\r\n    \"isPublic\" : false,\r\n \
+  \   \"category\" : \"ALL\",\r\n    \"externalApi\" : false,\r\n    \"ontologyId\"\
+  \ : \"a47104a9-aa67-4cdc-b25c-02d619361ecf\",\r\n    \"endpoint\" : \"https://development.onesaitplatform.com/api-manager/server/api/v1/apigravitee620beta1\"\
+  ,\r\n    \"endpointExt\" : \"\",\r\n    \"description\" : \"apigravitee620beta1\"\
+  ,\r\n    \"metainf\" : \"apigravitee620beta1\",\r\n    \"status\" : \"CREATED\"\
+  ,\r\n    \"creationDate\" : \"10/07/2024 15:18:19\",\r\n    \"userId\" : \"developer\"\
+  \r\n  },\r\n  \"x-original-swagger-version\" : \"2.0\"\r\n}\r\n"
+graviteeId: "7d29a19c-98f5-4eb6-a9a1-9c98f51eb612"
+apiOperations:
+- createdAt: 1728314299477
+  updatedAt: 1728314299477
+  id: "7ee19058-d4e5-4477-bc2e-288c7125fddf"
+  apiqueryparameters: []
+  identification: "apigravitee620beta1_GETAll"
+  description: "get all"
+  operation: "GET"
+  path: "/"
+public: false

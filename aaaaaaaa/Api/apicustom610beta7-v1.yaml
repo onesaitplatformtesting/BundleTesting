@@ -1,0 +1,152 @@
+---
+createdAt: 1722340953243
+updatedAt: 1728301060687
+id: "0796a7a1-4ca4-44e7-9356-8a051ac7661d"
+identification: "apicustom610beta7"
+user: "analytics"
+ontology: "a47104a9-aa67-4cdc-b25c-02d619361ecf"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "apicustom610beta7"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "apicustom610beta7"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1722340953504
+  updatedAt: 1722340953504
+  id: "39ddf010-bb0b-4f24-9aa1-be4cde1acdf8"
+  apiqueryparameters:
+  - createdAt: 1722340953506
+    updatedAt: 1722340953506
+    id: "4189073c-f5bd-45cf-856c-57e55692a4ea"
+    name: "query"
+    dataType: "STRING"
+    description: ""
+    value: "Select * from HelsinkiDataflowClone as c where c.Helsinki.year={$year}"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1722340953506
+    updatedAt: 1722340953506
+    id: "053f2caa-aab1-4dd9-9989-15104291a1df"
+    name: "queryType"
+    dataType: "STRING"
+    description: ""
+    value: "sql"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1722340953507
+    updatedAt: 1722340953507
+    id: "0a1ed78e-4a34-4018-bb65-1ca0f1e18495"
+    name: "year"
+    dataType: "NUMBER"
+    description: ""
+    condition: "REQUIRED"
+    headerType: "QUERY"
+  - createdAt: 1722340953507
+    updatedAt: 1722340953507
+    id: "e4e842d3-1ad6-4056-b7f6-6d4c21df82ce"
+    name: "targetdb"
+    dataType: "STRING"
+    description: ""
+    value: "rtdb"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  identification: "GETQUERY"
+  description: "GETQUERY"
+  operation: "GET"
+  path: "GETQUERY"
+  postProcess: ""
+- createdAt: 1722340953485
+  updatedAt: 1722340953485
+  id: "c72dd503-42b7-4cbe-8cc1-acc44f0642ec"
+  apiqueryparameters:
+  - createdAt: 1722340953501
+    updatedAt: 1722340953501
+    id: "c70e34ff-36ad-4499-80ad-ca57a098ffc7"
+    name: "population"
+    dataType: "NUMBER"
+    description: ""
+    condition: "REQUIRED"
+    headerType: "QUERY"
+  - createdAt: 1722340953501
+    updatedAt: 1722340953501
+    id: "01a1e894-4fb3-4342-9cc6-32869579203d"
+    name: "targetdb"
+    dataType: "STRING"
+    description: ""
+    value: "rtdb"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1722340953494
+    updatedAt: 1722340953494
+    id: "4641fb48-3d4b-4103-9125-617576d30db7"
+    name: "queryType"
+    dataType: "STRING"
+    description: ""
+    value: "sql"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1722340953500
+    updatedAt: 1722340953500
+    id: "feb4c46f-dbf9-4afb-b899-55cc0ec6ea00"
+    name: "query"
+    dataType: "STRING"
+    description: ""
+    value: "Select * from HelsinkiDataflowClone as c where c.Helsinki.year={$year}\
+      \ and c.Helsinki.population>{$population}"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1722340953500
+    updatedAt: 1722340953500
+    id: "1d72fb44-13af-4168-8297-6e257b9c8fa6"
+    name: "year"
+    dataType: "STRING"
+    description: ""
+    condition: "REQUIRED"
+    headerType: "PATH"
+  identification: "GETBY2PAC"
+  description: "GETBY2PAC"
+  operation: "GET"
+  path: "GETBY2PAC/{year}"
+  postProcess: ""
+- createdAt: 1722340953502
+  updatedAt: 1722340953502
+  id: "c39c9240-552f-4972-9be9-cf0277022842"
+  apiqueryparameters:
+  - createdAt: 1722340953504
+    updatedAt: 1722340953504
+    id: "65cfec28-7cdd-44a9-a32e-14b95a59e55e"
+    name: "targetdb"
+    dataType: "STRING"
+    description: ""
+    value: "rtdb"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1722340953502
+    updatedAt: 1722340953502
+    id: "a6f4bb35-47ed-466a-9e3a-1a85c9fc4bcb"
+    name: "query"
+    dataType: "STRING"
+    description: ""
+    value: "Select * from HelsinkiDataflowClone as c"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1722340953503
+    updatedAt: 1722340953503
+    id: "da605701-e94d-4925-9146-b51956fd5490"
+    name: "queryType"
+    dataType: "STRING"
+    description: ""
+    value: "sql"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  identification: "GETALLCUSTOM"
+  description: "GETALLCUSTOM"
+  operation: "GET"
+  path: "GETALLCUSTOM"
+  postProcess: ""
+public: false

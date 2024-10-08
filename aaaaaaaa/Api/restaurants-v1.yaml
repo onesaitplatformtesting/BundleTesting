@@ -1,0 +1,27 @@
+---
+createdAt: 1718018449860
+updatedAt: 1728301060733
+id: "2f816c15-a1ff-48bb-b877-22f5b6c75b89"
+identification: "restaurants"
+user: "administrator"
+ontology: "MASTER-Ontology-Restaurant-1"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "Api example"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "restaurants"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1719409514396
+  updatedAt: 1719409514396
+  id: "55d583c6-065e-46cf-8006-421577caa6c3"
+  apiqueryparameters: []
+  identification: "restaurants_GETAll"
+  description: "returnall"
+  operation: "GET"
+  path: "/"
+public: false

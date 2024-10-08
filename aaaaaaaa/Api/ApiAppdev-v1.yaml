@@ -1,0 +1,27 @@
+---
+createdAt: 1728396947695
+updatedAt: 1728396947712
+id: "7fa8f7b1-22b1-45e7-9d98-9c043eea03f1"
+identification: "ApiAppdev"
+user: "userapplication"
+ontology: "880dc319-5ad0-45b1-a1f8-b9ca8390d3a2"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "ApiAppdev"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "ApiAppdev"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1728396947711
+  updatedAt: 1728396947711
+  id: "bc35911a-7e11-4fe2-bbda-d4ff19ce0895"
+  apiqueryparameters: []
+  identification: "ApiAppdev_GETAll"
+  description: "ApiAppdev"
+  operation: "GET"
+  path: "/"
+public: false

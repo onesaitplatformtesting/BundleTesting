@@ -1,0 +1,27 @@
+---
+createdAt: 1721204402772
+updatedAt: 1728301060786
+id: "84430e77-0334-4a0e-92a4-8421747bf08a"
+identification: "APIRELEASE610"
+user: "developer"
+ontology: "MASTER-Ontology-9"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "APIRELEASE610"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "APIRELEASE610"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1721204402831
+  updatedAt: 1721204402831
+  id: "8c7fa588-26cb-41e7-abde-839d2fc952a8"
+  apiqueryparameters: []
+  identification: "APIRELEASE610_GETAll"
+  description: "get all"
+  operation: "GET"
+  path: "/"
+public: true

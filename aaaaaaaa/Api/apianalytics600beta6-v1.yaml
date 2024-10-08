@@ -1,0 +1,27 @@
+---
+createdAt: 1712905326063
+updatedAt: 1728301060801
+id: "ae97ed1f-8794-4af4-8b48-831776af637a"
+identification: "apianalytics600beta6"
+user: "analytics"
+ontology: "MASTER-Ontology-Restaurant-1"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "apianalytics600beta6"
+category: "ALL"
+endpointExt: ""
+state: "DEVELOPMENT"
+metaInf: "apianalytics600beta6"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1712907371184
+  updatedAt: 1712907371184
+  id: "078a18a6-b39b-45a6-831a-ba92c8f657da"
+  apiqueryparameters: []
+  identification: "apianalytics600beta6_GETAll"
+  description: "get all"
+  operation: "GET"
+  path: "/"
+public: false

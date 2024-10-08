@@ -1,0 +1,19 @@
+---
+createdAt: 1728396984925
+updatedAt: 1728396984925
+id: "70864a8e-9295-4280-9f97-c7f49fb7c5ca"
+identification: "ApiAppdev2"
+user: "userapplication"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "ApiAppdev2"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "ApiAppdev2"
+apiType: "EXTERNAL_FROM_JSON"
+swaggerJson: ""
+apiOperations: []
+public: false
+ontology: null

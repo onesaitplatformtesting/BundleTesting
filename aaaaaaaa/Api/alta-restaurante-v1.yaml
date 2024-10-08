@@ -1,0 +1,64 @@
+---
+createdAt: 1727131023646
+updatedAt: 1728301060707
+id: "21d8407f-5f61-4d10-9116-7ea60c0ce1f2"
+identification: "alta-restaurante"
+user: "jfgpimpollo"
+ontology: "2dde5564-9c37-4020-9013-6544dc67a99a"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "Alta restaurante"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "restaurantes"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1727131987128
+  updatedAt: 1727131987128
+  id: "1427e424-26a0-4fe4-9973-5de260bca104"
+  apiqueryparameters:
+  - createdAt: 1727131987129
+    updatedAt: 1727131987129
+    id: "a787ad05-e983-4b52-9d7b-00c3c48122f4"
+    name: "queryType"
+    dataType: "STRING"
+    description: ""
+    value: "sql"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1727131987129
+    updatedAt: 1727131987129
+    id: "927acb62-9d7e-4277-aedc-17af7cb9a529"
+    name: "nombreRestaurante"
+    dataType: "STRING"
+    description: ""
+    condition: "REQUIRED"
+    headerType: "BODY"
+  - createdAt: 1727131987130
+    updatedAt: 1727131987130
+    id: "995c8c0f-3a27-4844-9dde-f187047420a9"
+    name: "targetdb"
+    dataType: "STRING"
+    description: ""
+    value: "rtdb"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  - createdAt: 1727131987128
+    updatedAt: 1727131987128
+    id: "b8fbfada-7fad-4fc2-8f24-92dec15755f9"
+    name: "query"
+    dataType: "STRING"
+    description: ""
+    value: "Update SolicitudNuevoRestaurante SET SolicitudNuevoRestaurante.solicitudAprobada=true\
+      \ where SolicitudNuevoRestaurante.nombreRestaurante={$nombreRestaurante}"
+    condition: "CONSTANT"
+    headerType: "QUERY"
+  identification: "AltaRestaurante"
+  description: "AltaRestaurante"
+  operation: "PUT"
+  path: "AltaRestaurante"
+  postProcess: ""
+public: false

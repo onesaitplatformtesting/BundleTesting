@@ -1,0 +1,27 @@
+---
+createdAt: 1709051313103
+updatedAt: 1728301060765
+id: "55e437f7-780e-48e9-9b8a-c12beaac2c9e"
+identification: "apiTestabuenoa"
+user: "abuenoa"
+ontology: "MASTER-Ontology-10"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "apiTestabuenoa"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "apiTestabuenoa"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1710324025476
+  updatedAt: 1710324025476
+  id: "57543df6-1b71-49fa-a8b4-1b31e94cd5ae"
+  apiqueryparameters: []
+  identification: "apiTestabuenoa_GETAll"
+  description: "apiTestabuenoa"
+  operation: "GET"
+  path: "/"
+public: true

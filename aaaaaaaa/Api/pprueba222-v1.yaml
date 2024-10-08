@@ -1,0 +1,104 @@
+---
+createdAt: 1728393950546
+updatedAt: 1728394112685
+id: "8197de33-4f68-45d6-8992-08dd1443da40"
+identification: "pprueba222"
+user: "administrator"
+ontology: "MASTER-Ontology-10"
+ssl_certificate: false
+userApiAccesses:
+- createdAt: 1728394107926
+  updatedAt: 1728394107926
+  id: "d22cf652-ae2c-4733-948b-5b55099f698f"
+  user: "gcmagana"
+- createdAt: 1728394094745
+  updatedAt: 1728394094745
+  id: "4bf97ba0-17e3-4754-bafe-ad650806e805"
+  user: "developer"
+numversion: 1
+description: "sdsdsdsdsd"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "wqweqwe"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1728394112681
+  updatedAt: 1728394112681
+  id: "46a63111-f929-4298-a504-a0ad985c51ce"
+  apiqueryparameters:
+  - createdAt: 1728394112682
+    updatedAt: 1728394112682
+    id: "6da7196c-a24c-43da-947e-81aa5880af7c"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  identification: "pprueba222_POST"
+  description: "sdsd"
+  operation: "POST"
+  path: "/"
+- createdAt: 1728394112678
+  updatedAt: 1728394112678
+  id: "9afbd473-246f-4c94-abd2-0c70bc022ff0"
+  apiqueryparameters:
+  - createdAt: 1728394112679
+    updatedAt: 1728394112679
+    id: "4f06cc9f-cc2d-4879-b4c5-a08487165aad"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "pprueba222_GET"
+  description: "sdsd"
+  operation: "GET"
+  path: "/{id}"
+- createdAt: 1728394112678
+  updatedAt: 1728394112678
+  id: "60366565-8414-4f90-967b-ca37198d92ac"
+  apiqueryparameters: []
+  identification: "pprueba222_GETAll"
+  description: "sdasd"
+  operation: "GET"
+  path: "/"
+- createdAt: 1728394112679
+  updatedAt: 1728394112679
+  id: "7d164ee6-3b9e-4db7-be0d-204728797764"
+  apiqueryparameters:
+  - createdAt: 1728394112680
+    updatedAt: 1728394112680
+    id: "23d5bc2b-6cb4-41f2-a048-db30a98b68ce"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "pprueba222_DELETEID"
+  description: "sdsd"
+  operation: "DELETE"
+  path: "/{id}"
+- createdAt: 1728394112674
+  updatedAt: 1728394112674
+  id: "85f650c5-122a-4578-9ad3-e7f534483d28"
+  apiqueryparameters:
+  - createdAt: 1728394112675
+    updatedAt: 1728394112675
+    id: "f1d21188-be77-4c0a-a343-4eb91dd01fc4"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  - createdAt: 1728394112677
+    updatedAt: 1728394112677
+    id: "e7875e5a-e95f-49fe-baeb-342ae08736e4"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "pprueba222_PUT"
+  description: "sdsd"
+  operation: "PUT"
+  path: "/{id}"
+public: false

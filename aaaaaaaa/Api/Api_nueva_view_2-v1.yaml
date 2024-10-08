@@ -1,0 +1,27 @@
+---
+createdAt: 1708513407002
+updatedAt: 1728301060807
+id: "b3d0bfdd-d6f6-4a24-80e1-f3065ee87cae"
+identification: "Api_nueva_view_2"
+user: "developer"
+ontology: "MASTER-Ontology-10"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "pruebas"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "pruebas"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1708513407023
+  updatedAt: 1708513407023
+  id: "d58b3a9b-6a75-4afe-9822-c850121bddde"
+  apiqueryparameters: []
+  identification: "Api_nueva_view_2_GETAll"
+  description: "get all"
+  operation: "GET"
+  path: "/"
+public: true

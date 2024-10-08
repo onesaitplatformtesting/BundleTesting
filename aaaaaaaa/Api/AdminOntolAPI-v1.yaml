@@ -1,0 +1,43 @@
+---
+createdAt: 1713769255009
+updatedAt: 1728301060702
+id: "1f4adc72-a0c9-47d7-8c3a-afe4e68add01"
+identification: "AdminOntolAPI"
+user: "administrator"
+ontology: "MASTER-Ontology-10"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "sdfsdfsdfsdf"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "sdfsdfsdf"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1713769256281
+  updatedAt: 1713769256281
+  id: "bb8a634b-9fde-4d6a-b524-473f09933630"
+  apiqueryparameters: []
+  identification: "AdminOntolAPI_GETAll"
+  description: "all"
+  operation: "GET"
+  path: "/"
+- createdAt: 1713769256296
+  updatedAt: 1713769256296
+  id: "6483b1e0-0b26-47e4-8f3d-d59b4b5f91f9"
+  apiqueryparameters:
+  - createdAt: 1713769256299
+    updatedAt: 1713769256299
+    id: "f008cbd9-18c0-4606-a018-595ba1cf3259"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  identification: "AdminOntolAPI_POST"
+  description: "insert"
+  operation: "POST"
+  path: "/"
+public: false

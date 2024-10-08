@@ -1,0 +1,31 @@
+---
+createdAt: 1708513007199
+updatedAt: 1728301060723
+id: "2b8779d4-71a8-4e8d-852f-d17e436b32db"
+identification: "API_app_nuevo_view"
+user: "developer"
+ontology: "5b2ec4d6-f257-4793-9ca4-b43ca3600159"
+ssl_certificate: false
+userApiAccesses:
+- createdAt: 1709719943425
+  updatedAt: 1728301060893
+  id: "39ac8fac-da9c-4cf7-8bd6-3c306739119b"
+  user: "analytics"
+numversion: 1
+description: "pruebas"
+category: "ALL"
+endpointExt: ""
+state: "DEVELOPMENT"
+metaInf: "pruebas"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1719395190030
+  updatedAt: 1719395190030
+  id: "4d9fe08c-73cf-460d-84cf-4a2369af47cc"
+  apiqueryparameters: []
+  identification: "API_app_nuevo_view_GETAll"
+  description: "getall"
+  operation: "GET"
+  path: "/"
+public: true

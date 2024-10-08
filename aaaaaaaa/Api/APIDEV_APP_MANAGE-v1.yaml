@@ -1,0 +1,42 @@
+---
+createdAt: 1707390076028
+updatedAt: 1728301060759
+id: "50e87e4d-935f-4dff-88ed-d75f1ce38af4"
+identification: "APIDEV_APP_MANAGE"
+user: "developer"
+ontology: "MASTER-Ontology-Restaurant-1"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "APIDEV_APP_MANAGE"
+category: "ALL"
+endpointExt: ""
+state: "DELETED"
+metaInf: "PRUEBAS,pruebas2"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1709200051499
+  updatedAt: 1709200051499
+  id: "7e41daf2-61c6-4438-ac3a-4d14a1fbc299"
+  apiqueryparameters: []
+  identification: "APIDEV_APP_MANAGE_GETAll"
+  description: "get all"
+  operation: "GET"
+  path: "/"
+- createdAt: 1709200051497
+  updatedAt: 1709200051497
+  id: "d94728a0-1980-4a9d-b8ac-2443a8fd6aeb"
+  apiqueryparameters:
+  - createdAt: 1709200051498
+    updatedAt: 1709200051498
+    id: "7efe3285-746b-4793-8363-4184ae9513d4"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "APIDEV_APP_MANAGE_GET"
+  description: "ID"
+  operation: "GET"
+  path: "/{id}"
+public: true

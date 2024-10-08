@@ -1,0 +1,43 @@
+---
+createdAt: 1721295085900
+updatedAt: 1728301060770
+id: "5ea7eed2-5a53-4e4e-97a8-19a0c34dcbbc"
+identification: "op951Carlos"
+user: "developer"
+ontology: "466808e2-5033-4ce1-857b-8fceffdb6472"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "this is a test"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "testing"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1721295085914
+  updatedAt: 1721295085914
+  id: "240b2ca3-8df8-4274-8adb-a14610f72c17"
+  apiqueryparameters:
+  - createdAt: 1721295085917
+    updatedAt: 1721295085917
+    id: "b3ced36d-2b90-4a97-a6b2-833718be7cb1"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  identification: "op951Carlos_POST"
+  description: "insert data"
+  operation: "POST"
+  path: "/"
+- createdAt: 1721295085919
+  updatedAt: 1721295085919
+  id: "08e41193-fa58-4f4d-bd23-d4765f09168e"
+  apiqueryparameters: []
+  identification: "op951Carlos_GETAll"
+  description: "get all"
+  operation: "GET"
+  path: "/"
+public: false

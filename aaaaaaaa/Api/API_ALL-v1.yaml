@@ -1,0 +1,27 @@
+---
+createdAt: 1707823410991
+updatedAt: 1728301060803
+id: "b191ce0b-6122-4660-809e-375825df129e"
+identification: "API_ALL"
+user: "developer"
+ontology: "5b2ec4d6-f257-4793-9ca4-b43ca3600159"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "PRUEBAS"
+category: "ALL"
+endpointExt: ""
+state: "DEPRECATED"
+metaInf: "PRUEBAS"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1707823411063
+  updatedAt: 1707823411063
+  id: "8c033e67-0397-401e-bb71-dc5a17889d65"
+  apiqueryparameters: []
+  identification: "API_ALL_GETAll"
+  description: "get all"
+  operation: "GET"
+  path: "/"
+public: false

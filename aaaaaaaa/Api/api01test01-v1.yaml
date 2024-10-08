@@ -1,0 +1,27 @@
+---
+createdAt: 1724754780301
+updatedAt: 1728301060820
+id: "c01bdf89-de19-4bdb-ac9c-1b5fd777f37e"
+identification: "api01test01"
+user: "analytics"
+ontology: "MASTER-Ontology-7"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "api01test01"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "api01test01"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1724754780345
+  updatedAt: 1724754780345
+  id: "81fc7cfd-c735-4948-93f5-89e24523762f"
+  apiqueryparameters: []
+  identification: "api01test01_GETAll"
+  description: "api01test01"
+  operation: "GET"
+  path: "/"
+public: true

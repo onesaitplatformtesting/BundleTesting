@@ -1,0 +1,27 @@
+---
+createdAt: 1719416197070
+updatedAt: 1728301060783
+id: "8428f3f8-dfa8-49f0-9377-382a0e2bbbdf"
+identification: "PruebaApi"
+user: "administrator"
+ontology: "43213b21-a45a-414f-a168-509066c7dac8"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "sdgsgsdgsdg"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "sgsdgssdgsdgsdg"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1719416198441
+  updatedAt: 1719416198441
+  id: "3b8f49c9-deb1-4259-864e-9c116045ed2d"
+  apiqueryparameters: []
+  identification: "PruebaApi_GETAll"
+  description: "ddddddddd"
+  operation: "GET"
+  path: "/"
+public: false

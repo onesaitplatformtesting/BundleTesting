@@ -1,0 +1,92 @@
+---
+createdAt: 1721643697004
+updatedAt: 1728301060754
+id: "4c692cea-a6a6-460d-ba9e-7e1840927450"
+identification: "TEST-API-Automatizacion-POSTMAN-APP"
+user: "developer"
+ontology: "MASTER-Ontology-4"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "API generada para pruebas automáticas"
+category: "ALL"
+state: "CREATED"
+metaInf: "HelsinkiPopulation,TESTING"
+apiType: "INTERNAL_ONTOLOGY"
+apiOperations:
+- createdAt: 1721643697005
+  updatedAt: 1721643697005
+  id: "c2dc4409-8979-4efa-a95d-32a020369735"
+  apiqueryparameters:
+  - createdAt: 1721643697006
+    updatedAt: 1721643697006
+    id: "6f1bb82f-2fb6-4419-9ac8-79fb73421050"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    headerType: "BODY"
+  identification: "TEST-API-Automatizacion-POSTMAN-APP_POST"
+  description: "Inserción de un elemento"
+  operation: "POST"
+  path: "/"
+- createdAt: 1721643697008
+  updatedAt: 1721643697008
+  id: "1c3e560f-6fb5-47f3-b624-d677b46b96d0"
+  apiqueryparameters: []
+  identification: "TEST-API-Automatizacion-POSTMAN-APP_GETAll"
+  description: "Obtiene todos los elementos"
+  operation: "GET"
+  path: "/"
+- createdAt: 1721643697007
+  updatedAt: 1721643697007
+  id: "93768d87-13dc-4293-a10a-ddbe82229303"
+  apiqueryparameters:
+  - createdAt: 1721643697007
+    updatedAt: 1721643697007
+    id: "9b975ed7-bc9b-4a0d-9023-2cd1b3af53aa"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "TEST-API-Automatizacion-POSTMAN-APP_GET"
+  description: "Obtiene el elemento mediante su id"
+  operation: "GET"
+  path: "/{id}"
+- createdAt: 1721643697006
+  updatedAt: 1721643697006
+  id: "4c14f48f-91df-461d-9606-e958399f25d9"
+  apiqueryparameters:
+  - createdAt: 1721643697007
+    updatedAt: 1721643697007
+    id: "b6f8c1a1-ab79-4321-bef3-e3efdd1a5d5c"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    headerType: "BODY"
+  - createdAt: 1721643697006
+    updatedAt: 1721643697006
+    id: "4d39665f-c4cc-4884-aaa8-a08eb91f6745"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "TEST-API-Automatizacion-POSTMAN-APP_PUT"
+  description: "Actualización de un elemento mediante su id"
+  operation: "PUT"
+  path: "/{id}"
+- createdAt: 1721643697004
+  updatedAt: 1721643697004
+  id: "6449f459-3082-4c89-9f85-59c9155794ce"
+  apiqueryparameters:
+  - createdAt: 1721643697005
+    updatedAt: 1721643697005
+    id: "e1253774-5247-4957-a348-4b6944eb2956"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "TEST-API-Automatizacion-POSTMAN-APP_DELETEID"
+  description: "Eliminación de un elemento mediante su id"
+  operation: "DELETE"
+  path: "/{id}"
+public: true

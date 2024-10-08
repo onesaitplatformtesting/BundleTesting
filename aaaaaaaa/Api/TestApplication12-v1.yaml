@@ -1,0 +1,27 @@
+---
+createdAt: 1721033045407
+updatedAt: 1728301060876
+id: "f98fdc05-bc39-469e-a1e0-39f444c7845f"
+identification: "TestApplication12"
+user: "developer"
+ontology: "8f3a12f7-c425-402b-a230-f6f77773ad0b"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "TestApplication12"
+category: "ALL"
+endpointExt: ""
+state: "DEPRECATED"
+metaInf: "TestApplication12,rerrrrr"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1721034279159
+  updatedAt: 1721034279159
+  id: "72c9d40b-f4f0-44e9-9bad-f51262cd93b7"
+  apiqueryparameters: []
+  identification: "TestApplication12_GETAll"
+  description: "TestApplication12"
+  operation: "GET"
+  path: "/"
+public: true

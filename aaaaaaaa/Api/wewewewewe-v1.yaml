@@ -1,0 +1,100 @@
+---
+createdAt: 1728394340069
+updatedAt: 1728394628216
+id: "428779f2-3f6c-4b20-8481-b8ad3c63c46e"
+identification: "wewewewewe"
+user: "administrator"
+ontology: "d11924b7-df01-4197-b86c-ef02d5e123f2"
+ssl_certificate: false
+userApiAccesses:
+- createdAt: 1728394518998
+  updatedAt: 1728394518998
+  id: "2c8dc0be-e03a-4c23-a867-4b2be1a857eb"
+  user: "developer"
+numversion: 1
+description: "wewewewewe"
+category: "ALL"
+endpointExt: ""
+state: "DEVELOPMENT"
+metaInf: "wewewewe"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1728394522280
+  updatedAt: 1728394522280
+  id: "2e1af507-c90f-4667-9537-1f32483b3033"
+  apiqueryparameters:
+  - createdAt: 1728394522282
+    updatedAt: 1728394522282
+    id: "6b60301e-df31-408e-97f4-829239511c5d"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  - createdAt: 1728394522281
+    updatedAt: 1728394522281
+    id: "efdbe488-2090-471a-941f-afe88432b759"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  identification: "wewewewewe_PUT"
+  description: "we"
+  operation: "PUT"
+  path: "/{id}"
+- createdAt: 1728394522280
+  updatedAt: 1728394522280
+  id: "d5f6cde7-8220-4b2c-be20-e8a7333e5b5f"
+  apiqueryparameters: []
+  identification: "wewewewewe_GETAll"
+  description: "we"
+  operation: "GET"
+  path: "/"
+- createdAt: 1728394522283
+  updatedAt: 1728394522283
+  id: "21807cc0-54b8-495d-850a-c695cadd8963"
+  apiqueryparameters:
+  - createdAt: 1728394522283
+    updatedAt: 1728394522283
+    id: "ddb668ac-3bcc-42d0-a1a7-691440611aef"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  identification: "wewewewewe_POST"
+  description: "we"
+  operation: "POST"
+  path: "/"
+- createdAt: 1728394522284
+  updatedAt: 1728394522284
+  id: "bbee2e3e-b4e2-4b0d-b252-62c913861d13"
+  apiqueryparameters:
+  - createdAt: 1728394522284
+    updatedAt: 1728394522284
+    id: "ac6b1eb0-13a4-4e3f-9190-c9b9f7755bab"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "wewewewewe_DELETEID"
+  description: "we"
+  operation: "DELETE"
+  path: "/{id}"
+- createdAt: 1728394522285
+  updatedAt: 1728394522285
+  id: "c91a0d05-dfb5-441c-bf2f-87e95506de9d"
+  apiqueryparameters:
+  - createdAt: 1728394522285
+    updatedAt: 1728394522285
+    id: "ffc60f8b-449e-4e9d-9e79-b70385c6b12f"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "wewewewewe_GET"
+  description: "we"
+  operation: "GET"
+  path: "/{id}"
+public: false

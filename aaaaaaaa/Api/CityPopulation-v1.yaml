@@ -1,0 +1,81 @@
+---
+createdAt: 1727027917170
+updatedAt: 1728301060752
+id: "47f8689a-71c0-4b13-9644-940fa26a6772"
+identification: "CityPopulation"
+user: "jfgpimpollo"
+ontology: "MASTER-Ontology-7"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "City Population"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "population"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1727027917207
+  updatedAt: 1727027917207
+  id: "a1a78149-9379-4bcd-9a62-83d915e00c23"
+  apiqueryparameters:
+  - createdAt: 1727027917212
+    updatedAt: 1727027917212
+    id: "033fb8ee-fbcb-48ad-a87d-ed02c403df2a"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  identification: "CityPopulation_POST"
+  description: "Insert"
+  operation: "POST"
+  path: "/"
+- createdAt: 1727027917216
+  updatedAt: 1727027917216
+  id: "0eff6ba5-13ac-4fd4-b8e8-df155a2661f1"
+  apiqueryparameters:
+  - createdAt: 1727027917217
+    updatedAt: 1727027917217
+    id: "33eaa618-d809-497a-b194-5845eaff1ca5"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "CityPopulation_GET"
+  description: "Get By Id"
+  operation: "GET"
+  path: "/{id}"
+- createdAt: 1727027917216
+  updatedAt: 1727027917216
+  id: "3ec57bec-d7a4-4836-a290-9dcefacae49c"
+  apiqueryparameters: []
+  identification: "CityPopulation_GETAll"
+  description: "Get all"
+  operation: "GET"
+  path: "/"
+- createdAt: 1727027917215
+  updatedAt: 1727027917215
+  id: "d7a43df5-2e57-4007-8a61-7dda90bee3a6"
+  apiqueryparameters:
+  - createdAt: 1727027917216
+    updatedAt: 1727027917216
+    id: "89725348-98b1-4c10-80eb-62cccbc88462"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  - createdAt: 1727027917215
+    updatedAt: 1727027917215
+    id: "aa1fb1d3-4c68-4dc9-8ea2-14dde22b4da0"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  identification: "CityPopulation_PUT"
+  description: "Update "
+  operation: "PUT"
+  path: "/{id}"
+public: true

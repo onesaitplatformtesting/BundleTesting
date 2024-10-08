@@ -1,0 +1,96 @@
+---
+createdAt: 1721298197419
+updatedAt: 1728301060780
+id: "828f5ade-16eb-49c1-9090-0cc298239511"
+identification: "TEST-API-Estado-publicado"
+user: "developer"
+ontology: "MASTER-Ontology-10"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: " TEST-API-Estado-publicado"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: " TEST-API-Estado-publicado"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1721298197434
+  updatedAt: 1721298197434
+  id: "43876123-42d1-4244-a2da-67fbca683e6a"
+  apiqueryparameters:
+  - createdAt: 1721298197435
+    updatedAt: 1721298197435
+    id: "61d82852-0c42-4f3f-b3b7-033d4841c5a0"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  identification: "TEST-API-Estado-publicado_POST"
+  description: " TEST-API-Estado-publicado"
+  operation: "POST"
+  path: "/"
+- createdAt: 1721298197435
+  updatedAt: 1721298197435
+  id: "7e8c4a98-5b68-457d-b243-c049b3430d2e"
+  apiqueryparameters:
+  - createdAt: 1721298197435
+    updatedAt: 1721298197435
+    id: "cdde14ff-2d5b-4825-aeed-96fc43f50fc4"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "TEST-API-Estado-publicado_DELETEID"
+  description: " TEST-API-Estado-publicado"
+  operation: "DELETE"
+  path: "/{id}"
+- createdAt: 1721298197433
+  updatedAt: 1721298197433
+  id: "4b5ecee1-8efa-433d-8dca-773b2580273a"
+  apiqueryparameters:
+  - createdAt: 1721298197433
+    updatedAt: 1721298197433
+    id: "6f8f133f-7cea-4180-b086-dc527c653f65"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  - createdAt: 1721298197433
+    updatedAt: 1721298197433
+    id: "de434a9a-ac4d-450d-aa46-9005537a4f28"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  identification: "TEST-API-Estado-publicado_PUT"
+  description: " TEST-API-Estado-publicado"
+  operation: "PUT"
+  path: "/{id}"
+- createdAt: 1721298197432
+  updatedAt: 1721298197432
+  id: "2705b0b9-8072-4c53-8aa0-1b4eaa95a54f"
+  apiqueryparameters: []
+  identification: "TEST-API-Estado-publicado_GETAll"
+  description: " TEST-API-Estado-publicado"
+  operation: "GET"
+  path: "/"
+- createdAt: 1721298197434
+  updatedAt: 1721298197434
+  id: "cb789d78-b2af-4c96-b0bc-92fd60da9e5b"
+  apiqueryparameters:
+  - createdAt: 1721298197434
+    updatedAt: 1721298197434
+    id: "4c18ee43-1078-47cf-aa70-a597ffd20b1c"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "TEST-API-Estado-publicado_GET"
+  description: " TEST-API-Estado-publicado"
+  operation: "GET"
+  path: "/{id}"
+public: true

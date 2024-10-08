@@ -1,0 +1,27 @@
+---
+createdAt: 1713515256639
+updatedAt: 1728301060829
+id: "cd23ed4b-0f81-4bcf-a339-cd4191c9f62c"
+identification: "OntolApiTest"
+user: "administrator"
+ontology: "MASTER-Ontology-10"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "asdfasdf"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "asdfasdf"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1713515256708
+  updatedAt: 1713515256708
+  id: "e1773511-0557-416a-8ce9-f1197f3c825f"
+  apiqueryparameters: []
+  identification: "OntolApiTest_GETAll"
+  description: "all"
+  operation: "GET"
+  path: "/"
+public: false

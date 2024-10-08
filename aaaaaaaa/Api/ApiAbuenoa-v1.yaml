@@ -1,0 +1,43 @@
+---
+createdAt: 1721319540910
+updatedAt: 1728301060715
+id: "28feaa54-7a6c-4443-9162-c1ef951f71f3"
+identification: "ApiAbuenoa"
+user: "administrator"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "My API de prueba"
+category: "ALL"
+endpointExt: "http://flowengineservice:5050/adminDomain"
+state: "CREATED"
+apiType: "NODE_RED"
+apiOperations:
+- createdAt: 1727081290315
+  updatedAt: 1727081290315
+  id: "96a22c4a-fbdb-479c-9591-a35b99aa8f1a"
+  apiqueryparameters:
+  - createdAt: 1727081290316
+    updatedAt: 1727081290316
+    id: "59a581fd-a8d4-47ba-84ee-bfa5facaa423"
+    name: "element"
+    dataType: "STRING"
+    description: ""
+    condition: "REQUIRED"
+    headerType: "QUERY"
+  identification: "/delete"
+  description: "delete"
+  operation: "DELETE"
+  endpoint: "/9d89d65ec4efd664/delete/"
+  path: "/delete/"
+- createdAt: 1727081290316
+  updatedAt: 1727081290316
+  id: "86598452-89d6-43d5-94d4-965223e04189"
+  apiqueryparameters: []
+  identification: "getall"
+  description: "laskdjfalsdkfj"
+  operation: "GET"
+  endpoint: "/4b142cea493f0ffb/getall/"
+  path: "/getall/"
+public: false
+ontology: null

@@ -1,0 +1,96 @@
+---
+createdAt: 1721296185020
+updatedAt: 1728301060777
+id: "7fd617e6-0b11-4a5d-b399-5462d9a8ca34"
+identification: "TEST-API-Token-privada"
+user: "developer"
+ontology: "MASTER-Ontology-10"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "dzjfkjsdfkjkdfjdf"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "TEST-API-Token-privada,TEST-API-Token-privadaTEST-API-Token-privada"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1721296185056
+  updatedAt: 1721296185056
+  id: "ed57aa01-8f45-4ab9-8df9-15b0c58ad62a"
+  apiqueryparameters:
+  - createdAt: 1721296185056
+    updatedAt: 1721296185056
+    id: "7c65ec30-3c75-4015-86fd-a569102d4df2"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "TEST-API-Token-privada_DELETEID"
+  description: "TEST-API-Token-privadas"
+  operation: "DELETE"
+  path: "/{id}"
+- createdAt: 1721296185055
+  updatedAt: 1721296185055
+  id: "daec0692-1fb6-4341-8b64-e31986483f2c"
+  apiqueryparameters:
+  - createdAt: 1721296185055
+    updatedAt: 1721296185055
+    id: "d07f7448-7afd-4e75-b348-aa0bec7d5b9d"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "TEST-API-Token-privada_GET"
+  description: "TEST-API-Token-privadaddd"
+  operation: "GET"
+  path: "/{id}"
+- createdAt: 1721296185054
+  updatedAt: 1721296185054
+  id: "2155a229-3dc1-4924-ad1d-c01bad36312c"
+  apiqueryparameters: []
+  identification: "TEST-API-Token-privada_GETAll"
+  description: "TEST-API-Token-privadadd"
+  operation: "GET"
+  path: "/"
+- createdAt: 1721296185056
+  updatedAt: 1721296185056
+  id: "19c45781-5408-4d29-8dcc-8aed12d1324b"
+  apiqueryparameters:
+  - createdAt: 1721296185057
+    updatedAt: 1721296185057
+    id: "197e2a07-a0e3-40d9-9a0c-951c9134fc3f"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  identification: "TEST-API-Token-privada_POST"
+  description: "TEST-API-Token-privadaTEST-API-Token-privadaTEST-API-Token-privada"
+  operation: "POST"
+  path: "/"
+- createdAt: 1721296185053
+  updatedAt: 1721296185053
+  id: "44fdfbed-b412-4f5e-b427-b3199a572ee5"
+  apiqueryparameters:
+  - createdAt: 1721296185054
+    updatedAt: 1721296185054
+    id: "d6f82fc7-67d3-40ca-867b-c196858ce736"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  - createdAt: 1721296185054
+    updatedAt: 1721296185054
+    id: "680d4aa8-2f07-4191-8a31-2c2c86fff797"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "TEST-API-Token-privada_PUT"
+  description: "TEST-API-Token-privadas"
+  operation: "PUT"
+  path: "/{id}"
+public: true

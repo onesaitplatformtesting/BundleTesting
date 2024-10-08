@@ -1,0 +1,96 @@
+---
+createdAt: 1716374131520
+updatedAt: 1728301060718
+id: "2b05aace-5a9e-4c53-a48b-371bc947e349"
+identification: "ibermutua-loadprocess"
+user: "ibermutua_poc"
+ontology: "8cbaa484-7de1-4ddb-99de-004f7cc30760"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "ibermutua"
+category: "ALL"
+endpointExt: ""
+state: "DEVELOPMENT"
+metaInf: "ibermutua"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1716374131634
+  updatedAt: 1716374131634
+  id: "647dbcc7-c02f-4d85-8483-194ad478566d"
+  apiqueryparameters:
+  - createdAt: 1716374131634
+    updatedAt: 1716374131634
+    id: "ff803e36-4893-4351-b0f7-683e31501b15"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "ibermutua-loadprocess_DELETEID"
+  description: "delete"
+  operation: "DELETE"
+  path: "/{id}"
+- createdAt: 1716374131614
+  updatedAt: 1716374131614
+  id: "60b602aa-e2ab-4dc9-bdbf-821634b22cc1"
+  apiqueryparameters:
+  - createdAt: 1716374131626
+    updatedAt: 1716374131626
+    id: "0a91cc9e-0d37-491b-8d18-022d192a452e"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  - createdAt: 1716374131633
+    updatedAt: 1716374131633
+    id: "6d314861-04b2-4989-9198-8e3d8e635812"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  identification: "ibermutua-loadprocess_PUT"
+  description: "update"
+  operation: "PUT"
+  path: "/{id}"
+- createdAt: 1716374131635
+  updatedAt: 1716374131635
+  id: "c4b115a8-0f45-4e03-8e60-d2e7c4dcdd8c"
+  apiqueryparameters: []
+  identification: "ibermutua-loadprocess_GETAll"
+  description: "all"
+  operation: "GET"
+  path: "/"
+- createdAt: 1716374131634
+  updatedAt: 1716374131634
+  id: "70f556c2-9928-4f81-807a-6d91b996b19f"
+  apiqueryparameters:
+  - createdAt: 1716374131635
+    updatedAt: 1716374131635
+    id: "8314ce5e-c9a0-4dfd-9fde-dbaa0834de34"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "ibermutua-loadprocess_GET"
+  description: "query by id"
+  operation: "GET"
+  path: "/{id}"
+- createdAt: 1716374131635
+  updatedAt: 1716374131635
+  id: "e50d8f87-da67-4d2e-9141-f968d0cca91d"
+  apiqueryparameters:
+  - createdAt: 1716374131635
+    updatedAt: 1716374131635
+    id: "30984d39-6bfc-45af-ad90-e1915384c7f1"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  identification: "ibermutua-loadprocess_POST"
+  description: "insert"
+  operation: "POST"
+  path: "/"
+public: true

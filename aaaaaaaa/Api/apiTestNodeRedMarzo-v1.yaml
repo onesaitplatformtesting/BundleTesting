@@ -1,0 +1,26 @@
+---
+createdAt: 1712738502917
+updatedAt: 1728301060699
+id: "158cacf2-6a45-40aa-bda5-4b568773c66c"
+identification: "apiTestNodeRedMarzo"
+user: "administrator"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "apiTestNodeRedMarzo"
+category: "SOCIAL"
+endpointExt: "http://flowengineservice:5050/adminDomain"
+state: "CREATED"
+apiType: "NODE_RED"
+apiOperations:
+- createdAt: 1727081290415
+  updatedAt: 1727081290415
+  id: "76c5fe57-1985-4950-a75f-0723fc484ed9"
+  apiqueryparameters: []
+  identification: "getAll"
+  description: "GET ALL"
+  operation: "GET"
+  endpoint: "/0c71f4d18f8de129/getAll/"
+  path: "/getAll/"
+public: true
+ontology: null

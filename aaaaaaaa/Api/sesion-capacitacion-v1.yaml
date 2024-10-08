@@ -1,0 +1,133 @@
+---
+createdAt: 1727183718526
+updatedAt: 1728301060817
+id: "bf1dae34-5d82-4cd0-9cc9-20cda1d2dab1"
+identification: "sesion-capacitacion"
+user: "jfgpimpollo"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "Api Demo segittur"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "segittur"
+apiType: "EXTERNAL_FROM_JSON"
+swaggerJson: "{\r\n    \"openapi\": \"3.0.1\",\r\n    \"info\": {\r\n        \"title\"\
+  : \"OpenAPI definition - Segittur template\",\r\n        \"description\": \"OpenAPI\
+  \ definition - Segittur template.\",\r\n        \"version\": \"1.0\"\r\n    },\r\
+  \n    \"servers\": [{\r\n        \"url\": \"https://development.onesaitplatform.com/segittur\"\
+  \r\n    }],\r\n    \"security\": [{\r\n        \"Bearer Authentication\": []\r\n\
+  \    }],\r\n    \"paths\": {\r\n        \"/api/whoami\": {\r\n            \"get\"\
+  : {\r\n                \"tags\": [\"user-controller\"],\r\n                \"summary\"\
+  : \"Get information about your user\",\r\n                \"operationId\": \"whoAmI\"\
+  ,\r\n                \"responses\": {\r\n                    \"200\": {\r\n    \
+  \                    \"description\": \"The information was successfully received\"\
+  ,\r\n                        \"content\": {\r\n                            \"application/json\"\
+  : {\r\n                                \"schema\": {\r\n                       \
+  \             \"type\": \"string\"\r\n                                }\r\n    \
+  \                        }\r\n                        }\r\n                    },\r\
+  \n                    \"400\": {\r\n                        \"description\": \"\
+  Invalid message\"\r\n                    },\r\n                    \"401\": {\r\n\
+  \                        \"description\": \"User is not authenticated or not authorized\"\
+  \r\n                    },\r\n                    \"404\": {\r\n               \
+  \         \"description\": \"Error receiving the information\"\r\n             \
+  \       }\r\n                }\r\n            }\r\n        },\r\n        \"/api/c1/apikpis/v1/KPI006\"\
+  : {\r\n            \"get\": {\r\n                \"tags\": [\"kpi-controller\"],\r\
+  \n                \"summary\": \"Get usuarios ciudadanos activos\",\r\n        \
+  \        \"operationId\": \"getUsuariosCiudadanosActivos\",\r\n                \"\
+  responses\": {\r\n                    \"200\": {\r\n                        \"description\"\
+  : \"The information was successfully received\",\r\n                        \"content\"\
+  : {\r\n                            \"application/json\": {\r\n                 \
+  \               \"schema\": {\r\n                                    \"type\": \"\
+  string\"\r\n                                }\r\n                            }\r\
+  \n                        }\r\n                    },\r\n                    \"\
+  400\": {\r\n                        \"description\": \"Invalid message\"\r\n   \
+  \                 },\r\n                    \"401\": {\r\n                     \
+  \   \"description\": \"User is not authenticated or not authorized\"\r\n       \
+  \             },\r\n                    \"404\": {\r\n                        \"\
+  description\": \"Error receiving the information\"\r\n                    }\r\n\
+  \                }\r\n            }\r\n        },\r\n        \"/api/c1/apikpis/v1/KPI005\"\
+  : {\r\n            \"get\": {\r\n                \"tags\": [\"kpi-controller\"],\r\
+  \n                \"summary\": \"Get destinos por servicio\",\r\n              \
+  \  \"operationId\": \"getDestinosPorServicio\",\r\n                \"responses\"\
+  : {\r\n                    \"200\": {\r\n                        \"description\"\
+  : \"The information was successfully received\",\r\n                        \"content\"\
+  : {\r\n                            \"application/json\": {\r\n                 \
+  \               \"schema\": {\r\n                                    \"type\": \"\
+  string\"\r\n                                }\r\n                            }\r\
+  \n                        }\r\n                    },\r\n                    \"\
+  400\": {\r\n                        \"description\": \"Invalid message\"\r\n   \
+  \                 },\r\n                    \"401\": {\r\n                     \
+  \   \"description\": \"User is not authenticated or not authorized\"\r\n       \
+  \             },\r\n                    \"404\": {\r\n                        \"\
+  description\": \"Error receiving the information\"\r\n                    }\r\n\
+  \                }\r\n            }\r\n        },\r\n        \"/api/c1/apikpis/v1/KPI004\"\
+  : {\r\n            \"get\": {\r\n                \"tags\": [\"kpi-controller\"],\r\
+  \n                \"summary\": \"Get usuarios activos\",\r\n                \"operationId\"\
+  : \"getUsuariosActivos\",\r\n                \"responses\": {\r\n              \
+  \      \"200\": {\r\n                        \"description\": \"The information\
+  \ was successfully received\",\r\n                        \"content\": {\r\n   \
+  \                         \"application/json\": {\r\n                          \
+  \      \"schema\": {\r\n                                    \"type\": \"string\"\
+  \r\n                                }\r\n                            }\r\n     \
+  \                   }\r\n                    },\r\n                    \"400\":\
+  \ {\r\n                        \"description\": \"Invalid message\"\r\n        \
+  \            },\r\n                    \"401\": {\r\n                        \"\
+  description\": \"User is not authenticated or not authorized\"\r\n             \
+  \       },\r\n                    \"404\": {\r\n                        \"description\"\
+  : \"Error receiving the information\"\r\n                    }\r\n             \
+  \   }\r\n            }\r\n        },\r\n        \"/api/c1/apikpis/v1/KPI003\": {\r\
+  \n            \"get\": {\r\n                \"tags\": [\"kpi-controller\"],\r\n\
+  \                \"summary\": \"Get consultas por destino\",\r\n               \
+  \ \"operationId\": \"getConsultasPorDestino\",\r\n                \"responses\"\
+  : {\r\n                    \"200\": {\r\n                        \"description\"\
+  : \"The information was successfully received\",\r\n                        \"content\"\
+  : {\r\n                            \"application/json\": {\r\n                 \
+  \               \"schema\": {\r\n                                    \"type\": \"\
+  string\"\r\n                                }\r\n                            }\r\
+  \n                        }\r\n                    },\r\n                    \"\
+  400\": {\r\n                        \"description\": \"Invalid message\"\r\n   \
+  \                 },\r\n                    \"401\": {\r\n                     \
+  \   \"description\": \"User is not authenticated or not authorized\"\r\n       \
+  \             },\r\n                    \"404\": {\r\n                        \"\
+  description\": \"Error receiving the information\"\r\n                    }\r\n\
+  \                }\r\n            }\r\n        },\r\n        \"/api/c1/apikpis/v1/KPI002\"\
+  : {\r\n            \"get\": {\r\n                \"tags\": [\"kpi-controller\"],\r\
+  \n                \"summary\": \"Get accesos por destino y componente\",\r\n   \
+  \             \"operationId\": \"getAccesosPorDestinoYComponente\",\r\n        \
+  \        \"responses\": {\r\n                    \"200\": {\r\n                \
+  \        \"description\": \"The information was successfully received\",\r\n   \
+  \                     \"content\": {\r\n                            \"application/json\"\
+  : {\r\n                                \"schema\": {\r\n                       \
+  \             \"type\": \"string\"\r\n                                }\r\n    \
+  \                        }\r\n                        }\r\n                    },\r\
+  \n                    \"400\": {\r\n                        \"description\": \"\
+  Invalid message\"\r\n                    },\r\n                    \"401\": {\r\n\
+  \                        \"description\": \"User is not authenticated or not authorized\"\
+  \r\n                    },\r\n                    \"404\": {\r\n               \
+  \         \"description\": \"Error receiving the information\"\r\n             \
+  \       }\r\n                }\r\n            }\r\n        },\r\n        \"/api/c1/apikpis/v1/KPI001\"\
+  : {\r\n            \"get\": {\r\n                \"tags\": [\"kpi-controller\"],\r\
+  \n                \"summary\": \"Get gestores PID por destino\",\r\n           \
+  \     \"operationId\": \"getGestoresPIDPorDestino\",\r\n                \"responses\"\
+  : {\r\n                    \"200\": {\r\n                        \"description\"\
+  : \"The information was successfully received\",\r\n                        \"content\"\
+  : {\r\n                            \"application/json\": {\r\n                 \
+  \               \"schema\": {\r\n                                    \"type\": \"\
+  string\"\r\n                                }\r\n                            }\r\
+  \n                        }\r\n                    },\r\n                    \"\
+  400\": {\r\n                        \"description\": \"Invalid message\"\r\n   \
+  \                 },\r\n                    \"401\": {\r\n                     \
+  \   \"description\": \"User is not authenticated or not authorized\"\r\n       \
+  \             },\r\n                    \"404\": {\r\n                        \"\
+  description\": \"Error receiving the information\"\r\n                    }\r\n\
+  \                }\r\n            }\r\n        }\r\n    },\r\n    \"components\"\
+  : {\r\n        \"securitySchemes\": {\r\n            \"Bearer Authentication\":\
+  \ {\r\n                \"type\": \"http\",\r\n                \"scheme\": \"bearer\"\
+  ,\r\n                \"bearerFormat\": \"JWT\"\r\n            }\r\n        }\r\n\
+  \    }\r\n}"
+graviteeId: "41914ebd-aa74-4c91-914e-bdaa742c9136"
+apiOperations: []
+public: false
+ontology: null

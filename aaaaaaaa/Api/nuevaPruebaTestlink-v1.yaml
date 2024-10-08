@@ -1,0 +1,96 @@
+---
+createdAt: 1721216061834
+updatedAt: 1728301060836
+id: "df5a100d-be46-4f28-971a-c3560bb75f13"
+identification: "nuevaPruebaTestlink"
+user: "administrator"
+ontology: "MASTER-Ontology-10"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "nuevaPruebaTestlink"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "nuevaPruebaTestlink"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1721216061867
+  updatedAt: 1721216061867
+  id: "45edc6fb-d035-4354-b813-5464977c0b43"
+  apiqueryparameters:
+  - createdAt: 1721216061867
+    updatedAt: 1721216061867
+    id: "35366b47-0ac9-44f3-8f6a-dd48440e6ddd"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "nuevaPruebaTestlink_DELETEID"
+  description: "nuevaPruebaTestlink"
+  operation: "DELETE"
+  path: "/{id}"
+- createdAt: 1721216061858
+  updatedAt: 1721216061858
+  id: "60257d83-e5b6-4bbb-8112-360172af417e"
+  apiqueryparameters:
+  - createdAt: 1721216061865
+    updatedAt: 1721216061865
+    id: "63a84c43-49c3-477f-83a1-7fc9cf15de28"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  - createdAt: 1721216061863
+    updatedAt: 1721216061863
+    id: "f65cc4b8-be6c-4c9f-af74-2e44fafd78fb"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "nuevaPruebaTestlink_PUT"
+  description: "nuevaPruebaTestlink"
+  operation: "PUT"
+  path: "/{id}"
+- createdAt: 1721216061866
+  updatedAt: 1721216061866
+  id: "024cc756-3e57-47b9-ac1e-619d9bb48a74"
+  apiqueryparameters:
+  - createdAt: 1721216061866
+    updatedAt: 1721216061866
+    id: "bea9f087-b19f-44e1-b0eb-d8cd1a6b6d61"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "nuevaPruebaTestlink_GET"
+  description: "nuevaPruebaTestlink"
+  operation: "GET"
+  path: "/{id}"
+- createdAt: 1721216061867
+  updatedAt: 1721216061867
+  id: "e361eb50-0232-4bc5-a17c-29b12c206418"
+  apiqueryparameters: []
+  identification: "nuevaPruebaTestlink_GETAll"
+  description: "nuevo"
+  operation: "GET"
+  path: "/"
+- createdAt: 1721216061868
+  updatedAt: 1721216061868
+  id: "d24a6e53-aac3-45f2-83ad-39ddc820fadc"
+  apiqueryparameters:
+  - createdAt: 1721216061868
+    updatedAt: 1721216061868
+    id: "b42b5aad-fb01-4fec-bc13-8b201cbf2b40"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  identification: "nuevaPruebaTestlink_POST"
+  description: "nuevaPruebaTestlink"
+  operation: "POST"
+  path: "/"
+public: false

@@ -1,0 +1,93 @@
+---
+createdAt: 1713777898671
+updatedAt: 1728301060729
+id: "2e7e06c9-45ef-4fd8-b8de-65b66468ba59"
+identification: "TEST-API-Operaciones-publica"
+user: "administrator"
+ontology: "MASTER-Ontology-4"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "API generada para pruebas automáticas"
+category: "ALL"
+state: "CREATED"
+metaInf: "TEST-API-Operaciones,HelsinkiPopulation,TESTING"
+apilimit: 1
+apiType: "INTERNAL_ONTOLOGY"
+apiOperations:
+- createdAt: 1713777898697
+  updatedAt: 1713777898697
+  id: "d427fbac-fb17-41c3-91d0-b8f43705a128"
+  apiqueryparameters:
+  - createdAt: 1713777898697
+    updatedAt: 1713777898697
+    id: "1ddc7fd9-e7d7-4292-9c91-ef527268b0fe"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "TEST-API-Operaciones-publica_DELETEID"
+  description: "Eliminación de un elemento mediante su id"
+  operation: "DELETE"
+  path: "/{id}"
+- createdAt: 1713777898696
+  updatedAt: 1713777898696
+  id: "53324ced-adc5-4beb-8d4b-b168a5c6b39f"
+  apiqueryparameters:
+  - createdAt: 1713777898696
+    updatedAt: 1713777898696
+    id: "f6fe69c4-f0fa-4d68-a037-9b516cd2571c"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    headerType: "BODY"
+  - createdAt: 1713777898696
+    updatedAt: 1713777898696
+    id: "1124a772-9b77-4337-9801-7549b73df0d3"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "TEST-API-Operaciones-publica_PUT"
+  description: "Actualización de un elemento mediante su id"
+  operation: "PUT"
+  path: "/{id}"
+- createdAt: 1713777898689
+  updatedAt: 1713777898689
+  id: "586bc66f-9cd0-4d1f-a811-e88d1679f2f3"
+  apiqueryparameters:
+  - createdAt: 1713777898690
+    updatedAt: 1713777898690
+    id: "f7bb6212-6a9f-493a-839b-8ff188679bf3"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    headerType: "BODY"
+  identification: "TEST-API-Operaciones-publica_POST"
+  description: "Inserción de un elemento"
+  operation: "POST"
+  path: "/"
+- createdAt: 1713777898695
+  updatedAt: 1713777898695
+  id: "a3a3b9ae-27b8-4c5f-b5b9-1a60fe01c686"
+  apiqueryparameters:
+  - createdAt: 1713777898695
+    updatedAt: 1713777898695
+    id: "3f5dc1da-a5eb-497d-9225-d24d9e214281"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "TEST-API-Operaciones-publica_GET"
+  description: "Obtiene el elemento mediante su id"
+  operation: "GET"
+  path: "/{id}"
+- createdAt: 1713777898684
+  updatedAt: 1713777898684
+  id: "12eb251f-c8cd-464b-b447-6c14695d8baa"
+  apiqueryparameters: []
+  identification: "TEST-API-Operaciones-publica_GETAll"
+  description: "Obtiene todos los elementos"
+  operation: "GET"
+  path: "/"
+public: true

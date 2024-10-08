@@ -1,0 +1,27 @@
+---
+createdAt: 1714380851324
+updatedAt: 1728301060762
+id: "51324db9-8aad-4616-ae46-f32d425bc712"
+identification: "apiAPIM"
+user: "abuenoa"
+ontology: "b08b5d9e-f43f-4413-9bcb-42d528402b9d"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "apiAPIM"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "apiAPIM"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1714380851538
+  updatedAt: 1714380851538
+  id: "47510a9b-08ff-48a7-b732-0403001715c5"
+  apiqueryparameters: []
+  identification: "apiAPIM_GETAll"
+  description: "apiAPIM"
+  operation: "GET"
+  path: "/"
+public: false

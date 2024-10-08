@@ -1,0 +1,43 @@
+---
+createdAt: 1706106305373
+updatedAt: 1706106305373
+id: "MASTER-Ontology-1"
+identification: "OntologyMaster"
+user: "developer"
+jsonSchema:
+  $schema: "http://json-schema.org/draft-07/schema#"
+  title: "DataModel EmptyBase Schema"
+  type: "object"
+  required:
+  - "EmptyBase"
+  properties:
+    EmptyBase:
+      type: "string"
+      $ref: "#/datos"
+  datos:
+    description: "Properties for DataModel EmptyBase"
+    type: "object"
+    required: []
+    properties: {}
+dataModel: "MASTER-DataModel-5"
+active: true
+contextDataEnabled: true
+rtdbClean: false
+rtdbCleanLapse: "NEVER"
+rtdbToHdb: false
+rtdbToHdbStorage: "MONGO_GRIDFS"
+description: "Ontology created as Master Data"
+metainf: "OntologyMaster"
+ontologyUserAccesses: []
+rtdbDatasource: "MONGO"
+allowsCypherFields: false
+allowsCreateTopic: false
+allowsCreateNotificationTopic: false
+allowsNotificationBpm: false
+allowsCreateMqttTopic: false
+supportsJsonLd: false
+enableDataClass: false
+public: false
+ontologyKPI: null
+ontologyAI: null
+ontologyTimeSeries: null

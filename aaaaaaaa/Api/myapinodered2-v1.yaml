@@ -1,0 +1,26 @@
+---
+createdAt: 1721319541045
+updatedAt: 1728301060811
+id: "b7c3ab9c-71c1-4d57-9d60-036d0aeffc78"
+identification: "myapinodered2"
+user: "administrator"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "myapinodered1"
+category: "ALL"
+endpointExt: "http://flowengineservice:5050/adminDomain"
+state: "CREATED"
+apiType: "NODE_RED"
+apiOperations:
+- createdAt: 1727081290399
+  updatedAt: 1727081290399
+  id: "c3d6fadf-cab0-4108-886f-66477e8f0e66"
+  apiqueryparameters: []
+  identification: "getAll"
+  description: "getAll"
+  operation: "GET"
+  endpoint: "/c765869c99cbef0a/getAll/"
+  path: "/getAll/"
+public: false
+ontology: null

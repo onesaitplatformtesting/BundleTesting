@@ -1,0 +1,58 @@
+---
+createdAt: 1721394998043
+updatedAt: 1728301060796
+id: "a364097c-fe44-4bda-8be4-5d362c53d050"
+identification: "apinuevatracing"
+user: "administrator"
+ontology: "MASTER-Ontology-Restaurant-1"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "pruebas"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "pruebas"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1721394998185
+  updatedAt: 1721394998185
+  id: "e5d8cff3-ce8d-44a3-90c4-b56b617c03b2"
+  apiqueryparameters:
+  - createdAt: 1721394998191
+    updatedAt: 1721394998191
+    id: "bb3887e6-2936-4c48-86f5-2134f59a9d8e"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "apinuevatracing_GET"
+  description: "id"
+  operation: "GET"
+  path: "/{id}"
+- createdAt: 1721394998197
+  updatedAt: 1721394998197
+  id: "5faeadfd-3ff7-4ec9-b24a-2601c03fa39e"
+  apiqueryparameters:
+  - createdAt: 1721394998197
+    updatedAt: 1721394998197
+    id: "62b7f6ba-ce4b-4549-9cc1-d9d3ee8a5651"
+    name: "body"
+    dataType: "STRING"
+    description: ""
+    value: ""
+    headerType: "BODY"
+  identification: "apinuevatracing_POST"
+  description: "post"
+  operation: "POST"
+  path: "/"
+- createdAt: 1721394998198
+  updatedAt: 1721394998198
+  id: "058eb162-157e-4816-bfb5-9ca99f45642a"
+  apiqueryparameters: []
+  identification: "apinuevatracing_GETAll"
+  description: "all"
+  operation: "GET"
+  path: "/"
+public: true

@@ -1,0 +1,27 @@
+---
+createdAt: 1721302234919
+updatedAt: 1728301060659
+id: "01381d79-f545-4647-a884-c276c4591b0b"
+identification: "testupgrade"
+user: "developer"
+ontology: "MASTER-Ontology-10"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 2
+description: "qweqwewqe"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "wqeqwe"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1721302234942
+  updatedAt: 1721302234942
+  id: "cb3d412d-e74c-4eb4-bc10-46876bfb595f"
+  apiqueryparameters: []
+  identification: "testupgrade_GETAll"
+  description: "qweqwe"
+  operation: "GET"
+  path: "/"
+public: false
