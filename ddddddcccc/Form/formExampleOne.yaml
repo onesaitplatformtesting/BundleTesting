@@ -1,0 +1,80 @@
+---
+createdAt: 1716892110000
+updatedAt: 1717051776000
+id: "06ed70b2-1cdd-11ef-9835-92c3fba00072"
+identification: "formExampleOne"
+user: "analytics"
+jsonSchema: "{\"display\":\"form\",\"components\":[{\"label\":\"Table\",\"cellAlignment\"\
+  :\"right\",\"float\":\"float-end\",\"condensed\":true,\"fitcontent\":true,\"key\"\
+  :\"table\",\"type\":\"table\",\"numRows\":1,\"numCols\":1,\"input\":false,\"tableView\"\
+  :false,\"rows\":[[{\"components\":[{\"label\":\"\",\"action\":\"redirect\",\"showValidations\"\
+  :false,\"leftIcon\":\"op-icon-plus\",\"tableView\":false,\"key\":\"button\",\"type\"\
+  :\"button\",\"saveOnEnter\":false,\"filtersubmission\":false,\"input\":\"false\"\
+  ,\"persistent\":\"client-only\",\"id\":\"ertr7gr0\",\"placeholder\":\"\",\"prefix\"\
+  :\"\",\"customClass\":\"\",\"suffix\":\"\",\"multiple\":false,\"defaultValue\":false,\"\
+  protected\":false,\"unique\":false,\"hidden\":false,\"clearOnHide\":true,\"refreshOn\"\
+  :\"\",\"redrawOn\":\"\",\"modalEdit\":false,\"dataGridLabel\":true,\"labelPosition\"\
+  :\"top\",\"description\":\"\",\"errorLabel\":\"\",\"tooltip\":\"\",\"hideLabel\"\
+  :false,\"tabindex\":\"\",\"disabled\":false,\"autofocus\":false,\"dbIndex\":false,\"\
+  customDefaultValue\":\"\",\"calculateValue\":\"\",\"calculateServer\":false,\"widget\"\
+  :{\"type\":\"input\"},\"attributes\":{},\"validateOn\":\"change\",\"validate\":{\"\
+  required\":false,\"custom\":\"\",\"customPrivate\":false,\"strictDateValidation\"\
+  :false,\"multiple\":false,\"unique\":false},\"conditional\":{\"show\":null,\"when\"\
+  :null,\"eq\":\"\"},\"overlay\":{\"style\":\"\",\"left\":\"\",\"top\":\"\",\"width\"\
+  :\"\",\"height\":\"\"},\"allowCalculateOverride\":false,\"encrypted\":false,\"showCharCount\"\
+  :false,\"showWordCount\":false,\"properties\":{},\"allowMultipleMasks\":false,\"\
+  addons\":[],\"size\":\"md\",\"rightIcon\":\"\",\"block\":false,\"disableOnInvalid\"\
+  :false,\"theme\":\"primary\",\"redirect\":\"\",\"formCode\":\"\",\"formOid\":\"\"\
+  }]}]],\"placeholder\":\"\",\"prefix\":\"\",\"customClass\":\"\",\"suffix\":\"\"\
+  ,\"multiple\":false,\"defaultValue\":null,\"protected\":false,\"unique\":false,\"\
+  persistent\":false,\"hidden\":false,\"clearOnHide\":true,\"refreshOn\":\"\",\"redrawOn\"\
+  :\"\",\"modalEdit\":false,\"dataGridLabel\":false,\"labelPosition\":\"top\",\"description\"\
+  :\"\",\"errorLabel\":\"\",\"tooltip\":\"\",\"hideLabel\":false,\"tabindex\":\"\"\
+  ,\"disabled\":false,\"autofocus\":false,\"dbIndex\":false,\"customDefaultValue\"\
+  :\"\",\"calculateValue\":\"\",\"calculateServer\":false,\"widget\":null,\"attributes\"\
+  :{},\"validateOn\":\"change\",\"validate\":{\"required\":false,\"custom\":\"\",\"\
+  customPrivate\":false,\"strictDateValidation\":false,\"multiple\":false,\"unique\"\
+  :false},\"conditional\":{\"show\":null,\"when\":null,\"eq\":\"\"},\"overlay\":{\"\
+  style\":\"\",\"left\":\"\",\"top\":\"\",\"width\":\"\",\"height\":\"\"},\"allowCalculateOverride\"\
+  :false,\"encrypted\":false,\"showCharCount\":false,\"showWordCount\":false,\"properties\"\
+  :{},\"allowMultipleMasks\":false,\"addons\":[],\"tree\":false,\"lazyLoad\":false,\"\
+  header\":[],\"caption\":\"\",\"cloneRows\":false,\"striped\":false,\"bordered\"\
+  :false,\"hover\":false,\"id\":\"eoq9x6\"},{\"label\":\"TablePag\",\"typedatasource\"\
+  :\"entity\",\"loadFields\":true,\"attrs\":[{\"attr\":\"Helsinki.population\",\"\
+  value\":\"Helsinki.population\"},{\"attr\":\"Helsinki.population_men\",\"value\"\
+  :\"Helsinki.population_men\"},{\"attr\":\"Helsinki.population_women\",\"value\"\
+  :\"Helsinki.population_women\"},{\"attr\":\"Helsinki.year\",\"value\":\"Helsinki.year\"\
+  }],\"options\":[{\"icon\":\"pencil\",\"iconcolor\":\"\",\"path\":\"\",\"formCodeButton\"\
+  :\"\",\"idPathButton\":\"_id.$oid\",\"isdelete\":false,\"isclone\":false,\"onclick\"\
+  :\"\",\"disablebutton\":{\"option\":\"\",\"show\":\"\",\"when\":\"\",\"eq\":\"\"\
+  }},{\"icon\":\"delete\",\"iconcolor\":\"red\",\"path\":\"\",\"formCodeButton\":\"\
+  \",\"idPathButton\":\"_id.$oid\",\"isdelete\":true,\"onclick\":\"\",\"disablebutton\"\
+  :{\"option\":\"\",\"show\":\"\",\"when\":\"\",\"eq\":\"\"},\"deleteMessage\":\"\"\
+  }],\"refreshOnChange\":false,\"hideSearch\":false,\"key\":\"tablePag\",\"type\"\
+  :\"tablepag\",\"input\":false,\"tableView\":false,\"content\":\"\\n    <div  class=\\\
+  \"input-group mb-3\\\" style=\\\"margin-left: 4px;\\\">\\n    <!-- <div  style=\\\
+  \"background-color: white; padding-left: 8px; margin-top: 8px; margin-left: 0px;\
+  \ position: absolute; z-index: 10;\\\">\\n       <i class=\\\"op-icon-search  bg-white\\\
+  \"></i>\\n    </div> -->\\n      <input oninput=\\\"window.listThat.renderData(\
+  \ window.listThat,window.showformbase,true)\\\" id=\\\"inputsearchevhzt6q\\\" type=\\\
+  \"search\\\" class=\\\"form-control input-sm input-inline\\\" aria-controls=\\\"\
+  formsTable\\\" placeholder=\\\"Search\\\" style=\\\"height: 24px;max-width:260px;\\\
+  \">\\n    </div>\\n    <div id=\\\"listpagevhzt6q\\\"></div>\",\"dsEntity\":\"HelsinkiPopulation\"\
+  ,\"placeholder\":\"\",\"prefix\":\"\",\"customClass\":\"\",\"suffix\":\"\",\"multiple\"\
+  :false,\"defaultValue\":null,\"protected\":false,\"unique\":false,\"persistent\"\
+  :false,\"hidden\":false,\"clearOnHide\":true,\"refreshOn\":\"\",\"redrawOn\":\"\"\
+  ,\"modalEdit\":false,\"dataGridLabel\":false,\"labelPosition\":\"top\",\"description\"\
+  :\"\",\"errorLabel\":\"\",\"tooltip\":\"\",\"hideLabel\":false,\"tabindex\":\"\"\
+  ,\"disabled\":false,\"autofocus\":false,\"dbIndex\":false,\"customDefaultValue\"\
+  :\"\",\"calculateValue\":\"\",\"calculateServer\":false,\"widget\":null,\"attributes\"\
+  :{},\"validateOn\":\"change\",\"validate\":{\"required\":false,\"custom\":\"\",\"\
+  customPrivate\":false,\"strictDateValidation\":false,\"multiple\":false,\"unique\"\
+  :false},\"conditional\":{\"show\":null,\"when\":null,\"eq\":\"\"},\"overlay\":{\"\
+  style\":\"\",\"left\":\"\",\"top\":\"\",\"width\":\"\",\"height\":\"\"},\"allowCalculateOverride\"\
+  :false,\"encrypted\":false,\"showCharCount\":false,\"showWordCount\":false,\"properties\"\
+  :{},\"allowMultipleMasks\":false,\"addons\":[],\"tag\":\"div\",\"datasource\":\"\
+  \",\"idPath\":\"\",\"formCode\":\"\",\"id\":\"evhzt6q\"}]}"
+code: "formExampleOne-analytics"
+description: "Ejemplo"
+config: "{\"datasources\":[]}"
+ontology: "MASTER-Ontology-4"
