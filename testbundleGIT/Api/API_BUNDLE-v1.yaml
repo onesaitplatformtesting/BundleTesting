@@ -1,0 +1,42 @@
+---
+createdAt: 1737543109420
+updatedAt: 1737543109443
+id: "740061dc-d822-469a-9691-cbc7de4e4e24"
+identification: "API_BUNDLE"
+user: "administrator"
+ontology: "MASTER-Ontology-27"
+ssl_certificate: false
+userApiAccesses: []
+numversion: 1
+description: "API_BUNDLE"
+category: "ALL"
+endpointExt: ""
+state: "CREATED"
+metaInf: "API_BUNDLE"
+apiType: "INTERNAL_ONTOLOGY"
+swaggerJson: ""
+apiOperations:
+- createdAt: 1737543109436
+  updatedAt: 1737543109436
+  id: "37d8e8bd-9dd9-4497-b672-6a97990eabf7"
+  apiqueryparameters: []
+  identification: "API_BUNDLE_GETAll"
+  description: "all"
+  operation: "GET"
+  path: "/"
+- createdAt: 1737543109439
+  updatedAt: 1737543109439
+  id: "0b290c23-4a77-4e60-a14d-ac2f613d1c62"
+  apiqueryparameters:
+  - createdAt: 1737543109440
+    updatedAt: 1737543109440
+    id: "1228026d-8bda-4e3c-91f4-06f4a180f288"
+    name: "id"
+    dataType: "STRING"
+    description: ""
+    headerType: "PATH"
+  identification: "API_BUNDLE_GET"
+  description: "get"
+  operation: "GET"
+  path: "/{id}"
+public: true

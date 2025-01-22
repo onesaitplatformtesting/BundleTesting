@@ -1,0 +1,46 @@
+---
+createdAt: 1737046783618
+updatedAt: 1737046783618
+id: "74f8d7f1-5ec2-43cf-8333-a213a5ebd126"
+identification: "musictest"
+user: "administrator"
+jsonSchema:
+  properties:
+    ARTIST:
+      type: "string"
+    COUNTRY:
+      type: "string"
+    PRICE:
+      type: "number"
+    YEAR:
+      type: "number"
+    TITLE:
+      type: "string"
+    COMPANY:
+      type: "string"
+  type: "object"
+  description: "Info musictest"
+  $schema: "http://json-schema.org/draft-04/schema#"
+  title: "musictest"
+  additionalProperties: true
+dataModel: "MASTER-DataModel-5"
+active: true
+contextDataEnabled: false
+rtdbClean: false
+rtdbCleanLapse: "NEVER"
+rtdbToHdb: false
+description: "music_test"
+metainf: "imported,json"
+ontologyUserAccesses: []
+rtdbDatasource: "MONGO"
+allowsCypherFields: false
+allowsCreateTopic: false
+allowsCreateNotificationTopic: false
+allowsNotificationBpm: false
+allowsCreateMqttTopic: false
+supportsJsonLd: false
+enableDataClass: false
+public: false
+ontologyKPI: null
+ontologyAI: null
+ontologyTimeSeries: null

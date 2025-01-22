@@ -1,0 +1,15 @@
+---
+createdAt: 1736846692836
+updatedAt: 1736846692836
+userId: "administrator"
+email: "administrator@onesaitplatform.com"
+role:
+  createdAt: 1736846692749
+  updatedAt: 1736846692749
+  id: "ROLE_ADMINISTRATOR"
+  name: "Administrator"
+  description: "Administrator of the Platform"
+password: "abcdefghijklmnopqrstuvz2kB6aNm2d95nEcUU6qKZi1AJTgPiZJrvRY2uZcMWxA="
+active: true
+fullName: "A Administrator of the Platform"
+id: "administrator"

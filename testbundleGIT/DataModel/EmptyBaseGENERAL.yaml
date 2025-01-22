@@ -1,0 +1,25 @@
+---
+createdAt: 1736846693851
+updatedAt: 1736846693851
+id: "MASTER-DataModel-5"
+identification: "EmptyBase"
+user: "administrator"
+jsonSchema:
+  $schema: "http://json-schema.org/draft-07/schema#"
+  title: "DataModel EmptyBase Schema"
+  type: "object"
+  required:
+  - "EmptyBase"
+  properties:
+    EmptyBase:
+      type: "string"
+      $ref: "#/datos"
+  datos:
+    description: "Properties for DataModel EmptyBase"
+    type: "object"
+    required: []
+    properties: {}
+type: "GENERAL"
+description: "Base DataModel"
+labels: "General,IoT"
+version: 1
