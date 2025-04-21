@@ -1,0 +1,53 @@
+---
+createdAt: 1745246433619
+updatedAt: 1745248206007
+id: "137036ce-7aa9-4386-8159-f5bae08aff6f"
+identification: "atestting"
+user: "administrator"
+jsonSchema:
+  $schema: "http://json-schema.org/draft-07/schema#"
+  title: "DataModel atestting Schema"
+  type: "object"
+  required:
+  - "atestting"
+  properties:
+    atestting:
+      type: "string"
+      $ref: "#/datos"
+  datos:
+    description: "Properties for DataModel atestting"
+    type: "object"
+    required:
+    - "e"
+    properties:
+      e:
+        type: "string"
+  description: "testtt"
+  entitydclass: []
+  additionalProperties: true
+dataModel: "MASTER-DataModel-5"
+active: true
+contextDataEnabled: true
+rtdbClean: false
+rtdbCleanLapse: "NEVER"
+rtdbToHdb: false
+rtdbToHdbStorage: "MONGO_GRIDFS"
+description: "testtt"
+metainf: "testtt"
+dataModelVersion: "1"
+ontologyUserAccesses: []
+rtdbDatasource: "MONGO"
+allowsCypherFields: false
+allowsCreateTopic: false
+allowsCreateNotificationTopic: false
+allowsNotificationBpm: false
+allowsCreateMqttTopic: false
+partitionKey: "/id"
+supportsJsonLd: false
+jsonLdContext: ""
+enableDataClass: false
+listForm: ""
+public: false
+ontologyKPI: null
+ontologyAI: null
+ontologyTimeSeries: null
