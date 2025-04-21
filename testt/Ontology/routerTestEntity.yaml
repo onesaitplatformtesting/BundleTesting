@@ -1,0 +1,51 @@
+---
+createdAt: 1737620485803
+updatedAt: 1745237915981
+id: "c697a9fa-d2ac-401d-a41b-7a271acc13d5"
+identification: "routerTestEntity"
+user: "analytics"
+jsonSchema:
+  $schema: "http://json-schema.org/draft-07/schema#"
+  title: "DataModel routerTestEntity No Root Node Schema"
+  type: "object"
+  description: "Properties for DataModel routerTestEntity No Root Node "
+  required:
+  - "campo"
+  - "valor"
+  properties:
+    campo:
+      type: "string"
+    valor:
+      type: "number"
+  entitydclass: []
+  additionalProperties: true
+dataModel: "MASTER-DataModel-32"
+active: true
+contextDataEnabled: true
+rtdbClean: false
+rtdbCleanLapse: "NEVER"
+rtdbToHdb: false
+description: "routerTestEntity"
+metainf: "routerTestEntity"
+dataModelVersion: "1"
+ontologyUserAccesses:
+- createdAt: 1745237915975
+  updatedAt: 1745237915975
+  id: "65f23ddc-783e-4433-9cc3-d8d32c9044dd"
+  ontologyUserAccessType: "MASTER-Ontology-User-Access-Type-1"
+  user: "fjpradillo"
+rtdbDatasource: "MONGO"
+allowsCypherFields: false
+allowsCreateTopic: false
+allowsCreateNotificationTopic: false
+allowsNotificationBpm: false
+allowsCreateMqttTopic: false
+partitionKey: "/id"
+supportsJsonLd: false
+jsonLdContext: ""
+enableDataClass: false
+listForm: ""
+public: false
+ontologyKPI: null
+ontologyAI: null
+ontologyTimeSeries: null

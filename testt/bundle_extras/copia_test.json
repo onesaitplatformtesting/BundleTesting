@@ -1,0 +1,6214 @@
+{
+  "pipelineConfig" : {
+    "schemaVersion" : 6,
+    "version" : 19,
+    "pipelineId" : "copiateste18ce247-6528-4be2-ac1c-8f07400b3756",
+    "title" : "copia_test",
+    "description" : "",
+    "uuid" : "01fae643-ad34-494d-9487-348080cf7d2a",
+    "configuration" : [ {
+      "name" : "executionMode",
+      "value" : "STANDALONE"
+    }, {
+      "name" : "edgeHttpUrl",
+      "value" : "http://localhost:18633"
+    }, {
+      "name" : "deliveryGuarantee",
+      "value" : "AT_LEAST_ONCE"
+    }, {
+      "name" : "testOriginStage",
+      "value" : "streamsets-datacollector-dev-lib::com_streamsets_pipeline_stage_devtest_rawdata_RawDataDSource::3"
+    }, {
+      "name" : "startEventStage",
+      "value" : "streamsets-datacollector-basic-lib::com_streamsets_pipeline_stage_destination_devnull_ToErrorNullDTarget::1"
+    }, {
+      "name" : "stopEventStage",
+      "value" : "streamsets-datacollector-basic-lib::com_streamsets_pipeline_stage_destination_devnull_ToErrorNullDTarget::1"
+    }, {
+      "name" : "shouldRetry",
+      "value" : true
+    }, {
+      "name" : "triggerInterval",
+      "value" : 2000
+    }, {
+      "name" : "retryAttempts",
+      "value" : -1
+    }, {
+      "name" : "ludicrousMode",
+      "value" : false
+    }, {
+      "name" : "ludicrousModeInputCount",
+      "value" : false
+    }, {
+      "name" : "advancedErrorHandling",
+      "value" : false
+    }, {
+      "name" : "notifyOnStates",
+      "value" : [ "RUN_ERROR", "STOPPED", "FINISHED", "RUNNING" ]
+    }, {
+      "name" : "emailIDs",
+      "value" : [ ]
+    }, {
+      "name" : "constants",
+      "value" : [ {
+        "value" : "I_CMB_CONSULTAS_INCLIVA_RAW",
+        "key" : "RawOntologyName"
+      }, {
+        "value" : "c2010867de94417fa99ed7e535a82850",
+        "key" : "clientToken"
+      }, {
+        "value" : "DC_Ingesta",
+        "key" : "digitalClient"
+      }, {
+        "value" : "curated_consultas_gc",
+        "key" : "CuratedOntologyName"
+      } ]
+    }, {
+      "name" : "badRecordsHandling",
+      "value" : "streamsets-datacollector-basic-lib::com_streamsets_pipeline_stage_destination_devnull_ToErrorNullDTarget::1"
+    }, {
+      "name" : "errorRecordPolicy",
+      "value" : "ORIGINAL_RECORD"
+    }, {
+      "name" : "statsAggregatorStage",
+      "value" : "streamsets-datacollector-basic-lib::com_streamsets_pipeline_stage_destination_devnull_StatsDpmDirectlyDTarget::1"
+    }, {
+      "name" : "workerCount",
+      "value" : 0
+    }, {
+      "name" : "clusterSlaveMemory",
+      "value" : 2048
+    }, {
+      "name" : "clusterSlaveJavaOpts",
+      "value" : "-XX:+UseConcMarkSweepGC -XX:+UseParNewGC -Dlog4j.debug"
+    }, {
+      "name" : "clusterLauncherEnv",
+      "value" : [ ]
+    }, {
+      "name" : "mesosDispatcherURL",
+      "value" : null
+    }, {
+      "name" : "logLevel",
+      "value" : "INFO"
+    }, {
+      "name" : "hdfsS3ConfDir",
+      "value" : null
+    }, {
+      "name" : "rateLimit",
+      "value" : 0
+    }, {
+      "name" : "maxRunners",
+      "value" : 0
+    }, {
+      "name" : "shouldCreateFailureSnapshot",
+      "value" : true
+    }, {
+      "name" : "runnerIdleTIme",
+      "value" : 60
+    }, {
+      "name" : "webhookConfigs",
+      "value" : [ ]
+    }, {
+      "name" : "sparkConfigs",
+      "value" : [ ]
+    }, {
+      "name" : "preprocessScript",
+      "value" : "/*\nThe following script define a method\nthat increments an integer by 1 \nand registers it as a UDF with \nthe SparkSession, which can be accessed\nusing the variable named \"spark\":\ndef inc(i: Integer): Integer = {\n  i + 1\n}\nspark.udf.register (\"inc\", inc _)\n\n*/"
+    }, {
+      "name" : "clusterConfig.clusterType",
+      "value" : "LOCAL"
+    }, {
+      "name" : "clusterConfig.sparkMasterUrl",
+      "value" : "local[*]"
+    }, {
+      "name" : "clusterConfig.deployMode",
+      "value" : "CLIENT"
+    }, {
+      "name" : "clusterConfig.hadoopUserName",
+      "value" : null
+    }, {
+      "name" : "clusterConfig.sparkAppName",
+      "value" : "${pipeline:title()}"
+    }, {
+      "name" : "clusterConfig.stagingDir",
+      "value" : "/streamsets"
+    }, {
+      "name" : "clusterConfig.useYarnKerberosKeytab",
+      "value" : false
+    }, {
+      "name" : "clusterConfig.yarnKerberosKeytabSource",
+      "value" : "PROPERTIES_FILE"
+    }, {
+      "name" : "clusterConfig.yarnKerberosKeytab",
+      "value" : null
+    }, {
+      "name" : "clusterConfig.yarnKerberosKeytabBase64Bytes",
+      "value" : null
+    }, {
+      "name" : "clusterConfig.yarnKerberosPrincipal",
+      "value" : "name@DOMAIN"
+    }, {
+      "name" : "clusterConfig.callbackUrl",
+      "value" : null
+    }, {
+      "name" : "databricksConfig.baseUrl",
+      "value" : null
+    }, {
+      "name" : "databricksConfig.credentialType",
+      "value" : null
+    }, {
+      "name" : "databricksConfig.username",
+      "value" : null
+    }, {
+      "name" : "databricksConfig.password",
+      "value" : null
+    }, {
+      "name" : "databricksConfig.token",
+      "value" : null
+    }, {
+      "name" : "databricksConfig.provisionNewCluster",
+      "value" : true
+    }, {
+      "name" : "databricksConfig.clusterId",
+      "value" : null
+    }, {
+      "name" : "databricksConfig.clusterConfig",
+      "value" : "{\n    \"num_workers\": 8,\n    \"spark_version\": \"5.3.x-scala2.11\",\n    \"node_type_id\": \"i3.xlarge\"\n}"
+    }, {
+      "name" : "databricksConfig.terminateCluster",
+      "value" : false
+    }, {
+      "name" : "livyConfig.baseUrl",
+      "value" : "https://localhost:30443/gateway/default/livy/v1/"
+    }, {
+      "name" : "livyConfig.username",
+      "value" : null
+    }, {
+      "name" : "livyConfig.password",
+      "value" : null
+    }, {
+      "name" : "amazonEMRConfig.userRegion",
+      "value" : null
+    }, {
+      "name" : "amazonEMRConfig.userRegionCustom",
+      "value" : null
+    }, {
+      "name" : "amazonEMRConfig.accessKey",
+      "value" : null
+    }, {
+      "name" : "amazonEMRConfig.secretKey",
+      "value" : null
+    }, {
+      "name" : "amazonEMRConfig.s3StagingUri",
+      "value" : null
+    }, {
+      "name" : "amazonEMRConfig.provisionNewCluster",
+      "value" : false
+    }, {
+      "name" : "amazonEMRConfig.clusterId",
+      "value" : null
+    }, {
+      "name" : "amazonEMRConfig.clusterPrefix",
+      "value" : null
+    }, {
+      "name" : "amazonEMRConfig.terminateCluster",
+      "value" : false
+    }, {
+      "name" : "amazonEMRConfig.loggingEnabled",
+      "value" : true
+    }, {
+      "name" : "amazonEMRConfig.s3LogUri",
+      "value" : null
+    }, {
+      "name" : "amazonEMRConfig.enableEMRDebugging",
+      "value" : true
+    }, {
+      "name" : "amazonEMRConfig.serviceRole",
+      "value" : "EMR_DefaultRole"
+    }, {
+      "name" : "amazonEMRConfig.jobFlowRole",
+      "value" : "EMR_EC2_DefaultRole"
+    }, {
+      "name" : "amazonEMRConfig.visibleToAllUsers",
+      "value" : true
+    }, {
+      "name" : "amazonEMRConfig.ec2SubnetId",
+      "value" : null
+    }, {
+      "name" : "amazonEMRConfig.masterSecurityGroup",
+      "value" : null
+    }, {
+      "name" : "amazonEMRConfig.slaveSecurityGroup",
+      "value" : null
+    }, {
+      "name" : "amazonEMRConfig.instanceCount",
+      "value" : 2
+    }, {
+      "name" : "amazonEMRConfig.masterInstanceType",
+      "value" : null
+    }, {
+      "name" : "amazonEMRConfig.masterInstanceTypeCustom",
+      "value" : null
+    }, {
+      "name" : "amazonEMRConfig.slaveInstanceType",
+      "value" : null
+    }, {
+      "name" : "amazonEMRConfig.slaveInstanceTypeCustom",
+      "value" : null
+    }, {
+      "name" : "transformerEMRConfig.userRegion",
+      "value" : null
+    }, {
+      "name" : "transformerEMRConfig.userRegionCustom",
+      "value" : null
+    }, {
+      "name" : "transformerEMRConfig.useIAMRoles",
+      "value" : false
+    }, {
+      "name" : "transformerEMRConfig.accessKey",
+      "value" : null
+    }, {
+      "name" : "transformerEMRConfig.secretKey",
+      "value" : null
+    }, {
+      "name" : "transformerEMRConfig.s3StagingUri",
+      "value" : null
+    }, {
+      "name" : "transformerEMRConfig.provisionNewCluster",
+      "value" : false
+    }, {
+      "name" : "transformerEMRConfig.clusterId",
+      "value" : null
+    }, {
+      "name" : "transformerEMRConfig.emrVersion",
+      "value" : null
+    }, {
+      "name" : "transformerEMRConfig.clusterPrefix",
+      "value" : null
+    }, {
+      "name" : "transformerEMRConfig.terminateCluster",
+      "value" : false
+    }, {
+      "name" : "transformerEMRConfig.loggingEnabled",
+      "value" : true
+    }, {
+      "name" : "transformerEMRConfig.s3LogUri",
+      "value" : null
+    }, {
+      "name" : "transformerEMRConfig.serviceRole",
+      "value" : "EMR_DefaultRole"
+    }, {
+      "name" : "transformerEMRConfig.jobFlowRole",
+      "value" : "EMR_EC2_DefaultRole"
+    }, {
+      "name" : "transformerEMRConfig.visibleToAllUsers",
+      "value" : true
+    }, {
+      "name" : "transformerEMRConfig.ec2SubnetId",
+      "value" : null
+    }, {
+      "name" : "transformerEMRConfig.masterSecurityGroup",
+      "value" : null
+    }, {
+      "name" : "transformerEMRConfig.slaveSecurityGroup",
+      "value" : null
+    }, {
+      "name" : "transformerEMRConfig.serviceAccessSecurityGroup",
+      "value" : null
+    }, {
+      "name" : "transformerEMRConfig.instanceCount",
+      "value" : 2
+    }, {
+      "name" : "transformerEMRConfig.masterInstanceType",
+      "value" : null
+    }, {
+      "name" : "transformerEMRConfig.masterInstanceTypeCustom",
+      "value" : null
+    }, {
+      "name" : "transformerEMRConfig.slaveInstanceType",
+      "value" : null
+    }, {
+      "name" : "transformerEMRConfig.slaveInstanceTypeCustom",
+      "value" : null
+    }, {
+      "name" : "googleCloudCredentialsConfig.projectId",
+      "value" : null
+    }, {
+      "name" : "googleCloudCredentialsConfig.credentialsProvider",
+      "value" : "DEFAULT_PROVIDER"
+    }, {
+      "name" : "googleCloudCredentialsConfig.path",
+      "value" : null
+    }, {
+      "name" : "googleCloudCredentialsConfig.credentialsFileContent",
+      "value" : null
+    }, {
+      "name" : "googleCloudConfig.region",
+      "value" : null
+    }, {
+      "name" : "googleCloudConfig.customRegion",
+      "value" : null
+    }, {
+      "name" : "googleCloudConfig.gcsStagingUri",
+      "value" : null
+    }, {
+      "name" : "googleCloudConfig.create",
+      "value" : false
+    }, {
+      "name" : "googleCloudConfig.clusterPrefix",
+      "value" : null
+    }, {
+      "name" : "googleCloudConfig.version",
+      "value" : "1.4-ubuntu18"
+    }, {
+      "name" : "googleCloudConfig.masterType",
+      "value" : null
+    }, {
+      "name" : "googleCloudConfig.workerType",
+      "value" : null
+    }, {
+      "name" : "googleCloudConfig.networkType",
+      "value" : null
+    }, {
+      "name" : "googleCloudConfig.network",
+      "value" : null
+    }, {
+      "name" : "googleCloudConfig.subnet",
+      "value" : null
+    }, {
+      "name" : "googleCloudConfig.tags",
+      "value" : [ ]
+    }, {
+      "name" : "googleCloudConfig.workerCount",
+      "value" : 2
+    }, {
+      "name" : "googleCloudConfig.clusterName",
+      "value" : null
+    }, {
+      "name" : "googleCloudConfig.terminate",
+      "value" : null
+    } ],
+    "uiInfo" : {
+      "displayMode" : "ADVANCED",
+      "previewConfig" : {
+        "executeLifecycleEvents" : false,
+        "previewSource" : "CONFIGURED_SOURCE",
+        "showHeader" : true,
+        "showFieldType" : true,
+        "rememberMe" : false,
+        "batchSize" : 10,
+        "writeToDestinations" : false,
+        "timeout" : "60000"
+      }
+    },
+    "fragments" : [ ],
+    "stages" : [ {
+      "instanceName" : "OnesaitPlatformOrigin_01",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_origin_OnesaitplatformDOrigin",
+      "stageVersion" : "2",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 30000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "${RawOntologyName}"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "query",
+        "value" : "db.${RawOntologyName}.find({'_id':{$gt:ObjectId('${offset}')}}).limit(${batch})"
+      }, {
+        "name" : "qTypeEnum",
+        "value" : "NATIVE"
+      }, {
+        "name" : "batch",
+        "value" : 2000
+      }, {
+        "name" : "delay",
+        "value" : 0
+      }, {
+        "name" : "fTypeEnum",
+        "value" : "OFFSETFIELD"
+      }, {
+        "name" : "startOffset",
+        "value" : 0
+      }, {
+        "name" : "offsetField",
+        "value" : "_id.$oid"
+      }, {
+        "name" : "startOffsetField",
+        "value" : "000000000000000000000000"
+      }, {
+        "name" : "stopOnComplete",
+        "value" : false
+      }, {
+        "name" : "delayOnNoResults",
+        "value" : 10000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      } ],
+      "uiInfo" : {
+        "yPos" : 396.6968307495117,
+        "stageType" : "SOURCE",
+        "icon" : "onesait_vector_from.png",
+        "description" : "",
+        "label" : "Entidad RAW",
+        "xPos" : 1278.8882341384888,
+        "displayMode" : "ADVANCED"
+      },
+      "inputLanes" : [ ],
+      "outputLanes" : [ "OnesaitPlatformOrigin_01OutputLane17314985164750" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_08",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_EDAD_RAW"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "cod"
+        }, {
+          "columnName" : "descrip"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_edad",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/edad"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 394.4441680908203,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Edad",
+        "xPos" : 1529.026123046875,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformOrigin_01OutputLane17314985164750" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_08OutputLane17325158367540" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_09",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "TA_D_SEXO_RAW"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "codigo_sexo"
+        }, {
+          "columnName" : "desc_sexo"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_sexo",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku_sexo"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/sexo"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 401.5413513183594,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Sexo",
+        "xPos" : 1791.1995849609384,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_08OutputLane17325158367540" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_09OutputLane17332109603180" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_10",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_FECHA_RAW"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "nom_fecha"
+        }, {
+          "columnName" : "desc_fecha"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_fecha_registro",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku_fecha"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/fecha_regis"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 400.5413589477539,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Fecha Registro",
+        "xPos" : 2043.855468750001,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_09OutputLane17332109603180" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_10OutputLane17332111602100" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_11",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_LUGAR_RAW"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "cod"
+        }, {
+          "columnName" : "descrip"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_lugar",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/lugar"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 402.5413589477539,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Lugar",
+        "xPos" : 2266.261962890626,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_10OutputLane17332111602100" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_11OutputLane17332117948680" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_12",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "TA_D_NIVEL_CRONICIDAD_RAW"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "cod"
+        }, {
+          "columnName" : "descrip"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_nivel_cronicidad",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/cronicidad"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 398.71302795410156,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Nivel Cronicidad",
+        "xPos" : 2480.069335937501,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_11OutputLane17332117948680" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_12OutputLane17332120694570" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_13",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_PERSONAL"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "personal_nif"
+        }, {
+          "columnName" : "personal_nom_compl"
+        }, {
+          "columnName" : "categoria_profesional_cod"
+        }, {
+          "columnName" : "categoria_profesional_des"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_personal_registra",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "personal_id"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/personal_curated"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 405.87837982177734,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Personal Curated",
+        "xPos" : 2706.971435546876,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_12OutputLane17332120694570" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_13OutputLane17332123809950" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_14",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_CENTROS"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "cod_zona"
+        }, {
+          "columnName" : "desc_zona"
+        }, {
+          "columnName" : "cod_tipo_centro"
+        }, {
+          "columnName" : "desc_tipo_centro"
+        }, {
+          "columnName" : "cod_centro"
+        }, {
+          "columnName" : "desc_centro"
+        }, {
+          "columnName" : "cod_municipio"
+        }, {
+          "columnName" : "desc_municipio"
+        }, {
+          "columnName" : "cod_provincia"
+        }, {
+          "columnName" : "desc_provincia"
+        }, {
+          "columnName" : "cod_ccaa"
+        }, {
+          "columnName" : "desc_ccaa"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_centro_asig",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku_centro"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/centros"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 404,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Centros",
+        "xPos" : 2913.740234375001,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_13OutputLane17332123809950" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_14OutputLane17332133212290" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_15",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_CENTROS"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "cod_departamento"
+        }, {
+          "columnName" : "desc_departamento"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_departamento_asig",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku_departamento"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/departamento"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 402,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Departamento",
+        "xPos" : 3113.740234375001,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_14OutputLane17332133212290" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_15OutputLane17332160329580" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "StreamSelector_01",
+      "library" : "streamsets-datacollector-basic-lib",
+      "stageName" : "com_streamsets_pipeline_stage_processor_selector_SelectorDProcessor",
+      "stageVersion" : "1",
+      "configuration" : [ {
+        "name" : "lanePredicates",
+        "value" : [ {
+          "predicate" : "${record:value('/sku_servicio_sia_asig')==-1 || record:value('/sku_servicio_sia_asig')==-2}",
+          "outputLane" : "StreamSelector_01OutputLane1733216438813"
+        }, {
+          "predicate" : "default",
+          "outputLane" : "StreamSelector_01OutputLane1733216400209"
+        } ]
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 409.5,
+        "stageType" : "PROCESSOR",
+        "icon" : "laneSelector.png",
+        "description" : "",
+        "label" : "Stream Selector 1",
+        "xPos" : 3308.240234375001,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_15OutputLane17332160329580" ],
+      "outputLanes" : [ "StreamSelector_01OutputLane1733216438813", "StreamSelector_01OutputLane1733216400209" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_16",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_SERVICIO_SIA_RAW"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "cod"
+        }, {
+          "columnName" : "descrip"
+        }, {
+          "columnName" : "flag_deriva_espe"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_servicio_sia_asig",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/servicio_sia_asig"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 526,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Servicio Sia",
+        "xPos" : 3509.740234375001,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "StreamSelector_01OutputLane1733216400209" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_16OutputLane17332164787210" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_17",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_SERVICIO_SIA_RAW"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "cod"
+        }, {
+          "columnName" : "descrip"
+        }, {
+          "columnName" : "flag_deriva_espe"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_servicio_sia_asig",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/servicio_sia_asig"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "NULLS"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 346,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Servicio Sia",
+        "xPos" : 3499.740234375001,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "StreamSelector_01OutputLane1733216438813" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_17OutputLane17332167586570" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_18",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_PERSONAL"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "personal_nif"
+        }, {
+          "columnName" : "personal_nom_compl"
+        }, {
+          "columnName" : "categoria_profesional_cod"
+        }, {
+          "columnName" : "categoria_profesional_des"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_personal_asig",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "personal_id"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/personal_asig_cur"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 420,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Personal Asig Cur",
+        "xPos" : 3733.740234375001,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_17OutputLane17332167586570", "OnesaitPlatformLookup_16OutputLane17332164787210" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_18OutputLane17332173312310" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_19",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_CENTROS"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "cod_departamento"
+        }, {
+          "columnName" : "desc_departamento"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_departamento",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku_departamento"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/departamento_at"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 418,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Departamento At",
+        "xPos" : 3963.740234375001,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_18OutputLane17332173312310" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_19OutputLane17332182087720" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_20",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_CENTROS"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "cod_zona"
+        }, {
+          "columnName" : "desc_zona"
+        }, {
+          "columnName" : "cod_tipo_centro"
+        }, {
+          "columnName" : "desc_tipo_centro"
+        }, {
+          "columnName" : "cod_centro"
+        }, {
+          "columnName" : "desc_centro"
+        }, {
+          "columnName" : "cod_municipio"
+        }, {
+          "columnName" : "desc_municipio"
+        }, {
+          "columnName" : "cod_provincia"
+        }, {
+          "columnName" : "desc_provincia"
+        }, {
+          "columnName" : "cod_ccaa"
+        }, {
+          "columnName" : "desc_ccaa"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_centro_asig",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku_centro"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/centro"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 408,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Centro",
+        "xPos" : 4161.740234375001,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_19OutputLane17332182087720" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_20OutputLane17332186011650" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "StreamSelector_02",
+      "library" : "streamsets-datacollector-basic-lib",
+      "stageName" : "com_streamsets_pipeline_stage_processor_selector_SelectorDProcessor",
+      "stageVersion" : "1",
+      "configuration" : [ {
+        "name" : "lanePredicates",
+        "value" : [ {
+          "predicate" : "${record:value('/sku_servicio_sia')==-1 || record:value('/sku_servicio_sia')==-2}",
+          "outputLane" : "StreamSelector_02OutputLane17332193548960"
+        }, {
+          "predicate" : "default",
+          "outputLane" : "StreamSelector_02OutputLane17332193548961"
+        } ]
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 408,
+        "stageType" : "PROCESSOR",
+        "icon" : "laneSelector.png",
+        "description" : "",
+        "label" : "Stream Selector 2",
+        "xPos" : 4365.740234375001,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_20OutputLane17332186011650" ],
+      "outputLanes" : [ "StreamSelector_02OutputLane17332193548960", "StreamSelector_02OutputLane17332193548961" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_21",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_SERVICIO_SIA_RAW"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "cod"
+        }, {
+          "columnName" : "descrip"
+        }, {
+          "columnName" : "flag_deriva_espe"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_servicio_sia",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/servicio_sia"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "NULLS"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 268.5714340209961,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Servicio Sia",
+        "xPos" : 4549.169189453126,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "StreamSelector_02OutputLane17332193548960" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_21OutputLane17332193890540" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_22",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_SERVICIO_SIA_RAW"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "cod"
+        }, {
+          "columnName" : "descrip"
+        }, {
+          "columnName" : "flag_deriva_espe"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_servicio_sia",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/servicio_sia"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 506,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Servicio Sia",
+        "xPos" : 4545.740234375001,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "StreamSelector_02OutputLane17332193548961" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_22OutputLane17332193992460" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_23",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_TURNO_RAW"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "cod_turno"
+        }, {
+          "columnName" : "desc_turno"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_turno",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku_turno"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/turno"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 398,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Turno",
+        "xPos" : 4797.740234375001,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_21OutputLane17332193890540", "OnesaitPlatformLookup_22OutputLane17332193992460" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_23OutputLane17332198098570" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_24",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_PERSONAL"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "personal_nif"
+        }, {
+          "columnName" : "personal_nom_compl"
+        }, {
+          "columnName" : "categoria_profesional_cod"
+        }, {
+          "columnName" : "categoria_profesional_des"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_personal_atiende",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "personal_id"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/personal_at"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 392,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Personal At",
+        "xPos" : 5019.740234375001,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_23OutputLane17332198098570" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_24OutputLane17332202056370" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_25",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_FLAG_RAW"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "cod"
+        }, {
+          "columnName" : "descrip"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_derivacion",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/derivacion"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 390,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Derivacion",
+        "xPos" : 5221.740234375001,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_24OutputLane17332202056370" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_25OutputLane17332211147280" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_26",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_FLAG_RAW"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "cod"
+        }, {
+          "columnName" : "descrip"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_enfermeria_cura",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/enf_cura"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 388,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Enfermeria Cura",
+        "xPos" : 5413.740234375001,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_25OutputLane17332211147280" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_26OutputLane17332213591490" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_27",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_FLAG_RAW"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "cod"
+        }, {
+          "columnName" : "descrip"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_enfermeria_extrac",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/enf_extrac"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 388,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Enfermeria Extrac",
+        "xPos" : 5627.740234375001,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_26OutputLane17332213591490" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_27OutputLane17332214870850" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_28",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_FLAG_RAW"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "cod"
+        }, {
+          "columnName" : "descrip"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_enfermeria_inyecta",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/enf_iny"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 388,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Enfermeria Inyecta",
+        "xPos" : 5825.740234375001,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_27OutputLane17332214870850" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_28OutputLane17332217192670" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_29",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_FLAG_RAW"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "cod"
+        }, {
+          "columnName" : "descrip"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_enfermeria_otras",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/enf_otras"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 390,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Enfermeria Otras",
+        "xPos" : 6023.740234375001,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_28OutputLane17332217192670" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_29OutputLane17332219659910" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_30",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_FLAG_RAW"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "cod"
+        }, {
+          "columnName" : "descrip"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_cita_directa",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/cita_directa"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 396,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Cita Directa",
+        "xPos" : 6239.740234375001,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_29OutputLane17332219659910" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_30OutputLane17332226283670" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_31",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_FLAG_RAW"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "cod"
+        }, {
+          "columnName" : "descrip"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_atencion_realizada",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/aten_realizada"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 386,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cita Atencion Realizada",
+        "xPos" : 6455.740234375001,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_30OutputLane17332226283670" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_31OutputLane17332227543420" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_32",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_FLAG_RAW"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "cod"
+        }, {
+          "columnName" : "descrip"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_aviso_domicilio",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/av_dom"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 398,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Aviso Domicilio",
+        "xPos" : 6651.740234375001,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_31OutputLane17332227543420" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_32OutputLane17332228561810" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_33",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_FLAG_RAW"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "cod"
+        }, {
+          "columnName" : "descrip"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_finalizado",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/fin"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 402,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Finalizado",
+        "xPos" : 6865.740234375001,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_32OutputLane17332228561810" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_33OutputLane17332229607670" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_34",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_FLAG_RAW"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "cod"
+        }, {
+          "columnName" : "descrip"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_presencia_paciente",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/presencia"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 406,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Presencia Paciente",
+        "xPos" : 7069.740234375,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_33OutputLane17332229607670" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_34OutputLane17332230482500" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_35",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_FLAG_RAW"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "cod"
+        }, {
+          "columnName" : "descrip"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_recurso_agenda",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/agenda"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 404,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Recurso Agenda",
+        "xPos" : 7289.740234375,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_34OutputLane17332230482500" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_35OutputLane17332231416670" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_36",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_CENTROS"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "cod_procedencia"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_procedencia_asig",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku_procedencia"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/procedencia_asign"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 386,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Procedencia Asig",
+        "xPos" : 7489.740234375,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_35OutputLane17332231416670" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_36OutputLane17344320220240" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformLookup_37",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_processor_OnesaitplatformDProcessor",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 5000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "I_D_CENTROS"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "maxCharacters",
+        "value" : 10000
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "callType",
+        "value" : "FIELDMATCHING"
+      }, {
+        "name" : "query",
+        "value" : "SELECT * FROM <ontology> WHERE ..."
+      }, {
+        "name" : "queryNATIVE",
+        "value" : "db.<ontology>.find({},{})"
+      }, {
+        "name" : "columnSelector",
+        "value" : [ {
+          "columnName" : "cod_procedencia"
+        } ]
+      }, {
+        "name" : "columnMappings",
+        "value" : [ {
+          "field" : "/sku_procedencia_at",
+          "operator" : "EQUALS",
+          "isTimeStamp" : false,
+          "columnName" : "sku_procedencia"
+        } ]
+      }, {
+        "name" : "multipleValues",
+        "value" : "FIRST"
+      }, {
+        "name" : "dataPosition",
+        "value" : "/procedencia_atn"
+      }, {
+        "name" : "noValuePolicy",
+        "value" : "ERROR"
+      }, {
+        "name" : "localCache",
+        "value" : true
+      }, {
+        "name" : "limitCache",
+        "value" : false
+      }, {
+        "name" : "entriesNumber",
+        "value" : 1000
+      }, {
+        "name" : "cacheExpiration",
+        "value" : true
+      }, {
+        "name" : "timeValue",
+        "value" : 60
+      }, {
+        "name" : "timeUnit",
+        "value" : "MINUTES"
+      }, {
+        "name" : "expirationPolicy",
+        "value" : "ACCESS"
+      }, {
+        "name" : "retryMissing",
+        "value" : false
+      }, {
+        "name" : "initialLoad",
+        "value" : false
+      }, {
+        "name" : "maxRecordInitialLoad",
+        "value" : 2000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 391.5,
+        "stageType" : "PROCESSOR",
+        "icon" : "onesait_vector_processor.png",
+        "description" : "",
+        "label" : "Cruce Procedencia At",
+        "xPos" : 7703.240234375,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_36OutputLane17344320220240" ],
+      "outputLanes" : [ "OnesaitPlatformLookup_37OutputLane17344321892790" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "ExpressionEvaluator_01",
+      "library" : "streamsets-datacollector-basic-lib",
+      "stageName" : "com_streamsets_pipeline_stage_processor_expression_ExpressionDProcessor",
+      "stageVersion" : "2",
+      "configuration" : [ {
+        "name" : "expressionProcessorConfigs",
+        "value" : [ {
+          "expression" : "${null}",
+          "fieldToSet" : "/sipcod"
+        }, {
+          "expression" : "${null}",
+          "fieldToSet" : "/circunstancia_alta_cod"
+        }, {
+          "expression" : "${null}",
+          "fieldToSet" : "/circunstancia_alta_des"
+        }, {
+          "expression" : "${null}",
+          "fieldToSet" : "/cita_previa_cod"
+        }, {
+          "expression" : "${null}",
+          "fieldToSet" : "/cita_previa_des"
+        }, {
+          "expression" : "${null}",
+          "fieldToSet" : "/motivo_acceso_cod"
+        }, {
+          "expression" : "${null}",
+          "fieldToSet" : "/motivo_acceso_des"
+        }, {
+          "expression" : "${null}",
+          "fieldToSet" : "/orden_actividad_cod"
+        }, {
+          "expression" : "${null}",
+          "fieldToSet" : "/orden_actividad_des"
+        }, {
+          "expression" : "${null}",
+          "fieldToSet" : "/origen_consulta_cod"
+        }, {
+          "expression" : "${null}",
+          "fieldToSet" : "/origen_consulta_des"
+        }, {
+          "expression" : "${null}",
+          "fieldToSet" : "/tipo_consulta_cod"
+        }, {
+          "expression" : "${null}",
+          "fieldToSet" : "/tipo_consulta_des"
+        }, {
+          "expression" : "${null}",
+          "fieldToSet" : "/procedencia_asig_des"
+        }, {
+          "expression" : "${null}",
+          "fieldToSet" : "/procedencia_at_des"
+        } ]
+      }, {
+        "name" : "headerAttributeConfigs",
+        "value" : [ { } ]
+      }, {
+        "name" : "fieldAttributeConfigs",
+        "value" : [ {
+          "fieldToSet" : "/"
+        } ]
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 394.50396510532926,
+        "stageType" : "PROCESSOR",
+        "icon" : "expression.png",
+        "description" : "",
+        "label" : "Expression Evaluator 1",
+        "xPos" : 7906.473946707589,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "OnesaitPlatformLookup_37OutputLane17344321892790" ],
+      "outputLanes" : [ "ExpressionEvaluator_01OutputLane17325182918550" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "FieldRenamer_01",
+      "library" : "streamsets-datacollector-basic-lib",
+      "stageName" : "com_streamsets_pipeline_stage_processor_fieldrenamer_FieldRenamerDProcessor",
+      "stageVersion" : "2",
+      "configuration" : [ {
+        "name" : "renameMapping",
+        "value" : [ {
+          "fromFieldExpression" : "/procedencia_atn.cod_procedencia",
+          "toFieldExpression" : "/procedencia_at_cod"
+        }, {
+          "fromFieldExpression" : "/procedencia_asign.cod_procedencia",
+          "toFieldExpression" : "/procedencia_asig_cod"
+        }, {
+          "fromFieldExpression" : "/agenda.descrip",
+          "toFieldExpression" : "/recurso_agenda_des"
+        }, {
+          "fromFieldExpression" : "/agenda.cod",
+          "toFieldExpression" : "/recurso_agenda_cod"
+        }, {
+          "fromFieldExpression" : "/presencia.descrip",
+          "toFieldExpression" : "/presencia_paciente_des"
+        }, {
+          "fromFieldExpression" : "/presencia.cod",
+          "toFieldExpression" : "/presencia_paciente_cod"
+        }, {
+          "fromFieldExpression" : "/fin.descrip",
+          "toFieldExpression" : "/finalizado_des"
+        }, {
+          "fromFieldExpression" : "/fin.cod",
+          "toFieldExpression" : "/finalizado_cod"
+        }, {
+          "fromFieldExpression" : "/av_dom.descrip",
+          "toFieldExpression" : "/aviso_domicilio_des"
+        }, {
+          "fromFieldExpression" : "/av_dom.cod",
+          "toFieldExpression" : "/aviso_domicilio_cod"
+        }, {
+          "fromFieldExpression" : "/aten_realizada.descrip",
+          "toFieldExpression" : "/atencion_realizada_des"
+        }, {
+          "fromFieldExpression" : "/aten_realizada.cod",
+          "toFieldExpression" : "/atencion_realizada_cod"
+        }, {
+          "fromFieldExpression" : "/cita_directa.descrip",
+          "toFieldExpression" : "/cita_directa_des"
+        }, {
+          "fromFieldExpression" : "/cita_directa.cod",
+          "toFieldExpression" : "/cita_directa_cod"
+        }, {
+          "fromFieldExpression" : "/enf_otras.descrip",
+          "toFieldExpression" : "/enfermeria_otras_des"
+        }, {
+          "fromFieldExpression" : "/enf_otras.cod",
+          "toFieldExpression" : "/enfermeria_otras_cod"
+        }, {
+          "fromFieldExpression" : "/enf_iny.descrip",
+          "toFieldExpression" : "/enfermeria_inyecta_des"
+        }, {
+          "fromFieldExpression" : "/enf_iny.cod",
+          "toFieldExpression" : "/enfermeria_inyecta_cod"
+        }, {
+          "fromFieldExpression" : "/enf_cura.cod",
+          "toFieldExpression" : "/enfermeria_cura_cod"
+        }, {
+          "fromFieldExpression" : "/enf_cura.descrip",
+          "toFieldExpression" : "/enfermeria_cura_des"
+        }, {
+          "fromFieldExpression" : "/enf_extrac.descrip",
+          "toFieldExpression" : "/enfermeria_extrac_des"
+        }, {
+          "fromFieldExpression" : "/enf_extrac.cod",
+          "toFieldExpression" : "/enfermeria_extrac_cod"
+        }, {
+          "fromFieldExpression" : "/sku_consulta",
+          "toFieldExpression" : "/consulta_id"
+        }, {
+          "fromFieldExpression" : "/edad.cod",
+          "toFieldExpression" : "/edad_cod"
+        }, {
+          "fromFieldExpression" : "/edad.descrip",
+          "toFieldExpression" : "/edad_des"
+        }, {
+          "fromFieldExpression" : "/sexo.codigo_sexo",
+          "toFieldExpression" : "/sexo_cod"
+        }, {
+          "fromFieldExpression" : "/sexo.desc_sexo",
+          "toFieldExpression" : "/sexo_des"
+        }, {
+          "fromFieldExpression" : "/fecha_regis.nom_fecha",
+          "toFieldExpression" : "/fecha_registro"
+        }, {
+          "fromFieldExpression" : "/fecha_regis.desc_fecha",
+          "toFieldExpression" : "/fecha_registro_des"
+        }, {
+          "fromFieldExpression" : "/sku_cita",
+          "toFieldExpression" : "/cita_id"
+        }, {
+          "fromFieldExpression" : "/lugar.cod",
+          "toFieldExpression" : "/lugar_cod"
+        }, {
+          "fromFieldExpression" : "/lugar.descrip",
+          "toFieldExpression" : "/lugar_des"
+        }, {
+          "fromFieldExpression" : "/cronicidad.cod",
+          "toFieldExpression" : "/nivel_cronicidad_cod"
+        }, {
+          "fromFieldExpression" : "/cronicidad.descrip",
+          "toFieldExpression" : "/nivel_cronicidad_des"
+        }, {
+          "fromFieldExpression" : "/personal_curated.personal_nif",
+          "toFieldExpression" : "/personal_registrado_nif"
+        }, {
+          "fromFieldExpression" : "/personal_curated.personal_nom_compl",
+          "toFieldExpression" : "/personal_registrado_nombre_completo"
+        }, {
+          "fromFieldExpression" : "/personal_curated.categoria_profesional_cod",
+          "toFieldExpression" : "/personal_registrado_cat_profesional_cod"
+        }, {
+          "fromFieldExpression" : "/personal_curated.categoria_profesional_des",
+          "toFieldExpression" : "/personal_registrado_cat_profesional_des"
+        }, {
+          "fromFieldExpression" : "/centros.cod_zona",
+          "toFieldExpression" : "/zona_asig_cod"
+        }, {
+          "fromFieldExpression" : "/centros.desc_zona",
+          "toFieldExpression" : "/zona_asig_des"
+        }, {
+          "fromFieldExpression" : "/centros.cod_tipo_centro",
+          "toFieldExpression" : "/tipo_centro_asig_cod"
+        }, {
+          "fromFieldExpression" : "/centros.desc_tipo_centro",
+          "toFieldExpression" : "/tipo_centro_asig_des"
+        }, {
+          "fromFieldExpression" : "/centros.cod_centro",
+          "toFieldExpression" : "/centro_asig_cod"
+        }, {
+          "fromFieldExpression" : "/centros.desc_centro",
+          "toFieldExpression" : "/centro_asig_des"
+        }, {
+          "fromFieldExpression" : "/departamento.cod_departamento",
+          "toFieldExpression" : "/dpto_asig_cod"
+        }, {
+          "fromFieldExpression" : "/departamento.desc_departamento",
+          "toFieldExpression" : "/dpto_asig_des"
+        }, {
+          "fromFieldExpression" : "/servicio_sia_asig.cod",
+          "toFieldExpression" : "/servicio_sia_asig_cod"
+        }, {
+          "fromFieldExpression" : "/servicio_sia_asig.descrip",
+          "toFieldExpression" : "/servicio_sia_asig_des"
+        }, {
+          "fromFieldExpression" : "/servicio_sia_asig.flag_deriva_espe",
+          "toFieldExpression" : "/servicio_sia_asig_flag_deriva_espe"
+        }, {
+          "fromFieldExpression" : "/personal_asig_cur.personal_nif",
+          "toFieldExpression" : "/personal_asig_nif"
+        }, {
+          "fromFieldExpression" : "/personal_asig_cur.personal_nom_compl",
+          "toFieldExpression" : "/personal_asig_nombre_completo"
+        }, {
+          "fromFieldExpression" : "/personal_asig_cur.categoria_profesional_cod",
+          "toFieldExpression" : "/personal_asig_cat_profesional_cod"
+        }, {
+          "fromFieldExpression" : "/personal_asig_cur.categoria_profesional_des",
+          "toFieldExpression" : "/personal_asig_cat_profesional_des"
+        }, {
+          "fromFieldExpression" : "/centros.cod_municipio",
+          "toFieldExpression" : "/municipio_asig_cod"
+        }, {
+          "fromFieldExpression" : "/centros.desc_municipio",
+          "toFieldExpression" : "/municipio_asig_des"
+        }, {
+          "fromFieldExpression" : "/centros.cod_provincia",
+          "toFieldExpression" : "/provincia_asig_cod"
+        }, {
+          "fromFieldExpression" : "/centros.desc_provincia",
+          "toFieldExpression" : "/provincia_asig_des"
+        }, {
+          "fromFieldExpression" : "/centros.cod_ccaa",
+          "toFieldExpression" : "/ccaa_asig_cod"
+        }, {
+          "fromFieldExpression" : "/centros.desc_ccaa",
+          "toFieldExpression" : "/ccaa_asig_des"
+        }, {
+          "fromFieldExpression" : "/departamento_at.cod_departamento",
+          "toFieldExpression" : "/dpto_at_cod"
+        }, {
+          "fromFieldExpression" : "/departamento_at.desc_departamento",
+          "toFieldExpression" : "/dpto_at_des"
+        }, {
+          "fromFieldExpression" : "/centro.cod_zona",
+          "toFieldExpression" : "/zona_at_cod"
+        }, {
+          "fromFieldExpression" : "/centro.desc_zona",
+          "toFieldExpression" : "/zona_at_des"
+        }, {
+          "fromFieldExpression" : "/centro.cod_tipo_centro",
+          "toFieldExpression" : "/tipo_centro_at_cod"
+        }, {
+          "fromFieldExpression" : "/centro.desc_tipo_centro",
+          "toFieldExpression" : "/tipo_centro_at_des"
+        }, {
+          "fromFieldExpression" : "/centro.cod_centro",
+          "toFieldExpression" : "/centro_at_cod"
+        }, {
+          "fromFieldExpression" : "/centro.desc_centro",
+          "toFieldExpression" : "/centro_at_des"
+        }, {
+          "fromFieldExpression" : "/centro.cod_municipio",
+          "toFieldExpression" : "/municipio_at_cod"
+        }, {
+          "fromFieldExpression" : "/centro.desc_municipio",
+          "toFieldExpression" : "/municipio_at_des"
+        }, {
+          "fromFieldExpression" : "/centro.cod_provincia",
+          "toFieldExpression" : "/provincia_at_cod"
+        }, {
+          "fromFieldExpression" : "/centro.desc_provincia",
+          "toFieldExpression" : "/provincia_at_des"
+        }, {
+          "fromFieldExpression" : "/centro.cod_ccaa",
+          "toFieldExpression" : "/ccaa_at_cod"
+        }, {
+          "fromFieldExpression" : "/centro.desc_ccaa",
+          "toFieldExpression" : "/ccaa_at_des"
+        }, {
+          "fromFieldExpression" : "/servicio_sia.cod",
+          "toFieldExpression" : "/servicio_sia_at_cod"
+        }, {
+          "fromFieldExpression" : "/servicio_sia.descrip",
+          "toFieldExpression" : "/servicio_sia_at_des"
+        }, {
+          "fromFieldExpression" : "/servicio_sia.flag_deriva_espe",
+          "toFieldExpression" : "/servicio_sia_at_flag_deriva_espe"
+        }, {
+          "fromFieldExpression" : "/turno.cod_turno",
+          "toFieldExpression" : "/turno_cod"
+        }, {
+          "fromFieldExpression" : "/turno.desc_turno",
+          "toFieldExpression" : "/turno_des"
+        }, {
+          "fromFieldExpression" : "/personal_at.personal_nif",
+          "toFieldExpression" : "/personal_at_nif"
+        }, {
+          "fromFieldExpression" : "/personal_at.personal_nom_compl",
+          "toFieldExpression" : "/personal_at_nombre_completo"
+        }, {
+          "fromFieldExpression" : "/personal_at.categoria_profesional_cod",
+          "toFieldExpression" : "/personal_at_cat_profesional_cod"
+        }, {
+          "fromFieldExpression" : "/personal_at.categoria_profesional_des",
+          "toFieldExpression" : "/personal_at_cat_profesional_des"
+        }, {
+          "fromFieldExpression" : "/recurso_atiende",
+          "toFieldExpression" : "/recurso_at_id"
+        }, {
+          "fromFieldExpression" : "/derivacion.cod",
+          "toFieldExpression" : "/derivacion_cod"
+        }, {
+          "fromFieldExpression" : "/derivacion.descrip",
+          "toFieldExpression" : "/derivacion_des"
+        } ]
+      }, {
+        "name" : "errorHandler.nonExistingFromFieldHandling",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "errorHandler.existingToFieldHandling",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "errorHandler.multipleFromFieldsMatching",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 394.62331199645996,
+        "stageType" : "PROCESSOR",
+        "icon" : "edit.png",
+        "description" : "",
+        "label" : "Field Renamer 1",
+        "xPos" : 8099.601597377232,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "ExpressionEvaluator_01OutputLane17325182918550" ],
+      "outputLanes" : [ "FieldRenamer_01OutputLane17325174632260" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "FieldTypeConverter_01",
+      "library" : "streamsets-datacollector-basic-lib",
+      "stageName" : "com_streamsets_pipeline_stage_processor_fieldtypeconverter_FieldTypeConverterDProcessor",
+      "stageVersion" : "2",
+      "configuration" : [ {
+        "name" : "convertBy",
+        "value" : "BY_FIELD"
+      }, {
+        "name" : "fieldTypeConverterConfigs",
+        "value" : [ {
+          "decimalScaleRoundingStrategy" : "ROUND_UNNECESSARY",
+          "dateFormat" : "YYYY_MM_DD",
+          "scale" : -1,
+          "targetType" : "STRING",
+          "dataLocale" : "en,US",
+          "zonedDateTimeFormat" : "ISO_ZONED_DATE_TIME",
+          "fields" : [ "/fecha_registro" ],
+          "encoding" : "UTF-8",
+          "treatInputFieldAsDate" : false
+        } ]
+      }, {
+        "name" : "wholeTypeConverterConfigs",
+        "value" : [ {
+          "decimalScaleRoundingStrategy" : "ROUND_UNNECESSARY",
+          "sourceType" : "INTEGER",
+          "dateFormat" : "YYYY_MM_DD",
+          "scale" : -1,
+          "targetType" : "INTEGER",
+          "dataLocale" : "en,US",
+          "zonedDateTimeFormat" : "ISO_ZONED_DATE_TIME",
+          "encoding" : "UTF-8",
+          "treatInputFieldAsDate" : false
+        } ]
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 396.5,
+        "stageType" : "PROCESSOR",
+        "icon" : "converter.png",
+        "description" : "",
+        "label" : "Field Type Converter 1",
+        "xPos" : 8313.240234375,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "FieldRenamer_01OutputLane17325174632260" ],
+      "outputLanes" : [ "FieldTypeConverter_01OutputLane17344317033060" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "ExpressionEvaluator_02",
+      "library" : "streamsets-datacollector-basic-lib",
+      "stageName" : "com_streamsets_pipeline_stage_processor_expression_ExpressionDProcessor",
+      "stageVersion" : "2",
+      "configuration" : [ {
+        "name" : "expressionProcessorConfigs",
+        "value" : [ {
+          "expression" : "${record:value('/')}",
+          "fieldToSet" : "/"
+        } ]
+      }, {
+        "name" : "headerAttributeConfigs",
+        "value" : [ { } ]
+      }, {
+        "name" : "fieldAttributeConfigs",
+        "value" : [ {
+          "fieldToSet" : "/"
+        } ]
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 396.5,
+        "stageType" : "PROCESSOR",
+        "icon" : "expression.png",
+        "description" : "",
+        "label" : "Expression Evaluator 2",
+        "xPos" : 8512.740234375,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "FieldTypeConverter_01OutputLane17344317033060" ],
+      "outputLanes" : [ "ExpressionEvaluator_02OutputLane17344317150770" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "FieldTypeConverter_02",
+      "library" : "streamsets-datacollector-basic-lib",
+      "stageName" : "com_streamsets_pipeline_stage_processor_fieldtypeconverter_FieldTypeConverterDProcessor",
+      "stageVersion" : "2",
+      "configuration" : [ {
+        "name" : "convertBy",
+        "value" : "BY_FIELD"
+      }, {
+        "name" : "fieldTypeConverterConfigs",
+        "value" : [ {
+          "decimalScaleRoundingStrategy" : "ROUND_UNNECESSARY",
+          "dateFormat" : "OTHER",
+          "otherDateFormat" : "dd/MM/yyyy",
+          "scale" : -1,
+          "targetType" : "DATE",
+          "dataLocale" : "en,US",
+          "zonedDateTimeFormat" : "ISO_ZONED_DATE_TIME",
+          "fields" : [ "/fecha_registro" ],
+          "encoding" : "UTF-8",
+          "treatInputFieldAsDate" : false
+        }, {
+          "decimalScaleRoundingStrategy" : "ROUND_UNNECESSARY",
+          "dateFormat" : "YYYY_MM_DD",
+          "scale" : -1,
+          "targetType" : "INTEGER",
+          "dataLocale" : "en,US",
+          "zonedDateTimeFormat" : "ISO_ZONED_DATE_TIME",
+          "fields" : [ "/zona_asig_cod", "/zona_at_cod", "/tipo_centro_at_cod", "/tipo_centro_asig_cod", "/recurso_agenda_cod", "/provincia_asig_cod", "/procedencia_at_cod", "/procedencia_asig_cod", "/presencia_paciente_cod", "/nivel_cronicidad_cod", "/municipio_at_cod", "/municipio_asig_cod", "/finalizado_cod", "/enfermeria_otras_cod", "/enfermeria_inyecta_cod", "/enfermeria_extrac_cod", "/enfermeria_cura_cod", "/edad_cod", "/dpto_at_cod", "/dpto_asig_cod", "/derivacion_cod", "/cita_directa_cod", "/centro_at_cod", "/centro_asig_cod", "/ccaa_at_cod", "/ccaa_asig_cod", "/aviso_domicilio_cod", "/atencion_realizada_cod" ],
+          "encoding" : "UTF-8",
+          "treatInputFieldAsDate" : false
+        }, {
+          "decimalScaleRoundingStrategy" : "ROUND_UNNECESSARY",
+          "dateFormat" : "YYYY_MM_DD",
+          "scale" : -1,
+          "targetType" : "STRING",
+          "dataLocale" : "en,US",
+          "zonedDateTimeFormat" : "ISO_ZONED_DATE_TIME",
+          "fields" : [ "/hora_inicio", "/hora_fin", "/duracion_consulta" ],
+          "encoding" : "UTF-8",
+          "treatInputFieldAsDate" : false
+        } ]
+      }, {
+        "name" : "wholeTypeConverterConfigs",
+        "value" : [ {
+          "decimalScaleRoundingStrategy" : "ROUND_UNNECESSARY",
+          "sourceType" : "INTEGER",
+          "dateFormat" : "YYYY_MM_DD",
+          "scale" : -1,
+          "targetType" : "INTEGER",
+          "dataLocale" : "en,US",
+          "zonedDateTimeFormat" : "ISO_ZONED_DATE_TIME",
+          "encoding" : "UTF-8",
+          "treatInputFieldAsDate" : false
+        } ]
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 404,
+        "stageType" : "PROCESSOR",
+        "icon" : "converter.png",
+        "description" : "",
+        "label" : "Field Type Converter 2",
+        "xPos" : 8703.240234375,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "ExpressionEvaluator_02OutputLane17344317150770" ],
+      "outputLanes" : [ "FieldTypeConverter_02OutputLane17344317070330" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "ExpressionEvaluator_04",
+      "library" : "streamsets-datacollector-basic-lib",
+      "stageName" : "com_streamsets_pipeline_stage_processor_expression_ExpressionDProcessor",
+      "stageVersion" : "2",
+      "configuration" : [ {
+        "name" : "expressionProcessorConfigs",
+        "value" : [ {
+          "expression" : "${null}",
+          "fieldToSet" : "/fecha_act_curated"
+        }, {
+          "expression" : "${time:now()}",
+          "fieldToSet" : "/fecha_ins_curated"
+        } ]
+      }, {
+        "name" : "headerAttributeConfigs",
+        "value" : [ { } ]
+      }, {
+        "name" : "fieldAttributeConfigs",
+        "value" : [ {
+          "fieldToSet" : "/"
+        } ]
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 402.5,
+        "stageType" : "PROCESSOR",
+        "icon" : "expression.png",
+        "description" : "",
+        "label" : "Expression Evaluator 4",
+        "xPos" : 8898.333984375,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "FieldTypeConverter_02OutputLane17344317070330" ],
+      "outputLanes" : [ "ExpressionEvaluator_04OutputLane17364117330030" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "StreamSelector_03",
+      "library" : "streamsets-datacollector-basic-lib",
+      "stageName" : "com_streamsets_pipeline_stage_processor_selector_SelectorDProcessor",
+      "stageVersion" : "1",
+      "configuration" : [ {
+        "name" : "lanePredicates",
+        "value" : [ {
+          "outputLane" : "StreamSelector_03OutputLane1737561297863",
+          "predicate" : "${true}"
+        }, {
+          "outputLane" : "StreamSelector_03OutputLane1737561280055",
+          "predicate" : "default"
+        } ]
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 260.4205282540156,
+        "stageType" : "PROCESSOR",
+        "icon" : "laneSelector.png",
+        "description" : "",
+        "label" : "Stream Selector 3",
+        "xPos" : 9076.794150390626,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "ExpressionEvaluator_04OutputLane17364117330030" ],
+      "outputLanes" : [ "StreamSelector_03OutputLane1737561297863", "StreamSelector_03OutputLane1737561280055" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "FieldRemover_01",
+      "library" : "streamsets-datacollector-basic-lib",
+      "stageName" : "com_streamsets_pipeline_stage_processor_fieldfilter_FieldFilterDProcessor",
+      "stageVersion" : "1",
+      "configuration" : [ {
+        "name" : "filterOperation",
+        "value" : "KEEP"
+      }, {
+        "name" : "fields",
+        "value" : [ "/consulta_id", "/sipcod", "/edad_cod", "/edad_des", "/sexo_cod", "/sexo_des", "/fecha_registro", "/fecha_registro_des", "/hora_inicio", "/hora_fin", "/duracion_consulta", "/circunstancia_alta_cod", "/circunstancia_alta_des", "/cita_id", "/cita_previa_cod", "/cita_previa_des", "/lugar_cod", "/lugar_des", "/motivo_acceso_cod", "/motivo_acceso_des", "/nivel_cronicidad_cod", "/nivel_cronicidad_des", "/orden_actividad_cod", "/orden_actividad_des", "/origen_consulta_cod", "/origen_consulta_des", "/personal_registrado_nif", "/personal_registrado_nombre_completo", "/personal_registrado_cat_profesional_cod", "/personal_registrado_cat_profesional_des", "/tipo_consulta_cod", "/tipo_consulta_des", "/dpto_asig_cod", "/dpto_asig_des", "/zona_asig_cod", "/zona_asig_des", "/procedencia_asig_cod", "/procedencia_asig_des", "/tipo_centro_asig_cod", "/tipo_centro_asig_des", "/centro_asig_cod", "/centro_asig_des", "/servicio_sia_asig_cod", "/servicio_sia_asig_des", "/personal_asig_nif", "/personal_asig_nombre_completo", "/personal_asig_cat_profesional_cod", "/personal_asig_cat_profesional_des", "/municipio_asig_cod", "/municipio_asig_des", "/provincia_asig_cod", "/provincia_asig_des", "/ccaa_asig_cod", "/ccaa_asig_des", "/dpto_at_cod", "/dpto_at_des", "/zona_at_cod", "/zona_at_des", "/procedencia_at_cod", "/procedencia_at_des", "/tipo_centro_at_cod", "/tipo_centro_at_des", "/centro_at_cod", "/centro_at_des", "/servicio_sia_at_cod", "/servicio_sia_at_des", "/turno_cod", "/turno_des", "/personal_at_nif", "/personal_at_nombre_completo", "/personal_at_cat_profesional_cod", "/personal_at_cat_profesional_des", "/recurso_at_id", "/municipio_at_cod", "/municipio_at_des", "/provincia_at_cod", "/provincia_at_des", "/ccaa_at_cod", "/ccaa_at_des", "/atencont_key", "/derivacion_cod", "/derivacion_des", "/enfermeria_cura_cod", "/enfermeria_cura_des", "/enfermeria_extrac_cod", "/enfermeria_extrac_des", "/enfermeria_inyecta_cod", "/enfermeria_inyecta_des", "/enfermeria_otras_cod", "/enfermeria_otras_des", "/cita_directa_cod", "/cita_directa_des", "/atencion_realizada_cod", "/atencion_realizada_des", "/aviso_domicilio_cod", "/aviso_domicilio_des", "/finalizado_cod", "/finalizado_des", "/presencia_paciente_cod", "/presencia_paciente_des", "/recurso_agenda_cod", "/recurso_agenda_des", "/servicio_sia_asig_flag_deriva_espe", "/servicio_sia_at_flag_deriva_espe", "/fecha_act_curated", "/fecha_ins_curated" ]
+      }, {
+        "name" : "constant",
+        "value" : null
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 396.1348532051875,
+        "stageType" : "PROCESSOR",
+        "icon" : "filter.png",
+        "description" : "",
+        "label" : "Field Remover 1",
+        "xPos" : 9292.508994140626,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "StreamSelector_03OutputLane1737561280055" ],
+      "outputLanes" : [ "FieldRemover_01OutputLane17325195933200" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "FieldRemover_02",
+      "library" : "streamsets-datacollector-basic-lib",
+      "stageName" : "com_streamsets_pipeline_stage_processor_fieldfilter_FieldFilterDProcessor",
+      "stageVersion" : "1",
+      "configuration" : [ {
+        "name" : "filterOperation",
+        "value" : "REMOVE"
+      }, {
+        "name" : "fields",
+        "value" : [ "/sku_cita_directa", "/sku_igual_fechas", "/sku_enfermeria_inyecta", "/sku_enfermeria_extrac", "/sku_centro_asig", "/sku_enfermeria_otras", "/sku_finalizado", "/sku_recurso_agenda", "/sku_edad", "/sku_consulta_codificada", "/sku_servicio_sia", "/sku_procedencia_at", "/sku_circunstancia_alta", "/sku_aviso_domicilio", "/fecha_act_date", "/sku_cita_previa", "/sku_firmado", "/sku_nivel_cronicidad", "/sku_procedencia_asig", "/sku_personal_asig", "/sku_personal_atiende", "/sku_personal_registra", "/sku_turno", "/_id", "/sip_encriptado", "/sku_presencia_paciente", "/sku_enfermeria_cura", "/sku_fecha_registro", "/dias_espera_lab_estruc", "/sku_servicio_sia_asig", "/sku_orden_actividad", "/fecha_act", "/sku_sexo", "/sku_departamento", "/sku_lugar", "/sip", "/sku_atencion_realizada", "/sku_centro", "/sku_derivacion", "/sku_origen_consulta", "/sku_tipo_consulta", "/sku_motivo_acceso", "/sku_departamento_asig", "/edad", "/sexo", "/fecha_regis", "/lugar", "/cronicidad", "/personal_curated", "/centros", "/departamento", "/servicio_sia_asig", "/personal_asig_cur", "/departamento_at", "/centro", "/servicio_sia", "/turno", "/personal_at", "/derivacion", "/enf_cura", "/enf_extrac", "/enf_iny", "/enf_otras", "/cita_directa", "/aten_realizada", "/av_dom", "/fin", "/presencia", "/agenda", "/procedencia_asign", "/procedencia_atn" ]
+      }, {
+        "name" : "constant",
+        "value" : null
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 235.71429443359375,
+        "stageType" : "PROCESSOR",
+        "icon" : "filter.png",
+        "description" : "",
+        "label" : "Field Remover 2",
+        "xPos" : 9276.42578125,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "StreamSelector_03OutputLane1737561297863" ],
+      "outputLanes" : [ "FieldRemover_02OutputLane17375613107380" ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    }, {
+      "instanceName" : "OnesaitPlatformDestination_01",
+      "library" : "onesaitplatform-streamsets",
+      "stageName" : "com_minsait_onesait_platform_streamsets_destination_OnesaitplatformDTarget",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "stageDConfig.protocol",
+        "value" : "http"
+      }, {
+        "name" : "stageDConfig.host",
+        "value" : "iotbrokerservice"
+      }, {
+        "name" : "stageDConfig.port",
+        "value" : 19000
+      }, {
+        "name" : "stageDConfig.avoidSSL",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.timeout",
+        "value" : 30000
+      }, {
+        "name" : "stageDConfig.token",
+        "value" : "${clientToken}"
+      }, {
+        "name" : "stageDConfig.device",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.deviceId",
+        "value" : "${digitalClient}"
+      }, {
+        "name" : "stageDConfig.ontology",
+        "value" : "${CuratedOntologyName}"
+      }, {
+        "name" : "stageDConfig.proxyDConfig.useProxy",
+        "value" : false
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyHost",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyPort",
+        "value" : 80
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUser",
+        "value" : null
+      }, {
+        "name" : "stageDConfig.proxyDConfig.proxyUserPassword",
+        "value" : null
+      }, {
+        "name" : "ontologyProcessInstance",
+        "value" : "NOROOTNODE"
+      }, {
+        "name" : "customRootNode",
+        "value" : null
+      }, {
+        "name" : "bulk",
+        "value" : 250
+      }, {
+        "name" : "thread",
+        "value" : 9
+      }, {
+        "name" : "timeseriesOntology",
+        "value" : false
+      }, {
+        "name" : "generateErrorOnNoModification",
+        "value" : true
+      }, {
+        "name" : "timeseriesMultiupdate",
+        "value" : true
+      }, {
+        "name" : "retryAtMultiUpdateFail",
+        "value" : false
+      }, {
+        "name" : "retryExecutorThreads",
+        "value" : 10
+      }, {
+        "name" : "timeseriesTimeOntology",
+        "value" : "TENMINUTES"
+      }, {
+        "name" : "destinationTimeseriesValueField",
+        "value" : "values"
+      }, {
+        "name" : "timeseriesFieldOntology",
+        "value" : "timestamp"
+      }, {
+        "name" : "valueTimeseriesField",
+        "value" : "v"
+      }, {
+        "name" : "precalcSumTimeseries",
+        "value" : false
+      }, {
+        "name" : "precalcSumTimeseriesField",
+        "value" : "s"
+      }, {
+        "name" : "precalcSumTimeseriesProperty",
+        "value" : null
+      }, {
+        "name" : "precalcCountTimeseries",
+        "value" : false
+      }, {
+        "name" : "precalcCountTimeseriesField",
+        "value" : "c"
+      }, {
+        "name" : "historyTimeseries",
+        "value" : false
+      }, {
+        "name" : "historyTimeseriesField",
+        "value" : "h"
+      }, {
+        "name" : "historyTimeStampField",
+        "value" : "/historyTimestamp"
+      }, {
+        "name" : "updateFields",
+        "value" : [ ]
+      }, {
+        "name" : "originTimeseriesValueField",
+        "value" : "/value"
+      }, {
+        "name" : "timestampRecordField",
+        "value" : "/timestamp"
+      }, {
+        "name" : "minTimeseries",
+        "value" : false
+      }, {
+        "name" : "minTimeseriesFields",
+        "value" : [ { } ]
+      }, {
+        "name" : "maxTimeseries",
+        "value" : false
+      }, {
+        "name" : "maxTimeseriesFields",
+        "value" : [ { } ]
+      }, {
+        "name" : "maxTimeseriesRoot",
+        "value" : false
+      }, {
+        "name" : "maxTimeseriesRootFields",
+        "value" : [ { } ]
+      }, {
+        "name" : "minTimeseriesRoot",
+        "value" : false
+      }, {
+        "name" : "minTimeseriesRootFields",
+        "value" : [ { } ]
+      }, {
+        "name" : "ignoreNulls",
+        "value" : false
+      }, {
+        "name" : "createNewDocs",
+        "value" : false
+      }, {
+        "name" : "expirationTime",
+        "value" : 600
+      }, {
+        "name" : "maxCacheSize",
+        "value" : 10000
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      }, {
+        "name" : "stageRequiredFields",
+        "value" : [ ]
+      }, {
+        "name" : "stageRecordPreconditions",
+        "value" : [ ]
+      } ],
+      "uiInfo" : {
+        "yPos" : 308.0952377319336,
+        "stageType" : "TARGET",
+        "icon" : "onesait_vector_insert.png",
+        "description" : "",
+        "label" : "OnesaitPlatform Destination 1",
+        "xPos" : 9544.998046875,
+        "displayMode" : "BASIC"
+      },
+      "inputLanes" : [ "FieldRemover_01OutputLane17325195933200", "FieldRemover_02OutputLane17375613107380" ],
+      "outputLanes" : [ ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    } ],
+    "errorStage" : {
+      "instanceName" : "Discard_ErrorStage",
+      "library" : "streamsets-datacollector-basic-lib",
+      "stageName" : "com_streamsets_pipeline_stage_destination_devnull_ToErrorNullDTarget",
+      "stageVersion" : "1",
+      "configuration" : [ ],
+      "uiInfo" : {
+        "yPos" : 50,
+        "stageType" : "TARGET",
+        "icon" : "",
+        "description" : "",
+        "label" : "Error Records - Discard",
+        "xPos" : 6615.000000000001
+      },
+      "inputLanes" : [ ],
+      "outputLanes" : [ ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    },
+    "info" : {
+      "pipelineId" : "copiateste18ce247-6528-4be2-ac1c-8f07400b3756",
+      "title" : "copia_test",
+      "description" : "",
+      "created" : 1737561403392,
+      "lastModified" : 1737565982186,
+      "creator" : "admin",
+      "lastModifier" : "admin",
+      "lastRev" : "0",
+      "uuid" : "01fae643-ad34-494d-9487-348080cf7d2a",
+      "valid" : true,
+      "metadata" : {
+        "labels" : [ ]
+      },
+      "name" : "copiateste18ce247-6528-4be2-ac1c-8f07400b3756",
+      "sdcVersion" : "3.18.1",
+      "sdcId" : "778fec7d-9229-11ef-8950-3ba42ecd7116"
+    },
+    "metadata" : {
+      "labels" : [ ]
+    },
+    "statsAggregatorStage" : {
+      "instanceName" : "statsAggregatorStageInstance",
+      "library" : "streamsets-datacollector-basic-lib",
+      "stageName" : "com_streamsets_pipeline_stage_destination_devnull_StatsDpmDirectlyDTarget",
+      "stageVersion" : "1",
+      "configuration" : [ ],
+      "uiInfo" : {
+        "stageType" : "TARGET",
+        "label" : "Stats Aggregator -Write Directly to Control Hub - statistics are not aggregated across Data Collectors"
+      },
+      "inputLanes" : [ ],
+      "outputLanes" : [ ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    },
+    "startEventStages" : [ {
+      "instanceName" : "Discard_StartEventStage",
+      "library" : "streamsets-datacollector-basic-lib",
+      "stageName" : "com_streamsets_pipeline_stage_destination_devnull_ToErrorNullDTarget",
+      "stageVersion" : "1",
+      "configuration" : [ ],
+      "uiInfo" : {
+        "description" : "",
+        "yPos" : 50,
+        "label" : "Start Event - Discard",
+        "xPos" : 280,
+        "stageType" : "TARGET"
+      },
+      "inputLanes" : [ ],
+      "outputLanes" : [ ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    } ],
+    "stopEventStages" : [ {
+      "instanceName" : "Discard_StopEventStage",
+      "library" : "streamsets-datacollector-basic-lib",
+      "stageName" : "com_streamsets_pipeline_stage_destination_devnull_ToErrorNullDTarget",
+      "stageVersion" : "1",
+      "configuration" : [ ],
+      "uiInfo" : {
+        "description" : "",
+        "yPos" : 50,
+        "label" : "Stop Event - Discard",
+        "xPos" : 280,
+        "stageType" : "TARGET"
+      },
+      "inputLanes" : [ ],
+      "outputLanes" : [ ],
+      "eventLanes" : [ ],
+      "services" : [ ]
+    } ],
+    "testOriginStage" : {
+      "instanceName" : "com_streamsets_pipeline_stage_devtest_rawdata_RawDataDSource_TestOriginStage",
+      "library" : "streamsets-datacollector-dev-lib",
+      "stageName" : "com_streamsets_pipeline_stage_devtest_rawdata_RawDataDSource",
+      "stageVersion" : "3",
+      "configuration" : [ {
+        "name" : "rawData",
+        "value" : "{\n        \"SKU_CITA\": \"3hbuuWsIY45+G2m+kBEwCCQQRLUDmjndHm30dQqkIzU=\",\n        \"SKU_FECHA_REGISTRO\": \"20221020\",\n        \"SKU_DEPARTAMENTO\": 6,\n        \"SKU_PROCEDENCIA_AT\": 246,\n        \"SKU_CENTRO\": \"+/fYf4Esm7KCKhRwb2dlUHsoqjIUdDiq0s3Bee2Jkco=\",\n        \"SKU_SERVICIO_SIA\": -632754070,\n        \"SKU_PERSONAL_CITA\": \"dfCjvNHstrT5hr+PntX8Lg==\",\n        \"SKU_ORDEN_PRESTACION\": null,\n        \"SKU_TIPO_PRESTACION\": null,\n        \"SKU_PRESTACION\": null,\n        \"SKU_PRIORIDAD\": null,\n        \"SKU_TURNO\": 1,\n        \"SKU_LUGAR\": \"C\",\n        \"SKU_MEDIO_CITACION\": null,\n        \"SKU_TIPO_CITA\": \"A D\",\n        \"SKU_RECURSO_AGENDA\": \"S\",\n        \"SKU_CITA_DIRECTA\": \"S\",\n        \"SKU_CITA_MULTIPLE\": \"N\",\n        \"SKU_CITA_PREVIA\": \"N\",\n        \"HORA_CITA\": 1059,\n        \"SIP\": \"FvPGSzesBiehWrTM8Bb6hg==\",\n        \"FECHA_PRIMERA_BUSQUEDA\": 1666256395000,\n        \"FECHA_CITA\": 1666216800000,\n        \"CODIGO_AGENDA\": \"CARDIA\",\n        \"RECURSO_CITA\": 139005,\n        \"RECURSO_ATIENDE\": null,\n        \"DIAS_ESPERA_LAB_PROSPEC\": null,\n        \"DIAS_ESPERA_NAT_PROSPEC\": null,\n        \"ORIGEN\": null,\n        \"RECITACION\": null,\n        \"FECHA_ACT\": null,\n        \"MOTIACHI_COD\": \"CONPPACI\"\n    }"
+      }, {
+        "name" : "stopAfterFirstBatch",
+        "value" : false
+      }, {
+        "name" : "eventData",
+        "value" : null
+      }, {
+        "name" : "stageOnRecordError",
+        "value" : "TO_ERROR"
+      } ],
+      "uiInfo" : {
+        "yPos" : 56,
+        "label" : "Test Origin - Dev Raw Data Source",
+        "xPos" : 53,
+        "stageType" : "SOURCE"
+      },
+      "inputLanes" : [ ],
+      "outputLanes" : [ "KafkaMultitopicConsumer_01OutputLane17116438609600" ],
+      "eventLanes" : [ ],
+      "services" : [ {
+        "service" : "com.streamsets.pipeline.api.service.dataformats.DataFormatParserService",
+        "serviceVersion" : 2,
+        "configuration" : [ {
+          "name" : "displayFormats",
+          "value" : "DELIMITED,JSON,LOG,SDC_JSON,TEXT,XML"
+        }, {
+          "name" : "dataFormat",
+          "value" : "JSON"
+        }, {
+          "name" : "dataFormatConfig.compression",
+          "value" : "NONE"
+        }, {
+          "name" : "dataFormatConfig.filePatternInArchive",
+          "value" : "*"
+        }, {
+          "name" : "dataFormatConfig.charset",
+          "value" : "UTF-8"
+        }, {
+          "name" : "dataFormatConfig.removeCtrlChars",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.textMaxLineLen",
+          "value" : 1024
+        }, {
+          "name" : "dataFormatConfig.useCustomDelimiter",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.customDelimiter",
+          "value" : "\\r\\n"
+        }, {
+          "name" : "dataFormatConfig.includeCustomDelimiterInTheText",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.jsonContent",
+          "value" : "MULTIPLE_OBJECTS"
+        }, {
+          "name" : "dataFormatConfig.jsonMaxObjectLen",
+          "value" : 4096
+        }, {
+          "name" : "dataFormatConfig.csvFileFormat",
+          "value" : "CSV"
+        }, {
+          "name" : "dataFormatConfig.csvHeader",
+          "value" : "NO_HEADER"
+        }, {
+          "name" : "dataFormatConfig.csvAllowExtraColumns",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.csvExtraColumnPrefix",
+          "value" : "_extra_"
+        }, {
+          "name" : "dataFormatConfig.csvMaxObjectLen",
+          "value" : 1024
+        }, {
+          "name" : "dataFormatConfig.csvCustomDelimiter",
+          "value" : "|"
+        }, {
+          "name" : "dataFormatConfig.multiCharacterFieldDelimiter",
+          "value" : "||"
+        }, {
+          "name" : "dataFormatConfig.multiCharacterLineDelimiter",
+          "value" : "${str:unescapeJava('\\\\n')}"
+        }, {
+          "name" : "dataFormatConfig.csvCustomEscape",
+          "value" : "\\"
+        }, {
+          "name" : "dataFormatConfig.csvCustomQuote",
+          "value" : "\""
+        }, {
+          "name" : "dataFormatConfig.csvEnableComments",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.csvCommentMarker",
+          "value" : "#"
+        }, {
+          "name" : "dataFormatConfig.csvIgnoreEmptyLines",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.csvRecordType",
+          "value" : "LIST_MAP"
+        }, {
+          "name" : "dataFormatConfig.csvSkipStartLines",
+          "value" : 0
+        }, {
+          "name" : "dataFormatConfig.parseNull",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.nullConstant",
+          "value" : "\\\\N"
+        }, {
+          "name" : "dataFormatConfig.xmlRecordElement",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.preserveRootElement",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.includeFieldXpathAttributes",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.xPathNamespaceContext",
+          "value" : [ ]
+        }, {
+          "name" : "dataFormatConfig.outputFieldAttributes",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.xmlMaxObjectLen",
+          "value" : 4096
+        }, {
+          "name" : "dataFormatConfig.logMode",
+          "value" : "COMMON_LOG_FORMAT"
+        }, {
+          "name" : "dataFormatConfig.logMaxObjectLen",
+          "value" : 1024
+        }, {
+          "name" : "dataFormatConfig.retainOriginalLine",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.customLogFormat",
+          "value" : "%h %l %u %t \"%r\" %>s %b"
+        }, {
+          "name" : "dataFormatConfig.regex",
+          "value" : "^(\\S+) (\\S+) (\\S+) \\[([\\w:/]+\\s[+\\-]\\d{4})\\] \"(\\S+) (\\S+) (\\S+)\" (\\d{3}) (\\d+)"
+        }, {
+          "name" : "dataFormatConfig.fieldPathsToGroupName",
+          "value" : [ {
+            "fieldPath" : "/",
+            "group" : 1
+          } ]
+        }, {
+          "name" : "dataFormatConfig.grokPatternDefinition",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.grokPattern",
+          "value" : "%{COMMONAPACHELOG}"
+        }, {
+          "name" : "dataFormatConfig.onParseError",
+          "value" : "ERROR"
+        }, {
+          "name" : "dataFormatConfig.maxStackTraceLines",
+          "value" : 50
+        }, {
+          "name" : "dataFormatConfig.enableLog4jCustomLogFormat",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.log4jCustomLogFormat",
+          "value" : "%r [%t] %-5p %c %x - %m%n"
+        }, {
+          "name" : "dataFormatConfig.avroSchemaSource",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.avroSchema",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.schemaRegistryUrls",
+          "value" : [ ]
+        }, {
+          "name" : "dataFormatConfig.basicAuth",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.schemaLookupMode",
+          "value" : "SUBJECT"
+        }, {
+          "name" : "dataFormatConfig.subject",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.schemaId",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.avroSkipUnionIndex",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.protoDescriptorFile",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.messageType",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.isDelimited",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.binaryMaxObjectLen",
+          "value" : 1024
+        }, {
+          "name" : "dataFormatConfig.datagramMode",
+          "value" : "SYSLOG"
+        }, {
+          "name" : "dataFormatConfig.typesDbPath",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.convertTime",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.excludeInterval",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.authFilePath",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.netflowOutputValuesMode",
+          "value" : "RAW_AND_INTERPRETED"
+        }, {
+          "name" : "dataFormatConfig.maxTemplateCacheSize",
+          "value" : -1
+        }, {
+          "name" : "dataFormatConfig.templateCacheTimeoutMs",
+          "value" : -1
+        }, {
+          "name" : "dataFormatConfig.netflowOutputValuesModeDatagram",
+          "value" : "RAW_AND_INTERPRETED"
+        }, {
+          "name" : "dataFormatConfig.maxTemplateCacheSizeDatagram",
+          "value" : -1
+        }, {
+          "name" : "dataFormatConfig.templateCacheTimeoutMsDatagram",
+          "value" : -1
+        }, {
+          "name" : "dataFormatConfig.wholeFileMaxObjectLen",
+          "value" : 8192
+        }, {
+          "name" : "dataFormatConfig.rateLimit",
+          "value" : "-1"
+        }, {
+          "name" : "dataFormatConfig.verifyChecksum",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.excelHeader",
+          "value" : null
+        }, {
+          "name" : "dataFormatConfig.excelSkipCellsWithNoHeader",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.excelReadAllSheets",
+          "value" : false
+        }, {
+          "name" : "dataFormatConfig.excelSheetNames",
+          "value" : [ ]
+        } ]
+      } ]
+    },
+    "valid" : true,
+    "issues" : {
+      "pipelineIssues" : [ ],
+      "stageIssues" : { },
+      "issueCount" : 0
+    },
+    "previewable" : true
+  },
+  "pipelineRules" : {
+    "schemaVersion" : 3,
+    "version" : 2,
+    "metricsRuleDefinitions" : [ {
+      "id" : "badRecordsAlertID",
+      "alertText" : "High incidence of Error Records",
+      "metricId" : "pipeline.batchErrorRecords.counter",
+      "metricType" : "COUNTER",
+      "metricElement" : "COUNTER_COUNT",
+      "condition" : "${value() > 100}",
+      "sendEmail" : false,
+      "enabled" : false,
+      "timestamp" : 1711639348555,
+      "valid" : true
+    }, {
+      "id" : "stageErrorAlertID",
+      "alertText" : "High incidence of Stage Errors",
+      "metricId" : "pipeline.batchErrorMessages.counter",
+      "metricType" : "COUNTER",
+      "metricElement" : "COUNTER_COUNT",
+      "condition" : "${value() > 100}",
+      "sendEmail" : false,
+      "enabled" : false,
+      "timestamp" : 1711639348555,
+      "valid" : true
+    }, {
+      "id" : "idleGaugeID",
+      "alertText" : "Pipeline is Idle",
+      "metricId" : "RuntimeStatsGauge.gauge",
+      "metricType" : "GAUGE",
+      "metricElement" : "TIME_OF_LAST_RECEIVED_RECORD",
+      "condition" : "${time:now() - value() > 120000}",
+      "sendEmail" : false,
+      "enabled" : false,
+      "timestamp" : 1711639348555,
+      "valid" : true
+    }, {
+      "id" : "batchTimeAlertID",
+      "alertText" : "Batch taking more time to process",
+      "metricId" : "RuntimeStatsGauge.gauge",
+      "metricType" : "GAUGE",
+      "metricElement" : "CURRENT_BATCH_AGE",
+      "condition" : "${value() > 200}",
+      "sendEmail" : false,
+      "enabled" : false,
+      "timestamp" : 1711639348555,
+      "valid" : true
+    } ],
+    "dataRuleDefinitions" : [ {
+      "id" : "dataRule1731570366979",
+      "label" : "centros",
+      "lane" : "OnesaitPlatformLookup_01OutputLane17314263794730",
+      "samplingPercentage" : 5.0,
+      "samplingRecordsToRetain" : 10,
+      "condition" : "true",
+      "alertEnabled" : true,
+      "alertText" : "",
+      "thresholdType" : "COUNT",
+      "thresholdValue" : "100",
+      "minVolume" : 1000,
+      "meterEnabled" : true,
+      "sendEmail" : false,
+      "enabled" : false,
+      "timestamp" : 0,
+      "valid" : true
+    }, {
+      "id" : "dataRule1731570388943",
+      "label" : "servicio sia",
+      "lane" : "OnesaitPlatformLookup_02OutputLane17315178900620",
+      "samplingPercentage" : 5.0,
+      "samplingRecordsToRetain" : 10,
+      "condition" : "true",
+      "alertEnabled" : true,
+      "alertText" : "",
+      "thresholdType" : "COUNT",
+      "thresholdValue" : "100",
+      "minVolume" : 1000,
+      "meterEnabled" : true,
+      "sendEmail" : false,
+      "enabled" : false,
+      "timestamp" : 0,
+      "valid" : true
+    }, {
+      "id" : "dataRule1731570402422",
+      "label" : "lugar",
+      "lane" : "OnesaitPlatformLookup_03OutputLane17315189315870",
+      "samplingPercentage" : 5.0,
+      "samplingRecordsToRetain" : 10,
+      "condition" : "true",
+      "alertEnabled" : true,
+      "alertText" : "",
+      "thresholdType" : "COUNT",
+      "thresholdValue" : "100",
+      "minVolume" : 1000,
+      "meterEnabled" : true,
+      "sendEmail" : false,
+      "enabled" : false,
+      "timestamp" : 0,
+      "valid" : true
+    }, {
+      "id" : "dataRule1731570420371",
+      "label" : "turno",
+      "lane" : "OnesaitPlatformLookup_04OutputLane17315696331700",
+      "samplingPercentage" : 5.0,
+      "samplingRecordsToRetain" : 10,
+      "condition" : "true",
+      "alertEnabled" : true,
+      "alertText" : "",
+      "thresholdType" : "COUNT",
+      "thresholdValue" : "100",
+      "minVolume" : 1000,
+      "meterEnabled" : true,
+      "sendEmail" : false,
+      "enabled" : false,
+      "timestamp" : 0,
+      "valid" : true
+    }, {
+      "id" : "dataRule1731570430415",
+      "label" : "edad",
+      "lane" : "OnesaitPlatformLookup_05OutputLane17315696428000",
+      "samplingPercentage" : 5.0,
+      "samplingRecordsToRetain" : 10,
+      "condition" : "true",
+      "alertEnabled" : true,
+      "alertText" : "",
+      "thresholdType" : "COUNT",
+      "thresholdValue" : "100",
+      "minVolume" : 1000,
+      "meterEnabled" : true,
+      "sendEmail" : false,
+      "enabled" : false,
+      "timestamp" : 0,
+      "valid" : true
+    }, {
+      "id" : "dataRule1737559610530",
+      "label" : "Rule",
+      "lane" : "ExpressionEvaluator_04OutputLane17364117330030",
+      "samplingPercentage" : 5.0,
+      "samplingRecordsToRetain" : 10,
+      "condition" : "${true}",
+      "alertEnabled" : false,
+      "alertText" : "",
+      "thresholdType" : "COUNT",
+      "thresholdValue" : "100",
+      "minVolume" : 1000,
+      "meterEnabled" : false,
+      "sendEmail" : false,
+      "enabled" : true,
+      "timestamp" : 0,
+      "valid" : true
+    } ],
+    "driftRuleDefinitions" : [ ],
+    "uuid" : "0cff66b5-bc31-41a0-984b-303e445cc8b3",
+    "configuration" : [ {
+      "name" : "emailIDs",
+      "value" : [ ]
+    }, {
+      "name" : "webhookConfigs",
+      "value" : [ ]
+    } ],
+    "ruleIssues" : [ ],
+    "configIssues" : [ ]
+  },
+  "libraryDefinitions" : null
+}
