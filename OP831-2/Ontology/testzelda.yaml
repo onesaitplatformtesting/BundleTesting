@@ -1,0 +1,60 @@
+---
+createdAt: 1748879006000
+updatedAt: 1748879579000
+id: "52bdf6b0-3fc8-11f0-acf4-324a2a1b7e45"
+identification: "testzelda"
+user: "developer"
+jsonSchema:
+  $schema: "http://json-schema.org/draft-07/schema#"
+  title: "DataModel testzelda Schema"
+  type: "object"
+  required:
+  - "testzelda"
+  properties:
+    testzelda:
+      type: "string"
+      $ref: "#/datos"
+  datos:
+    description: "Properties for DataModel testzelda"
+    type: "object"
+    required:
+    - "dni"
+    - "age"
+    properties:
+      dni:
+        type: "string"
+        propdclass:
+        - "GeneralDataClass.toUpperCase"
+        - "GeneralDataClass.dniformat"
+      age:
+        type: "number"
+  description: "testzelda"
+  entitydclass:
+  - "GeneralDataClass.adultAge"
+  additionalProperties: true
+dataModel: "MASTER-DataModel-5"
+active: true
+contextDataEnabled: true
+rtdbClean: false
+rtdbCleanLapse: "NEVER"
+rtdbToHdb: false
+description: "testzelda"
+metainf: "testzelda"
+ontologyUserAccesses: []
+rtdbDatasource: "MONGO"
+allowsCypherFields: false
+allowsCreateTopic: false
+allowsCreateNotificationTopic: false
+allowsNotificationBpm: false
+allowsCreateMqttTopic: false
+partitionKey: "/id"
+supportsJsonLd: false
+jsonLdContext: ""
+enableDataClass: false
+showForm: ""
+editForm: ""
+listForm: ""
+public: false
+ontologyKPI: null
+ontologyAI: null
+ontologyTimeSeries: null
