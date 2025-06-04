@@ -1,0 +1,16 @@
+---
+createdAt: 1732706622000
+updatedAt: 1749021383000
+userId: "developer"
+email: "developer@onesaitplatform.com"
+role:
+  createdAt: 1732706622000
+  updatedAt: 1732706622000
+  id: "ROLE_DEVELOPER"
+  name: "Developer"
+  description: "Advanced User of the Platform"
+password: "abcdefghijklmnopqrstuvyskOwp3Zjjuvf4UxUGcC7Ybq5w9S1iXJS2whDw4sE1A="
+active: true
+fullName: "A Developer of the Platform."
+extraFields: null
+id: "developer"

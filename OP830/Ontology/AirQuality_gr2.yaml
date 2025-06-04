@@ -1,0 +1,60 @@
+---
+createdAt: 1732708661000
+updatedAt: 1732708661000
+id: "MASTER-Ontology-8"
+identification: "AirQuality_gr2"
+user: "developer"
+jsonSchema:
+  $schema: "http://json-schema.org/draft-04/schema#"
+  title: "AirQuality_gr2"
+  type: "object"
+  required:
+  - "AirQuality_gr2"
+  properties:
+    AirQuality_gr2:
+      type: "string"
+      $ref: "#/datos"
+  datos:
+    description: "Info AirQuality_gr2"
+    type: "object"
+    required:
+    - "location"
+    - "measure"
+    - "timestamp"
+    properties:
+      location:
+        type: "string"
+      measure:
+        type: "number"
+      timestamp:
+        type: "object"
+        required:
+        - "$date"
+        properties:
+          $date:
+            type: "string"
+            format: "date-time"
+  description: "AirQuality_gr2"
+  additionalProperties: true
+dataModel: "MASTER-DataModel-5"
+active: true
+contextDataEnabled: true
+rtdbClean: false
+rtdbCleanLapse: "NEVER"
+rtdbToHdb: false
+rtdbToHdbStorage: "MONGO_GRIDFS"
+description: "AirQuality_gr2"
+metainf: "AirQuality_gr2"
+ontologyUserAccesses: []
+rtdbDatasource: "MONGO"
+allowsCypherFields: false
+allowsCreateTopic: false
+allowsCreateNotificationTopic: false
+allowsNotificationBpm: false
+allowsCreateMqttTopic: false
+supportsJsonLd: false
+enableDataClass: false
+public: false
+ontologyKPI: null
+ontologyAI: null
+ontologyTimeSeries: null

@@ -1,0 +1,74 @@
+---
+createdAt: 1732708665000
+updatedAt: 1745572134000
+id: "MASTER-Ontology-15"
+identification: "airportsdata"
+user: "analytics"
+jsonSchema:
+  $schema: "http://json-schema.org/draft-04/schema#"
+  title: "airportsdata"
+  type: "object"
+  required:
+  - "airportsdata"
+  properties:
+    airportsdata:
+      type: "string"
+      $ref: "#/datos"
+  datos:
+    description: "Info airportsdata"
+    type: "object"
+    required:
+    - "name"
+    - "city"
+    - "country"
+    - "IATAFAA"
+    - "latitude"
+    - "longitude"
+    - "tz"
+    properties:
+      name:
+        type: "string"
+      city:
+        type: "string"
+      country:
+        type: "string"
+      IATAFAA:
+        type: "string"
+      latitude:
+        type: "string"
+      longitude:
+        type: "string"
+      tz:
+        type: "string"
+  description: "Ontology for notebook-dashboard example"
+  additionalProperties: true
+dataModel: "MASTER-DataModel-5"
+active: true
+contextDataEnabled: true
+rtdbClean: false
+rtdbCleanLapse: "NEVER"
+rtdbToHdb: false
+description: "Ontology for notebook-dashboard example"
+metainf: "airportsdata"
+ontologyUserAccesses:
+- createdAt: 1745572132000
+  updatedAt: 1745572132000
+  id: "e851b8f7-21b4-11f0-947e-7a22666437ea"
+  ontologyUserAccessType: "MASTER-Ontology-User-Access-Type-1"
+  user: "developer"
+rtdbDatasource: "MONGO"
+allowsCypherFields: false
+allowsCreateTopic: false
+allowsCreateNotificationTopic: false
+allowsNotificationBpm: false
+allowsCreateMqttTopic: false
+supportsJsonLd: false
+jsonLdContext: ""
+enableDataClass: false
+showForm: ""
+editForm: ""
+listForm: ""
+public: true
+ontologyKPI: null
+ontologyAI: null
+ontologyTimeSeries: null

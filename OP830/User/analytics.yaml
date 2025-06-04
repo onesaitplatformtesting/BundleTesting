@@ -1,0 +1,21 @@
+---
+createdAt: 1732706623000
+updatedAt: 1748963425000
+userId: "analytics"
+email: "analytics@onesaitplatform.com"
+role:
+  createdAt: 1732706622000
+  updatedAt: 1732706622000
+  id: "ROLE_DATASCIENTIST"
+  roleParent:
+    createdAt: 1732706622000
+    updatedAt: 1732706622000
+    id: "ROLE_DEVELOPER"
+    name: "Developer"
+    description: "Advanced User of the Platform"
+  name: "Analytics"
+  description: "Analytics User of the Platform"
+password: "abcdefghijklmnopqrstuvDCxLLN6X4qrlIoI0vvuyEApc5xZWZgXgTfYkqyuhUTQ="
+active: true
+fullName: "Generic Analytics User of the Platform"
+id: "analytics"
